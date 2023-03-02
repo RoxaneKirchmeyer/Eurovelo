@@ -14,47 +14,53 @@
         rel="stylesheet">
 </head>
 
+
 <body>
     <header>
         <div>
             <ul>
-                <li><a href="https://www.instagram.com/?hl=fr"></a><i class="fa-brands fa-instagram"></i></li>
-                <li><a href="https://www.youtube.com/?hl=FR"></a><i class="fa-brands fa-youtube"></i></li>
-                <li><a href="https://fr-fr.facebook.com/"></a><i class="fa-brands fa-facebook-f"></i></li>
+                <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/?hl=FR"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
             </ul>
+
             <form>
                 <label>S'abonner à la newsletter</label>
                 <input type="email" placeholder="Votre adresse mail">
                 <button type="submit">JE M'INSCRIS</button>
             </form>
+
             <ul>
                 <li><a href="">Espace pro</a></li>
-                <li><i class="fa-solid fa-heart"></i><a href="">Carnet de voyage</a></li>
-                <li><i class="fa-solid fa-circle-user"></i><a href="">Espace personnel</a></li>
+                <li><a href=""><i class="fa-solid fa-heart"></i> Carnet de voyage</a></li>
+                <li><a href=""><i class="fa-solid fa-circle-user"></i> Espace personnel</a></li>
                 <li><a href=""></a></li>
             </ul>
-
         </div>
+
         <nav>
             <figure>
-                <a href=""></a>
+                <a href="accueil.html"></a>
                 <img src="#" alt="">
             </figure>
             <ul>
-                <li><a href="">L'ITINÉRAIRE</a></li>
+                <li><a href="itineraire.html">L'ITINÉRAIRE</a></li>
                 <li><a href="">TÉMOIGNAGES</a></li>
                 <li><a href="">INFOS PRATIQUES</a></li>
                 <li><a href="">SUGGESTIONS</a></li>
                 <li><a href="">INSPIRATIONS</a></li>
-                <li><a href="">ACTUALITÉS</a></li>
+                <li><a href="">Actualités 💬</a></li>
                 <li><a href="">PASSEPORT 🗺️</a></li>
             </ul>
             <div>
                 <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
         </nav>
+
         <h1>La Vélodyssée</h1>
+
         <span>La Vélodyssée, l'Atlantique en roue libre !</span>
+
         <form>
             <input type="text" placeholder="Lieu de départ">
             <input type="text" placeholder="Lieu d'arrivée">
@@ -62,38 +68,50 @@
         </form>
     </header>
 
-    
 
-    
     <section>
         <article>
             <h2>La Vélodyssée, 1300 km à vélo le long de l'Atlantique</h2>
             <p>La Vélodyssée, partie française de Atlantic Coast Route - EuroVelo 1, est une véloroute qui traverse la
-                Bretagne et longe l’Atlantique jusqu’à la Côte basque par un parcours tonique et sauvage.
-                Enfourchez vos vélos et en route pour un périple de plus de 1300 km de vélotourisme avec l’océan en
-                toile de fond ! Entre Roscoff et Hendaye, près de 80% du trajet se réalise sur des voies sans voiture.
-                Découvrez les trésors de nos régions, en suivant la plus longue véloroute française aménagée,
+                Bretagne et longe l&rsquo;Atlantique jusqu&rsquo;à la Côte basque par un parcours tonique et sauvage.
+                Enfourchez vos vélos et en route pour un périple de plus de 1300 km de vélotourisme avec l&rsquo;océan
+                en toile de fond ! Entre Roscoff et Hendaye, près de 80% du trajet se réalise sur des voies sans
+                voiture. Découvrez les trésors de nos régions, en suivant la plus longue véloroute française aménagée,
                 entièrement balisée de bout en bout.</p>
             <figure>
                 <img src="images/pictos-velodyssee3.jpg" alt="">
             </figure>
             <form>
-                <h3></h3>
+                <h3>Pédalez selon vos envies</h3>
                 <select name="parcours-select">
+                    <option value="">Tous les parcours</option>
+                    <option value="">Aller simple</option>
+                    <option value="">Aller-retour</option>
+                    <option value="">Boucle</option>
                     <option value="">Tous les parcours</option>
                     <option value="">Aller simple</option>
                     <option value="">Aller-retour</option>
                     <option value="">Boucle</option>
                 </select>
 
-                <select name="difficultés">
+                <select name="difficultes">
+                    <option value="">Toutes les difficultés</option>
+                    <option value="">Je débute / En famille</option>
+                    <option value="">J'ai l'habitude</option>
+                    <option value="">Je me dépasse</option>
                     <option value="">Toutes les difficultés</option>
                     <option value="">Je débute / En famille</option>
                     <option value="">J'ai l'habitude</option>
                     <option value="">Je me dépasse</option>
                 </select>
 
-                <select name="durée">
+                <select name="duree">
+                    <option value="">Toutes les durées</option>
+                    <option value="">Journée</option>
+                    <option value="">Long séjour (+7 de jours)</option>
+                    <option value="">A la semaine</option>
+                    <option value="">Court séjour (3 à 5 jours)</option>
+                    <option value="">Week-end</option>
                     <option value="">Toutes les durées</option>
                     <option value="">Journée</option>
                     <option value="">Long séjour (+7 de jours)</option>
@@ -102,7 +120,15 @@
                     <option value="">Week-end</option>
                 </select>
 
-                <select name="thématique">
+                <select name="thematique">
+                    <option value="">Toutes les thématiques</option>
+                    <option value="">Le littoral</option>
+                    <option value="">Nature et patrimoine</option>
+                    <option value="">au fil de l'eau</option>
+                    <option value="">Forêts et landes</option>
+                    <option value="">En famille</option>
+                    <option value="">Vignobles et gastronomie</option>
+                    <option value="">Panoramas</option>
                     <option value="">Toutes les thématiques</option>
                     <option value="">Le littoral</option>
                     <option value="">Nature et patrimoine</option>
@@ -113,11 +139,11 @@
                     <option value="">Panoramas</option>
                 </select>
 
-                <select name="déstinations">
+                <select name="destinations">
                     <option value="">Toutes les déstinations</option>
-                    <option value="">Nouvelle-Aquitaine (La rochelle > Hendaye)</option>
-                    <option value="">Pays de la Loires (Nantes > La Rochelle)</option>
-                    <option value="">Bretagne (Roscoff > Nantes)</option>
+                    <option value="">Nouvelle-Aquitaine (La rochelle &gt; Hendaye)</option>
+                    <option value="">Pays de la Loires (Nantes &gt; La Rochelle)</option>
+                    <option value="">Bretagne (Roscoff &gt; Nantes)</option>
                 </select>
                 <button>Trouver mon parcours idéal</button>
             </form>
@@ -129,6 +155,7 @@
             </div>
         </article>
     </section>
+
     <section>
         <div>
             <figure>
@@ -136,19 +163,27 @@
                 <h2>Trouver mon Accueil vélo</h2>
             </figure>
         </div>
-        <p>Accueil Vélo est une marque qui garantit des services de qualité auprès des cyclistes le long de l'itinéraire
-        </p>
+
+        <p>Accueil Vélo est une marque qui garantit des services de qualité auprès des cyclistes le long de l'itinéraire</p>
+
         <div>
             <figure>
+                <img src="#" alt="">
                 <figcaption>HÉBERGEMENTS</figcaption>
             </figure>
+
             <figure>
+                <img src="#" alt="">
                 <figcaption>LIEUX DE VISITE</figcaption>
             </figure>
+
             <figure>
+                <img src="#" alt="">
                 <figcaption>OFFICES DE TOURISME</figcaption>
             </figure>
+
             <figure>
+                <img src="#" alt="">
                 <figcaption>LOUEURS & RÉPARATEURS DE VÉLO</figcaption>
             </figure>
         </div>
@@ -157,67 +192,87 @@
     <section>
         <h2>Ils l'ont fait !</h2>
         <p>Ces retours d'expérience sont précieux pour vous aider à préparer votre parcours sur La Vélodyssée.
-            Inspirez-vous !</p>
+        <br>
+        Inspirez-vous !</p>
+
         <div>
             <figure>
+                <img src="#" alt="">
                 <h3>Les 1110 km de Cynthia en solo sur La Vélodyssée</h3>
                 <p>Un premier voyage à vélo de 16 jours avec 1110 km au compteur !</p>
-                <a href=""><img src="#" alt=""></a>
+                <a href="#"><img src="#" alt=""></a>
             </figure>
+
             <figure>
-                <h3>Premier voyae à vélo avec un bébé de 8 mois</h3>
+                <img src="#" alt="">
+                <h3>Premier voyage à vélo avec un bébé de 8 mois</h3>
                 <p>300 km de Nantes à La Rochelle, entre préparation d'un voyage futur et découverte du voyage à vélo
-                    pour Zohé. </p>
-                <a href=""><img src="#" alt=""></a>
+                    pour Zohé.</p>
+                <a href="#"><img src="#" alt=""></a>
             </figure>
+
             <figure>
+                <img src="#" alt="">
                 <h3>Le bike trip de Valentin</h3>
-                <a href=""><img src="#" alt=""></a>
+                <a href="#"><img src="#" alt=""></a>
             </figure>
+
             <figure>
+                <img src="#" alt="">
                 <h3>De La Rochelle à Biarritz entre copains.</h3>
                 <p>Un trip entre copain, avec quelques rebondissements...</p>
-                <a href=""><img src="#" alt=""></a>
+                <a href="#"><img src="#" alt=""></a>
             </figure>
+
             <figure>
+                <img src="#" alt="">
                 <h3>L'aventure au bout du guidon</h3>
-                <p>1000 km, de Hendaye à Nantes, la côte aux milles paysages. </p>
-                <a href=""><img src="#" alt=""></a>
+                <p>1000 km, de Hendaye à Nantes, la côte aux milles paysages.</p>
+                <a href="#"><img src="#" alt=""></a>
             </figure>
-            <h3>La Valodyssée et ses crochets en famille, au fil de l'Atlantique !</h3>
-            <p>La famille Matton, itinérants belges, a choisi de parcourir la France à vélo sur la Vélodyssée, retour
-                sur
-                leur aventure au fil de l'Atlantique !</p>
-            <a href=""><img src="#" alt=""></a>
+
+            <figure>
+                <img src="#" alt="">
+                <h3>La Velodyssée et ses crochets en famille, au fil de l'Atlantique !</h3>
+                <p>La famille Matton, itinérants belges, a choisi de parcourir 
+                    la France à vélo sur la Vélodyssée, retour sur leur aventure au fil de l'Atlantique !
+                </p>
+                <a href="#"><img src="#" alt=""></a>
+            </figure>
+
             <div>
-                <a href="">TOUS LES TÉMOIGNAGES</a>
+                <a href="#">TOUS LES TÉMOIGNAGES</a>
                 <button>←</button>
                 <button>→</button>
             </div>
         </div>
     </section>
-    <script src="https://kit.fontawesome.com/9876741200.js" crossorigin="anonymous"></script>
-
+   
     <section>
         <h2>Les derniers avis publiés !</h2>
         <p>Les avis et commentaires de voyageurs à vélo sur nos parcours.
             N'hésitez pas à déposer le votre sur les tracés que vous avez déjà parcourus !
         </p>
+
         <div>
             <article>
                 <span>mar 28/06/2022 - 11:43</span>
                 <span>David</span>
                 <span>star</span>
                 <span>Arcachon / Biscarrosse-plage</span>
+
                 <ul>
                     <li>Sécurité 5/5</li>
                     <li>Balisage 5/5</li>
                     <li>Intérêt 5/5</li>
                     <li>Services 5/5</li>
                 </ul>
-                <span>Biscarosse -> Arcachon -> Biscarosse dans la journée</span>
+
+                <span>Biscarosse → Arcachon → Biscarosse dans la journée</span>
+
                 <p>Petite balade en famille à 6 vélos, n'ayant pas fait de vélo depuis un moment nous avons voulu faire un aller retour de Biscarosse plage à Arcachon.
                     Bilan : le départ est assez simple plusieurs bons kilomètres vallonnés, environ 15 kilomètres je dirai et arrivé la première côte</p>
+
                 <div>
                     <span>0 réponse</span>
                     <a href="#">Lire</a>
@@ -235,29 +290,35 @@
                     <li>Services 4/5</li>
                 </ul>
                 <span>Decouverte</span>
-                <p>Lors de la semaine fédérale de cyclotourisme de loudeac nous avons décidé de parcourir deux parcours de la velodyssee.
+                <p>Lors de la semaine fédérale de cyclotourisme de loudeac nous avons décidé de parcourir deux parcours
+                    de la velodyssee.
                     Nous avons été ravi du parcours du mur-de-Bretagne à Pontivy.
-                    Le chemin de halage tantôt en bitume, tantôt en stabilisé. Une végétation changeante tous les cinq kilomètres, un vrai</p>
+                    Le chemin de halage tantôt en bitume, tantôt en stabilisé. Une végétation changeante tous les cinq
+                    kilomètres, un vrai</p>
                 <div>
                     <span>0 réponse</span>
                     <a href="#">Lire</a>
                 </div>
             </article>
+
             <article>
                 <span>dim 14/08/2022 - 19:34</span>
                 <span>Philippe</span>
                 <span>star</span>
                 <span>Pontivy / Josselin</span>
+
                 <ul>
                     <li>Sécurité 4/5</li>
                     <li>Balisage 5/5</li>
                     <li>Intérêt 5/5</li>
                     <li>Services 5/5</li>
                 </ul>
+
                 <span>Decouverte</span>
                 <p>Deuxième parcours de la journée, toujours aussi bien avec ses points de vues, nombreuses écluses, maison d'eclusiers fleuries, sa halte au chalet pour une dégustation de cidre.
                     Une arrivée au château de Josselin.
                     Une journée agréable, nous poursuivrons notre odyssée l'année prochaine.</p>
+
                 <div>
                     <span>0 réponse</span>
                     <a href="#">Lire</a>
@@ -279,10 +340,11 @@
             
             <div class="bottom-reservation">
                 <figure class="reservation-1">
-                    <a href="">
+                    <a href="#">
                         <img src="#" alt="#">
-                    
+                    </a>
                     <figcaption>
+                        <a href="#">
                         <div class="info-sejour">
                             <div>Dès 785€</div>
                             <div>
@@ -291,21 +353,23 @@
                             </div>
                         </div>
                         <div class="coeur">
-                            <img src="" alt="">
+                            <img src="#" alt="#">
                         </div>
                         <div>La Vélodyssée, de Bordeaux à Biarritz</div>
                         <div class="image-enbas" >
-                            <img src="" alt="">
+                            <img src="#" alt="#">
                         </div>
+                        </a>
                     </figcaption>
-                    </a>
+                    
                 </figure>
 
                 <figure class="reservation-2">
-                    <a href="">
+                    <a href="#">
                         <img src="#" alt="#">
-                    
+                    </a>
                     <figcaption>
+                        <a href="#">
                         <div class="info-sejour">
                             <div>Dès 855€</div>
                             <div>
@@ -314,38 +378,41 @@
                             </div>
                         </div>
                         <div class="couer">
-                            <img src="" alt="">
+                            <img src="#" alt="#">
                         </div>
 
                         <div>De Royan à l'île d'Oléron en famille</div>
                         <div class="image-enbas" >
-                            <img src="" alt="">
+                            <img src="#" alt="#">
                         </div>
+                        </a>
                     </figcaption>
-                    </a>
+                    
                 </figure>
 
                 <figure class="reservation-3">
-                    <a href="">
+                    <a href="#">
                         <img src="#" alt="#">
-                    
-                    <figcaption>
-                        <div class="info-sejour">
-                            <div>Dès 1404€</div>
-                            <div>
-                                <p>A la Semaine</p> 
-                                <img src="#" alt="#">
-                            </div>
-                        </div>
-                        <div class="coeur">
-                            <img src="" alt="">
-                        </div>
-                        <div>La Vélodyssée de La Rochelle à Royan</div>
-                        <div class="image-enbas" >
-                            <img src="" alt="">
-                        </div>
-                    </figcaption>
                     </a>
+                    <figcaption>
+                        <a href="#">
+                            <div class="info-sejour">
+                                <div>Dès 1404€</div>
+                                <div>
+                                    <p>A la Semaine</p> 
+                                    <img src="#" alt="#">
+                                </div>
+                            </div>
+                            <div class="coeur">
+                                <img src="#" alt="">
+                            </div>
+                            <div>La Vélodyssée de La Rochelle à Royan</div>
+                            <div class="image-enbas" >
+                                <img src="#" alt="">
+                            </div>
+                        </a>
+                    </figcaption>
+                    
                 </figure> 
             </div>
         </div>
@@ -354,5 +421,81 @@
         </div>
     </section>
     <!-- reservation-end -->
+
+    <footer>
+        <div>
+            <figure>
+                <img src="#" alt="">
+            </figure>
+
+            <ul>
+                <li><a href="https://www.instagram.com/?hl=fr"></a><i class="fa-brands fa-instagram"></i></li>
+                <li><a href="https://www.youtube.com/?hl=FR"></a><i class="fa-brands fa-youtube"></i></li>
+                <li><a href="https://fr-fr.facebook.com/"></a><i class="fa-brands fa-facebook-f"></i></li>
+            </ul>
+
+            <h3>Qui sommes-nous?</h3>
+            <p>La Vélodyssée est un projet porté collectivement par 3 Régions et 9 Départements réunis autour d'une
+                ambition commune : positionner La Vélodyssée comme un itinéraire d'excellence du tourisme à vélo en
+                France et à l'étranger.</p>
+            <a href="">EN SAVOIR PLUS</a>
+            <a href="">NOUS CONTACTER</a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="">Un itinéraire vélo européen</a></li>
+                <li><a href="">Louer un vélo</a></li>
+                <li><a href="">Voyages organisés</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="">Les suggestions de parcours</a></li>
+                <li><a href="">Séjours</a></li>
+                <li><a href="">Inspirations</a></li>
+                <li><a href="">Étapes</a></li>
+                <li><a href="">Boucles</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="">Conseils</a></li>
+                <li><a href="">Guides</a></li>
+                <li><a href="">Voyager en famille</a></li>
+                <li><a href="">Foire Aux Questions</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <span>La marque Accueil Vélo qu'est ce que c'est ?</span>
+
+            <figure>
+                <img src="#" alt="#">
+            </figure>
+            
+                <p>Accueil Vélo est une marque nationale qui garantit un accueil et des services de qualité auprès des
+                    cyclistes le long des itinéraires cyclables.</p>
+                    <a href="#">EN SAVOIR PLUS</a>
+                    <a href="#">DEVENIR ACCUEIL VÉLO</a>
+        </div>
+
+        <div>
+            <ul>
+                <li><a href="#">Presse</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Gestion des cookies</a></li>
+            </ul>
+
+            <div>
+                <span>Réalisation</span>
+                <a href="#">BZZZZZZZ</a>
+                <a href="#">France Vélo Tourism</a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/9876741200.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
