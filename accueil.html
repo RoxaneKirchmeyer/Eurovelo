@@ -14,6 +14,7 @@
         rel="stylesheet">
 </head>
 
+
 <body>
     <header>
         <div>
@@ -25,6 +26,7 @@
             <form>
                 <label>S'abonner à la newsletter</label>
                 <input type="email" placeholder="Votre adresse mail">
+                <button type="submit">JE M'INSCRIS</button>
                 <button type="submit">JE M'INSCRIS</button>
             </form>
             <ul>
@@ -84,9 +86,17 @@
                     <option value="">Aller simple</option>
                     <option value="">Aller-retour</option>
                     <option value="">Boucle</option>
+                    <option value="">Tous les parcours</option>
+                    <option value="">Aller simple</option>
+                    <option value="">Aller-retour</option>
+                    <option value="">Boucle</option>
                 </select>
 
                 <select name="difficultés">
+                    <option value="">Toutes les difficultés</option>
+                    <option value="">Je débute / En famille</option>
+                    <option value="">J'ai l'habitude</option>
+                    <option value="">Je me dépasse</option>
                     <option value="">Toutes les difficultés</option>
                     <option value="">Je débute / En famille</option>
                     <option value="">J'ai l'habitude</option>
@@ -100,9 +110,23 @@
                     <option value="">A la semaine</option>
                     <option value="">Court séjour (3 à 5 jours)</option>
                     <option value="">Week-end</option>
+                    <option value="">Toutes les durées</option>
+                    <option value="">Journée</option>
+                    <option value="">Long séjour (+7 de jours)</option>
+                    <option value="">A la semaine</option>
+                    <option value="">Court séjour (3 à 5 jours)</option>
+                    <option value="">Week-end</option>
                 </select>
 
                 <select name="thématique">
+                    <option value="">Toutes les thématiques</option>
+                    <option value="">Le littoral</option>
+                    <option value="">Nature et patrimoine</option>
+                    <option value="">au fil de l'eau</option>
+                    <option value="">Forêts et landes</option>
+                    <option value="">En famille</option>
+                    <option value="">Vignobles et gastronomie</option>
+                    <option value="">Panoramas</option>
                     <option value="">Toutes les thématiques</option>
                     <option value="">Le littoral</option>
                     <option value="">Nature et patrimoine</option>
@@ -123,13 +147,13 @@
             </form>
         </article>
 
+
         <article>
             <div>
                 <!-- insérer la carte -->
             </div>
         </article>
     </section>
-
     <section>
         <div>
             <figure>
@@ -197,7 +221,75 @@
             </div>
         </div>
     </section>
-    <script src="https://kit.fontawesome.com/9876741200.js" crossorigin="anonymous"></script>
+   
+
+    <section>
+        <h2>Les derniers avis publiés !</h2>
+        <p>Les avis et commentaires de voyageurs à vélo sur nos parcours.
+            N'hésitez pas à déposer le votre sur les tracés que vous avez déjà parcourus !
+        </p>
+        <div>
+            <article>
+                <span>mar 28/06/2022 - 11:43</span>
+                <span>David</span>
+                <span>star</span>
+                <span>Arcachon / Biscarrosse-plage</span>
+                <ul>
+                    <li>Sécurité 5/5</li>
+                    <li>Balisage 5/5</li>
+                    <li>Intérêt 5/5</li>
+                    <li>Services 5/5</li>
+                </ul>
+                <span>Biscarosse -> Arcachon -> Biscarosse dans la journée</span>
+                <p>Petite balade en famille à 6 vélos, n'ayant pas fait de vélo depuis un moment nous avons voulu faire un aller retour de Biscarosse plage à Arcachon.
+                    Bilan : le départ est assez simple plusieurs bons kilomètres vallonnés, environ 15 kilomètres je dirai et arrivé la première côte</p>
+                <div>
+                    <span>0 réponse</span>
+                    <a href="#">Lire</a>
+                </div>
+            </article>
+            <article>
+                <span>dim 14/08/2022 - 19:29</span>
+                <span>Philippe</span>
+                <span>star</span>
+                <span>Mûr-de-Bretagne / Pontivy</span>
+                <ul>
+                    <li>Sécurité 4/5</li>
+                    <li>Balisage 5/5</li>
+                    <li>Intérêt 5/5</li>
+                    <li>Services 4/5</li>
+                </ul>
+                <span>Decouverte</span>
+                <p>Lors de la semaine fédérale de cyclotourisme de loudeac nous avons décidé de parcourir deux parcours de la velodyssee.
+                    Nous avons été ravi du parcours du mur-de-Bretagne à Pontivy.
+                    Le chemin de halage tantôt en bitume, tantôt en stabilisé. Une végétation changeante tous les cinq kilomètres, un vrai</p>
+                <div>
+                    <span>0 réponse</span>
+                    <a href="#">Lire</a>
+                </div>
+            </article>
+            <article>
+                <span>dim 14/08/2022 - 19:34</span>
+                <span>Philippe</span>
+                <span>star</span>
+                <span>Pontivy / Josselin</span>
+                <ul>
+                    <li>Sécurité 4/5</li>
+                    <li>Balisage 5/5</li>
+                    <li>Intérêt 5/5</li>
+                    <li>Services 5/5</li>
+                </ul>
+                <span>Decouverte</span>
+                <p>Deuxième parcours de la journée, toujours aussi bien avec ses points de vues, nombreuses écluses, maison d'eclusiers fleuries, sa halte au chalet pour une dégustation de cidre.
+                    Une arrivée au château de Josselin.
+                    Une journée agréable, nous poursuivrons notre odyssée l'année prochaine.</p>
+                <div>
+                    <span>0 réponse</span>
+                    <a href="#">Lire</a>
+                </div>
+            </article>
+        </div>
+    </section>
     <footer>
         <div>
             <figure>
@@ -262,6 +354,7 @@
         </div>
 
     </footer>
+    <script src="https://kit.fontawesome.com/9876741200.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
