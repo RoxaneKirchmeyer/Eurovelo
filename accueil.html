@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main.css">
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <title>Document</title>
 </head>
 
 <body>
     <header>
         <div>
             <ul>
-                <li><a href="https://www.instagram.com/?hl=fr"></a></li>
-                <li><a href="https://www.youtube.com/?hl=FR"></a></li>
-                <li><a href="https://fr-fr.facebook.com/"></a></li>
+                <li><a href="https://www.instagram.com/?hl=fr"></a><i class="fa-brands fa-instagram"></i></li>
+                <li><a href="https://www.youtube.com/?hl=FR"></a><i class="fa-brands fa-youtube"></i></li>
+                <li><a href="https://fr-fr.facebook.com/"></a><i class="fa-brands fa-facebook-f"></i></li>
             </ul>
             <form>
                 <label>S'abonner à la newsletter</label>
@@ -28,8 +29,8 @@
             </form>
             <ul>
                 <li><a href="">Espace pro</a></li>
-                <li><a href="">Carnet de voyage</a></li>
-                <li><a href="">Espace personnel</a></li>
+                <li><i class="fa-solid fa-heart"></i><a href="">Carnet de voyage</a></li>
+                <li><i class="fa-solid fa-circle-user"></i><a href="">Espace personnel</a></li>
                 <li><a href=""></a></li>
             </ul>
 
@@ -46,10 +47,10 @@
                 <li><a href="">SUGGESTIONS</a></li>
                 <li><a href="">INSPIRATIONS</a></li>
                 <li><a href="">ACTUALITÉS</a></li>
-                <li><a href="">PASSEPORT</a></li>
+                <li><a href="">PASSEPORT 🗺️</a></li>
             </ul>
             <div>
-                <a href=""></a>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
         </nav>
         <h1>La Vélodyssée</h1>
@@ -60,6 +61,7 @@
             <button type="submit">CALCULER MON ITINÉRAIRE</button>
         </form>
     </header>
+    
     <section>
         <article>
             <h2>La Vélodyssée, 1300 km à vélo le long de l'Atlantique</h2>
@@ -70,11 +72,10 @@
                 Découvrez les trésors de nos régions, en suivant la plus longue véloroute française aménagée,
                 entièrement balisée de bout en bout.</p>
             <figure>
-                <img src="https://www.lavelodyssee.com/sites/velodyssee/files/medias/images/pictos-velodyssee3.jpg"
-                    alt="">
+                <img src="images/pictos-velodyssee3.jpg" alt="">
             </figure>
-            <form action="#">
-                <h3>Pédalez selon vos envies</h3>
+            <form>
+                <h3></h3>
                 <select name="parcours-select">
                     <option value="">Tous les parcours</option>
                     <option value="">Aller simple</option>
@@ -125,7 +126,6 @@
             </div>
         </article>
     </section>
-
     <section>
         <div>
             <figure>
@@ -150,8 +150,9 @@
             </figure>
         </div>
     </section>
+
     <section>
-        <h2>Ils l’ont fait !</h2>
+        <h2>Ils l&rsquo;ont fait !</h2>
         <p>Ces retours d'expérience sont précieux pour vous aider à préparer votre parcours sur La Vélodyssée.
             Inspirez-vous !</p>
         <div>
@@ -192,46 +193,74 @@
             </div>
         </div>
     </section>
+    <script src="https://kit.fontawesome.com/9876741200.js" crossorigin="anonymous"></script>
+
     <section>
-        <h2>La douceur de l'Atlantique à portée de roues !</h2>
-        <p>Idées week-end, nouveautés et tutos pour s'élancer dans une aventure à vélo.</p>
+        <h2>Les derniers avis publiés !</h2>
+        <p>Les avis et commentaires de voyageurs à vélo sur nos parcours.
+            N'hésitez pas à déposer le votre sur les tracés que vous avez déjà parcourus !
+        </p>
         <div>
-            <figure>
-                <h3>Présentation de l'itinéraire</h3>
-                <a href=""><img src="#" alt=""></a>
-            </figure>
-            <figure>
-                <h3>La Vélodyssée : difficulté et dénivelé</h3>
-                <p>Un itinéraire adapté aux débutants aux familles !</p>
-                <a href=""><img src="#" alt=""></a>
-            </figure>
-            <figure>
-                <h3>Foire aux questions</h3>
-                <a href=""><img src="#" alt=""></a>
-            </figure>
-            <figure>
-                <h3>Comment bien préparer son premier voyage à vélo ?</h3>
-                <a href=""><img src="#" alt=""></a>
-            </figure>
-            <figure>
-                <h3>Modes de transport + vélo</h3>
-                <a href=""><img src="#" alt=""></a>
-            </figure>
-            <figure>
-                <h3>Les hébergements légers à la nuitée</h3>
-                <a href=""><img src="#" alt=""></a>
-            </figure>
-            <figure>
-                <h3>Découvrez à vélo les îles autour de la Vélodyssée</h3>
-                <a href=""><img src="#" alt=""></a>
-            </figure>
-            <figure>
-                <h3>L'outil de signalement à votre service</h3>
-                <p>Avant, pendant et après votre parcours</p>
-                <a href=""><img src="#" alt=""></a>
-            </figure>
+            <article>
+                <span>mar 28/06/2022 - 11:43</span>
+                <span>David</span>
+                <span>star</span>
+                <span>Arcachon / Biscarrosse-plage</span>
+                <ul>
+                    <li>Sécurité 5/5</li>
+                    <li>Balisage 5/5</li>
+                    <li>Intérêt 5/5</li>
+                    <li>Services 5/5</li>
+                </ul>
+                <span>Biscarosse -> Arcachon -> Biscarosse dans la journée</span>
+                <p>Petite balade en famille à 6 vélos, n'ayant pas fait de vélo depuis un moment nous avons voulu faire un aller retour de Biscarosse plage à Arcachon.
+                    Bilan : le départ est assez simple plusieurs bons kilomètres vallonnés, environ 15 kilomètres je dirai et arrivé la première côte</p>
+                <div>
+                    <span>0 réponse</span>
+                    <a href="#">Lire</a>
+                </div>
+            </article>
+            <article>
+                <span>dim 14/08/2022 - 19:29</span>
+                <span>Philippe</span>
+                <span>star</span>
+                <span>Mûr-de-Bretagne / Pontivy</span>
+                <ul>
+                    <li>Sécurité 4/5</li>
+                    <li>Balisage 5/5</li>
+                    <li>Intérêt 5/5</li>
+                    <li>Services 4/5</li>
+                </ul>
+                <span>Decouverte</span>
+                <p>Lors de la semaine fédérale de cyclotourisme de loudeac nous avons décidé de parcourir deux parcours de la velodyssee.
+                    Nous avons été ravi du parcours du mur-de-Bretagne à Pontivy.
+                    Le chemin de halage tantôt en bitume, tantôt en stabilisé. Une végétation changeante tous les cinq kilomètres, un vrai</p>
+                <div>
+                    <span>0 réponse</span>
+                    <a href="#">Lire</a>
+                </div>
+            </article>
+            <article>
+                <span>dim 14/08/2022 - 19:34</span>
+                <span>Philippe</span>
+                <span>star</span>
+                <span>Pontivy / Josselin</span>
+                <ul>
+                    <li>Sécurité 4/5</li>
+                    <li>Balisage 5/5</li>
+                    <li>Intérêt 5/5</li>
+                    <li>Services 5/5</li>
+                </ul>
+                <span>Decouverte</span>
+                <p>Deuxième parcours de la journée, toujours aussi bien avec ses points de vues, nombreuses écluses, maison d'eclusiers fleuries, sa halte au chalet pour une dégustation de cidre.
+                    Une arrivée au château de Josselin.
+                    Une journée agréable, nous poursuivrons notre odyssée l'année prochaine.</p>
+                <div>
+                    <span>0 réponse</span>
+                    <a href="#">Lire</a>
+                </div>
+            </article>
         </div>
     </section>
 </body>
-
 </html>
