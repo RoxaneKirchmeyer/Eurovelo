@@ -1,0 +1,60 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+    background-color: $backgroundNav;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    i {
+        color: $roseTrace;
+        font-size: 1.5rem;
+            &:hover {
+                color: $roseFonce;
+            }
+    }
+
+    .fa-xmark {
+        color: $grisFonce;
+        font-size: 1.5rem;
+        padding-right: 5px;
+    }
+
+    img {
+        display: block;
+        min-height: 50px;
+        max-width: 50px;
+        margin-left: 1rem;
+    }
+
+    .logoNav {
+        padding: 0;
+    }
+    
+    ul {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    div {
+        button {
+            background-color: $backgroundNav;
+            margin-right: 1rem;
+                &:hover {
+                    background-color: $backgroundNav;
+                    color: $buttonHover;
+                }
+        }
+    }
+}
+
+.headerItineraire {
+    nav {
+        border-top: 1px solid $grisClair;
+        border-bottom: 1px solid $grisClair;
+        box-shadow: 0px 5px 5px $grisClair;
+    }
+}

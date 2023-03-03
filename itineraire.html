@@ -9,47 +9,51 @@
     <title>Itinéraire</title>
 </head>
 <body>
-    <header>
+    <header class="headerItineraire">
         <div>
-            <ul>
-                <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.youtube.com/?hl=FR"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <div class="media">
+                <ul>
+                    <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/?hl=FR"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                </ul>
+                <form>
+                    <label>S'abonner à la newsletter</label>
+                    <input type="email" placeholder="Votre adresse mail">
+                    <button type="submit">JE M'INSCRIS</button>
+                </form>
+            </div>
+
+            <ul class="pro">
+                <li><a href="#">Espace pro</a></li>
+                <li><a href="#"><i class="fa-solid fa-heart"></i> Carnet de voyage</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-user"></i> Espace personnel</a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-flag"></i></a></li>
             </ul>
-
-            <form>
-                <label>S'abonner à la newsletter</label>
-                <input type="email" placeholder="Votre adresse mail">
-                <button type="submit">JE M'INSCRIS</button>
-            </form>
-
-            <ul>
-                <li><a href="">Espace pro</a></li>
-                <li><a href=""><i class="fa-solid fa-heart"></i> Carnet de voyage</a></li>
-                <li><a href=""><i class="fa-solid fa-circle-user"></i> Espace personnel</a></li>
-                <li><a href=""></a></li>
-            </ul>
-
         </div>
+
         <nav>
-            <figure>
-                <a href="accueil.html"></a>
-                <img src="#" alt="">
-            </figure>
             <ul>
+                <li><a href="accueil.html" class="logoNav"><img src="images/logo-euroVelo.png" alt=""></a></li>
                 <li><a href="itineraire.html">L'ITINÉRAIRE</a></li>
                 <li><a href="">TÉMOIGNAGES</a></li>
                 <li><a href="">INFOS PRATIQUES</a></li>
                 <li><a href="">SUGGESTIONS</a></li>
                 <li><a href="">INSPIRATIONS</a></li>
-                <li><a href="">ACTUALITÉS</a></li>
+                <li><a href="">ACTUALITÉS 💬</a></li>
                 <li><a href="">PASSEPORT 🗺️</a></li>
             </ul>
             <div>
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <button type="button"><i class="fa-solid fa-magnifying-glass" id="search"></i></button>
             </div>
         </nav>
-        </header>
+        <form class="searchMenu">
+            <input type="text" placeholder="Rechercher...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </header>
+
         <script src="https://kit.fontawesome.com/9876741200.js" crossorigin="anonymous"></script>
+        <script src="navSearch.js"></script>
 </body>
 </html>
