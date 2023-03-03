@@ -1,11 +1,10 @@
-@import "./vendors/vendor";
+@import "./vendors/reset";
 
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/variables";
 
 
-@import "./base/reset";
 @import "./base/typography";
 
 @import "./components/buttons";
