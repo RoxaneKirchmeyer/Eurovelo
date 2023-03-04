@@ -1,0 +1,36 @@
+h1 {
+    font-family: $fontTitre;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: $colorTexteDarkBackground;
+}
+
+h2 {
+    font-family: $fontTitre;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: $colorTitre;
+}
+
+p {
+    font-family: $fontTexte;
+    font-weight: 500;
+    font-size: 1rem;
+    color: $colorTexte;
+    line-height: 1.5em;
+}
+
+nav {
+    a {
+        padding: 1rem;
+        font-family: $fontTitre;
+        font-weight: 600;
+        font-size: 1rem;
+        color: $colorTitre;
+
+        &:hover {
+            color: $roseTrace;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}
