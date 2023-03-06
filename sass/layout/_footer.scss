@@ -1,0 +1,190 @@
+footer {
+  
+.background {
+    background-image: url(/images/image6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+
+}
+
+
+.contact {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+   
+    
+    .head {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    img {
+        display: block;
+        min-height: 50px;
+        max-width: 50px;
+        margin-left: 1rem;
+        
+    }
+    ul {
+      display: flex;
+        gap: 20px;
+        
+    }
+    a {
+        color: black;
+        font-size: 1rem;
+    }
+    .qui-sommes-nous {
+        display: flex;
+       
+       
+        h3 {
+            font-size: 1.5rem;
+            padding: 1rem;
+            font-family: $fontTitre;
+            font-weight: 600;
+        }
+        p {
+        color: $grisFonce;
+        width: 80%;
+        padding: 1rem;
+           
+        }
+      .liens {
+       display: flex;
+       gap: 30px;
+        
+      }
+    }
+   .savoirPlus {
+    color: $roseTrace;
+    background-color: $blanc;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-family: $fontTexte;
+    font-weight: bold;
+    display: block;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    
+
+   }
+   .nousContacter {
+ 
+    background-color: $roseTrace;
+    color: $blanc;
+    padding: 0.5rem 3rem;
+    border-radius: 5px;
+    font-family: $fontTexte;
+    font-weight: bold;
+    display: block;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    
+   }
+} 
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    
+    ul {
+        li {
+            padding: 0.5rem;
+        }
+    }
+    a {
+        font-family: $fontTexte;
+        font-size: 1.25rem;
+        color:  $grisFonce;
+        font-weight: bold;
+    } .gris {
+        color: $grisMoyen;
+        font-weight: lighter;
+    }
+    
+}
+.accueilVélo {
+    background-color: #F4F4F4;
+    width: 80%;
+    margin: auto;
+    padding: 2rem 11.6rem;
+    display: flex;
+    
+    span {
+        font-family: $fontTitre;
+        font-weight: 600;
+    }
+  .liens {
+    display: flex;
+    gap: 30px;
+  }
+    .savoirPlus {
+        font-family: $fontTexte;
+        color: $grisFonce;
+        background-color: #F4F4F4;
+        border: solid 2px;
+        border-radius: 6px;
+        padding: 0.5rem 1rem;
+        width: 150px;
+        height: 30px;
+        display: block;
+        text-align: center;
+    }
+    .devenirAccueil {
+        font-family: $fontTexte;
+        color: $blanc;
+        background-color: $grisFonce;
+        border: solid 2px;
+        border-radius: 6px;
+        padding: 0.5rem 1rem;
+        width: 250px;
+        height: 30px;
+        display: block;
+        text-align: center;
+
+    }
+    p {
+        color: $grisMoyen;
+        width: 80%;
+        padding: 1rem;
+    }
+} .légale {
+    background-color: $grisFonce;
+    width: 80%;
+    margin: auto;
+    padding: 2rem 11.6rem;
+    font-family: $fontTexte;
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        gap: 20px;
+        a {
+            color: $blanc;
+        }
+    }
+    .end {
+       
+        span {
+            color: $blanc;
+        }
+        a {
+            color: $blanc;
+            margin-left: 20px;
+        }
+       
+
+    }
+}
+
+
+}
