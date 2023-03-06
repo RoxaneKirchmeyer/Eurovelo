@@ -71,7 +71,7 @@
 
 
     <main>
-        <section>
+        <section class="firstArticle">
             <article>
                 <h2>La Vélodyssée, 1300 km à vélo le long de l'Atlantique</h2>
                 <p>La Vélodyssée, partie française de Atlantic Coast Route - EuroVelo 1, est une véloroute qui traverse la
@@ -85,7 +85,7 @@
                 </figure>
                 <form>
                     <h3>Pédalez selon vos envies</h3>
-                    <select name="parcours-select">
+                    <div><select name="parcours-select">
                         <option value="">Tous les parcours</option>
                         <option value="">Aller simple</option>
                         <option value="">Aller-retour</option>
@@ -94,8 +94,8 @@
                         <option value="">Aller simple</option>
                         <option value="">Aller-retour</option>
                         <option value="">Boucle</option>
-                    </select>
-                    <select name="difficultes">
+                    </select></div>
+                    <div><select name="difficultes">
                         <option value="">Toutes les difficultés</option>
                         <option value="">Je débute / En famille</option>
                         <option value="">J'ai l'habitude</option>
@@ -104,8 +104,8 @@
                         <option value="">Je débute / En famille</option>
                         <option value="">J'ai l'habitude</option>
                         <option value="">Je me dépasse</option>
-                    </select>
-                    <select name="duree">
+                    </select></div>
+                    <div><select name="duree">
                         <option value="">Toutes les durées</option>
                         <option value="">Journée</option>
                         <option value="">Long séjour (+7 de jours)</option>
@@ -118,37 +118,41 @@
                         <option value="">A la semaine</option>
                         <option value="">Court séjour (3 à 5 jours)</option>
                         <option value="">Week-end</option>
-                    </select>
-                    <select name="thematique">
-                        <option value="">Toutes les thématiques</option>
-                        <option value="">Le littoral</option>
-                        <option value="">Nature et patrimoine</option>
-                        <option value="">au fil de l'eau</option>
-                        <option value="">Forêts et landes</option>
-                        <option value="">En famille</option>
-                        <option value="">Vignobles et gastronomie</option>
-                        <option value="">Panoramas</option>
-                        <option value="">Toutes les thématiques</option>
-                        <option value="">Le littoral</option>
-                        <option value="">Nature et patrimoine</option>
-                        <option value="">au fil de l'eau</option>
-                        <option value="">Forêts et landes</option>
-                        <option value="">En famille</option>
-                        <option value="">Vignobles et gastronomie</option>
-                        <option value="">Panoramas</option>
-                    </select>
-                    <select name="destinations">
-                        <option value="">Toutes les déstinations</option>
-                        <option value="">Nouvelle-Aquitaine (La rochelle &gt; Hendaye)</option>
-                        <option value="">Pays de la Loires (Nantes &gt; La Rochelle)</option>
-                        <option value="">Bretagne (Roscoff &gt; Nantes)</option>
-                    </select>
-                    <button>Trouver mon parcours idéal</button>
+                    </select></div>
+                    <div>
+                        <select name="thematique">
+                            <option value="">Toutes les thématiques</option>
+                            <option value="">Le littoral</option>
+                            <option value="">Nature et patrimoine</option>
+                            <option value="">au fil de l'eau</option>
+                            <option value="">Forêts et landes</option>
+                            <option value="">En famille</option>
+                            <option value="">Vignobles et gastronomie</option>
+                            <option value="">Panoramas</option>
+                            <option value="">Toutes les thématiques</option>
+                            <option value="">Le littoral</option>
+                            <option value="">Nature et patrimoine</option>
+                            <option value="">au fil de l'eau</option>
+                            <option value="">Forêts et landes</option>
+                            <option value="">En famille</option>
+                            <option value="">Vignobles et gastronomie</option>
+                            <option value="">Panoramas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="destinations">
+                            <option value="">Toutes les destinations</option>
+                            <option value="">Nouvelle-Aquitaine (La rochelle &gt; Hendaye)</option>
+                            <option value="">Pays de la Loires (Nantes &gt; La Rochelle)</option>
+                            <option value="">Bretagne (Roscoff &gt; Nantes)</option>
+                        </select>
+                    </div>
+                    <div><button>TROUVER MON PARCOURS IDÉAL</button></div>
                 </form>
             </article>
             <article>
-                <div>
-                    <!-- insérer la carte -->
+                <div id="map">
+                    <img src="images/test.jpg" alt="">
                 </div>
             </article>
         </section>

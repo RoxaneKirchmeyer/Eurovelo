@@ -1,3 +1,63 @@
 main {
     margin-top: 150px;
+
+    .firstArticle {
+        display: flex;
+        justify-content: space-around;
+
+        article {
+            max-width: 60%;
+
+            h2 {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                margin-left: 5rem;
+                width: 80%;
+            }
+
+            figure {
+                max-width: 30%;
+            }
+
+            img {
+                padding: 2rem;
+            }
+
+            form {
+
+                padding: 1rem;
+                max-width: 35%;
+                flex-direction: column;
+                background-color: $roseTrace;
+
+                h3 {
+                    text-align: center;
+                    font-family: $fontTexte;
+                    color: $blanc;
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+
+                div {
+                    padding: 0.7rem;
+                }
+
+                button {
+                    width: 100%;
+                    padding: 1rem;
+                    background-color: black;
+                    font-family: $fontTexte;
+                    font-weight: 600;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        #map {
+            max-width: 40%;
+        }
+    }
 }
