@@ -1,0 +1,11 @@
+button {
+    color: $colorTexteDarkBackground;
+    background-color: $button;
+    border: none;
+    &:hover {
+        background-color: $buttonHover;
+        transition: all 0.5s ease-in-out;
+    }
+    cursor: pointer;
+
+}

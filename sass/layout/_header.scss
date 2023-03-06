@@ -1,0 +1,267 @@
+.headerIndex {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/eddy-lackmann-i5wsu0PJWpY-unsplash.jpg");
+}
+
+header {
+    position: relative;
+
+    section {
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            font-family: $fontTitre;
+            font-weight: 300;
+            font-size: 2.5rem;
+            color: $colorTexteDarkBackground
+        }
+
+        #leftButton {
+            padding: 0 1.15rem 0 1.1rem;
+            position: absolute;
+            left: 0;
+            top: 50vh;
+            font-size: 2.5rem;
+            font-family: $fontTitre;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        #rightButton {
+            padding: 0 1.1rem 0 1.15rem;
+            position: absolute;
+            right: 0;
+            top: 50vh;
+            font-size: 2.5rem;
+            font-family: $fontTitre;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        form {
+            display: flex;
+            padding: 1.5rem;
+            gap: 1.5rem;
+
+            div {
+                position: relative;
+
+                i {
+                    position: absolute;
+                    left: 10px;
+                }
+
+                input {
+                    padding: 10px 40px;
+                    color: $colorTexte;
+                    font-weight: 700;
+                    font-size: 0.9rem;
+                }
+            }
+
+            .depart {
+                i {
+                    color: $vertDepart;
+                }
+
+            }
+
+            .arrivee {
+                i {
+                    color: $rougeArrivee;
+                }
+
+            }
+
+            button {
+                background-color: $roseTrace;
+                font-family: $fontTitre;
+                color: $colorTexteDarkBackground;
+                font-weight: 600;
+                padding: 0px 40px;
+            }
+        }
+    }
+
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+    }
+
+    .pro {
+
+        a {
+            padding: 1rem;
+            color: $colorTexteDarkBackground;
+            font-weight: 700;
+            font-family: $fontTexte;
+
+            i {
+                margin-right: 0.25rem;
+            }
+
+            &:hover,
+            i:hover {
+                color: $roseTrace;
+            }
+        }
+    }
+
+    i {
+        color: $colorTexteDarkBackground;
+        font-size: 1.25rem;
+    }
+
+    .media {
+        gap: 1rem;
+
+        form {
+            display: flex;
+
+            label {
+                padding: 0.5rem;
+                font-family: $fontTitre;
+                color: $colorTexteDarkBackground;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+
+            input {
+                border-radius: 5px 0 0 5px;
+                padding-left: 0.5rem;
+                background-color: rgba(#000000, 0.2);
+
+                &::placeholder {
+                    color: $colorTexteDarkBackground;
+                    font-weight: 700;
+                    font-size: 0.9rem;
+                }
+
+            }
+
+            button {
+                border-radius: 0 5px 5px 0;
+                font-weight: 700;
+            }
+        }
+
+        ul {
+            gap: 1rem;
+
+            li {
+                a {
+                    display: block;
+                    padding: 1rem;
+                    background-color: rgba(#000000, 0.25);
+
+                    &:hover {
+                        background-color: $roseTrace;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .searchMenu {
+        visibility: hidden;
+        position: fixed;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        top: 19vh;
+        margin: auto;
+        box-sizing: border-box;
+        background-color: $grisFonce;
+        z-index: 1;
+
+        input {
+            width: 100%;
+            background-color: $grisFonce;
+            font-size: 1.5rem;
+            font-family: $fontTitre;
+            color: $colorTexteDarkBackground;
+
+            &::placeholder {
+                color: $colorTexteDarkBackground;
+                opacity: 0.75;
+            }
+        }
+
+        button {
+            padding: 1rem;
+            width: 4rem;
+
+            i {
+                color: $colorTexteDarkBackground;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .visible {
+        visibility: visible;
+    }
+}
+
+.headerItineraire {
+    .media {
+        form {
+            label {
+                color: $colorTitre;
+            }
+
+            input {
+                background-color: rgba(0, 0, 0, 0.05);
+
+                &::placeholder {
+                    color: $colorTitre;
+                }
+            }
+        }
+
+        ul {
+            li {
+                a {
+                    background-color: $backgroundNav;
+
+                    i {
+                        color: $colorTitre;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .pro {
+        a {
+            color: $colorTitre;
+
+            i {
+                color: $colorTitre;
+            }
+        }
+
+    }
+}
