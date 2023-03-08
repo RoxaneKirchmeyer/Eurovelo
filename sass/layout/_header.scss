@@ -1,8 +1,9 @@
 .headerIndex {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/eddy-lackmann-i5wsu0PJWpY-unsplash.jpg");
+    background-image: url("../../images/eddy-lackmann.jpg");
 }
+
 
 header {
     position: relative;
@@ -92,11 +93,16 @@ header {
         }
     }
 
+    .mediaProNone {
+        display: none;
+    }
 
+    
     div {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        min-height: 55px;
 
         ul {
             display: flex;
@@ -188,7 +194,7 @@ header {
         position: fixed;
         padding: 0.5rem 1rem;
         width: 100%;
-        top: 19vh;
+        top: 140px;
         margin: auto;
         box-sizing: border-box;
         background-color: $grisFonce;
@@ -264,4 +270,32 @@ header {
         }
 
     }
+}
+@media screen and (max-width:391px) {
+
+    // header {
+    //     width: 100%;
+    //     margin: 0;
+
+    //     h1 {
+    //         font-size: 1.5rem;
+    //     }
+    // }
+    // .headerIndex {
+    //     width: 100%;
+    //     min-height: 50vh;
+    //     background-position: center;
+    //     background-size: cover;
+    // }
+    // #leftButton, #rightButton{
+    //     font-size: 1.5rem;
+    //     top: 42vh;
+    //     padding: 0.5rem;
+    // }
+    // #leftButton {
+    //     left: 25%;
+    // }
+    // #rightButton {
+    //     right: 25%;
+    // }
 }
