@@ -1,5 +1,5 @@
 main {
-    margin-top: 150px;
+    padding-top: 150px;
 
     .firstArticle {
         width: 80%;
@@ -70,71 +70,33 @@ main {
             font-weight: 800;
             font-size: 58px;
             text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.4);
-            overflow: hidden;
+            
+            text-align: center;
         }   
 
         p {
             color: rgb(255, 255, 255);
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
             font-size: 16px;
+            text-align: center;
         }
-    }
-
-
-    .bottom-reservation {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 100px;
-
+        
+        
+        .bottom-reservation {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 100px;
+            
             .image-reservation{
-                background-image: ;
+                background-image:url("/Users/maheydine/Documents/Eurovelo/images/img-rocher.jpeg") ;
             }
-    }
-
-
-
-
-
-}
-
-
-.reservation {
-    background-image: url("	/../../../images/img-nature\ .jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 770Px;
-
- 
-        h2 {
-            color: rgb(255, 255, 255);
-            font-weight: 800;
-            font-size: 58px;
-            text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.4);
-            overflow: hidden;
-        }   
-
-        p {
-            color: rgb(255, 255, 255);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            font-size: 16px;
         }
-    }
-
-
-    .bottom-reservation {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 100px;
-
-            .image-reservation{
-                background-image: ;
-            }
+        
     }
 
 
 
 
+    
 
-}
+
