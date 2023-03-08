@@ -1,1 +1,24 @@
+// menu burger
+#btn-burger {
+    display: none;
+}
+@media screen and (max-width:391px) {
+#btn-burger {
+    display: block;
+    position: fixed;
+    font-size: 3em;
+    line-height: 60px;
+    color: $blanc;
+    background-color: $special;
+    z-index: 2;
+    padding: 0.5rem;
+}
 
+.main-nav-burger.visible {
+    display: block;
+    position:fixed;
+    width: 80%;
+    z-index: 1;
+    background-color:$grisFonceMoyen;
+}
+} 
