@@ -63,17 +63,82 @@ main {
             margin-bottom: 40px;
             text-align: center;
         }
+
         p {
             font-family: $fontTexte;
             margin-bottom: 40px;
-            text-align: center;}
+            text-align: center;
+        }
     }
-    .mon-acceuil {.logo-et-h2
-    {
-        display: flex;
-    }}
-}
 
+    .mon-acceuil {
+
+    .logo-et-h2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 50px;
+
+        h2 {
+                font-family: $fontTitre;
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: $fontTexte;
+    }
+
+    }
+
+    .tourisme {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 4fr));
+        grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+        height: 100%;
+        width: 100%;
+        gap: 30px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    figure {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        justify-content: center;
+
+        // figcaption {
+        //     position: absolute;
+        //     font-family: $fontTitre;
+        //     font-size: 1.5rem;
+        //     color: black;
+        // }
+
+        img {
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        }
+
+        img:hover {
+
+            scale: (1.4);
+            backdrop-filter: blur(5px);
+            filter: blur(6px);
+
+        }
+    }
+}
 
 .reservation {
     background-image: url("	/../../../images/img-nature\ .jpeg");
@@ -83,40 +148,33 @@ main {
     width: 100%;
     height: 770Px;
 
- 
-        h2 {
-            color: rgb(255, 255, 255);
-            font-weight: 800;
-            font-size: 58px;
-            text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.4);
-            
-            text-align: center;
-        }   
+    h2 {
+        color: rgb(255, 255, 255);
+        font-weight: 800;
+        font-size: 58px;
+        text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.4);
 
-        p {
-            color: rgb(255, 255, 255);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            font-size: 16px;
-            text-align: center;
-        }
-        
-        
-        .bottom-reservation {
-            display: flex;
-            justify-content: space-around;
-            padding-top: 100px;
-            
-            .image-reservation{
-                background-image:url("/Users/maheydine/Documents/Eurovelo/images/img-rocher.jpeg") ;
-            }
-        }
+        text-align: center;
+    }
 
-               
+    p {
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        font-size: 16px;
+        text-align: center;
     }
 
 
+    .bottom-reservation {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 100px;
+
+        .image-reservation {
+            background-image: url("/Users/maheydine/Documents/Eurovelo/images/img-rocher.jpeg");
+        }
+    }
 
 
-    
-
-
+}
+}
