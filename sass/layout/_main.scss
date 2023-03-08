@@ -1,5 +1,7 @@
 main {
     margin-top: 150px;
+    margin-right: 120px;
+    margin-left: 120px;
 
     .firstArticle {
         width: 80%;
@@ -52,5 +54,17 @@ main {
         #map {
             max-width: 50%;
         }
+    }
+
+    .HDF {
+        h2 {
+            font-family: $fontTitre;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        p {
+            font-family: $fontTexte;
+            margin-bottom: 40px;
+            text-align: center;}
     }
 }
