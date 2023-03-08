@@ -7,15 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="sass/main.css">
     <title>Accueil</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="headerIndex">
         <div class="mediaPro">
             <div class="media">
@@ -59,11 +63,11 @@
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
 
-        <section>
-            <h1>L'Eurovélo 5</h1>
-            <h2>L'Eurovélo 5, les Hauts-de-France en roue libre !</h2>
-            <button type="button" id="leftButton">&lt;</button>
-            <button type="button" id="rightButton">&gt;</button>
+      <section>
+        <h1>L'Eurovélo 5</h1>
+        <h2>L'Eurovélo 5, les Hauts-de-France en roue libre !</h2>
+        <button type="button" id="leftButton">&lt;</button>
+        <button type="button" id="rightButton">&gt;</button>
 
             <form>
                 <div class="depart"><i class="fa-regular fa-circle"></i><input type="text" placeholder="Lieu de départ">
@@ -75,7 +79,6 @@
             </form>
         </section>
     </header>
-
 
     <main>
         <section class="firstArticle">
@@ -252,7 +255,7 @@
                 </div>
             </div>
         </section>
-        <section id="avis">
+        <section>
             <h2>Les derniers avis publiés !</h2>
             <p>Les avis et commentaires de voyageurs à vélo sur nos parcours.
                 N'hésitez pas à déposer le votre sur les tracés que vous avez déjà parcourus !
@@ -333,42 +336,47 @@
         <section>
             <h2>La douceur de l'Atlantique à portée de roues !</h2>
             <p>Idées week-end, nouveautés et tutos pour s'élancer dans une aventure à vélo.</p>
-            <div>
-                <figure>
+            <div class="grid">
+                <figure class="case1">
                     <img src="#" alt="">
                     <i class="fa-solid fa-heart"></i>
                     <h3>Présentattion de l'itinéaire</h3>
                 </figure>
-                <figure>
+                <figure class="case2">
                     <img src="#" alt="">
                     <span>Juin 2022</span>
-                    <h3>Le passeport La Vélodyssée</h3>
+                    <h3>Le passeport de l'EuroVélo</h3>
                     <p>Des souvenirs indélébiles à portée de main</p>
                 </figure>
-                <figure>
+                <figure class="case3">
                     <img src="#" alt="">
                     <i class="fa-thin fa-comments-question"></i>
                     <h3>Foire Aux Questions</h3>
                 </figure>
-                <figure>
+                <figure class="case4">
                     <img src="#" alt="">
                     <span>Nos conseils</span>
-                    <h3>La Vélodyssée : difficulté et dénivelé</h3>
+                    <h3>L'EuroVlé: difficulté et dénivelé</h3>
                     <p>Un itineraire adapté aux débutants et aux familles !</p>
                 </figure>
-                <figure>
+                <figure class="case5">
+                    <img src="#" alt="">
+                    <span>Nos conseils</span>
+                    <h3>Comment bien préparer son premier voyage à vélo ?</h3>
+                </figure>
+                <figure class="case6">
                     <img src="#" alt="">
                     <h3>Mode de transport + vélo</h3>
                 </figure>
-                <figure>
+                <figure class="case7">
                     <img src="#" alt="">
                     <h3>Les hébergements légers à la nuitée</h3>
                 </figure>
-                <figure>
+                <figure class="case8">
                     <img src="#" alt="">
-                    <h3>Découvrez à vélo les îles autour de la Vélodyssée</h3>
+                    <h3>Découvrez à vélo la région autour de l'EuroVélo</h3>
                 </figure>
-                <figure>
+                <figure class="case9">
                     <img src="#" alt="">
                     <h3>L'outil de signalement à votre service</h3>
                     <p>Pendant, avant et après votre parcours</p>
@@ -392,96 +400,58 @@
 
 
 
-                <div class="bottom-reservation">
-                    <figure class="reservation-1">
-                        <a href="#">
-                            <img src="#" alt="#">
-                        </a>
-                        <figcaption>
-                            <a href="#">
-                                <div class="info-sejour">
-                                    <div>Dès 785€</div>
-                                    <div>
-                                        <p>Court séjour (3 à 5 jours)</p>
-                                        <img src="#" alt="#">
-                                    </div>
-                                </div>
-                                <i class="fa-solid fa-heart"></i>
-                                <div>La Vélodyssée, de Bordeaux à Biarritz</div>
-                                <div class="image-enbas">
-                                    <img src="#" alt="#">
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
+          <div class="bottom-reservation">
 
-
-                    <figure class="reservation-2">
-                        <a href="#">
-                            <img src="#" alt="#">
-                        </a>
-                        <figcaption>
-                            <a href="#">
-                                <div class="info-sejour">
-                                    <div>Dès 855€</div>
-                                    <div>
-                                        <p>A la Semaine</p>
-                                        <img src="#" alt="#">
-                                    </div>
-                                </div>
-                                <i class="fa-solid fa-heart"></i>
-                                <div>De Royan à l'île d'Oléron en famille</div>
-                                <div class="image-enbas">
-                                    <img src="#" alt="#">
-                                </div>
-                                <div class="info-sejour">
-                                    <div>Dès 855€</div>
-                                    <div>
-                                        <p>A la Semaine</p>
-                                        <img src="#" alt="#">
-                                    </div>
-                                </div>
-                                <i class="fa-solid fa-heart"></i>
-                                <div>De Royan à l'île d'Oléron en famille</div>
-                                <div class="image-enbas">
-                                    <img src="#" alt="#">
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-
-
-
-                    <figure class="reservation-3">
-                        <a href="#">
-                            <img src="#" alt="#">
-                        </a>
-                        <figcaption>
-                            <a href="#">
-                                <div class="info-sejour">
-                                    <div>Dès 1404€</div>
-                                    <div>
-                                        <p>A la Semaine</p>
-                                        <img src="#" alt="#">
-                                    </div>
-                                </div>
-                                <i class="fa-solid fa-heart"></i>
-                                <div>La Vélodyssée de La Rochelle à Royan</div>
-                                <div class="image-enbas">
-                                    <div class="image-enbas">
-                                        <img src="#" alt="">
-                                    </div>
-                            </a>
-                        </figcaption>
-
-
-                    </figure>
+            <a href="#" class="image-reservation">
+              <div class="info-sejour">
+                <div>Dès 785€</div>
+                <div>
+                  <p>Court séjour (3 à 5 jours)</p>
+                  <img src="#" alt="#" />
                 </div>
-            </div>
-            <div class="btn-reservation">
-                <span>TOUS LES SÉJOURS</span>
-            </div>
-        </section>
+              </div>
+              <div class="fa-solid fa-heart"></div>
+              <div>La Vélodyssée, de Bordeaux à Biarritz</div>
+              <div class="image-enbas">
+                <img src="#" alt="#" />
+              </div>
+            </a>
+
+            <a href="#" class="image-reservation">
+              <div class="info-sejour">
+                <div>Dès 855€</div>
+                <div>
+                  <p>A la Semaine</p>
+                  <img src="#" alt="#" />
+                </div>
+              </div>
+              <div class="fa-solid fa-heart"></div>
+              <div>De Royan à l'île d'Oléron en famille</div>
+              <div class="image-enbas">
+                <img src="#" alt="#" />
+              </div>
+            </a>
+
+            <a href="#" class="image-reservation">
+              <div class="info-sejour">
+                <div>Dès 1404€</div>
+                <div>
+                  <p>A la Semaine</p>
+                  <img src="#" alt="#" />
+                </div>
+              </div>
+              <div class="fa-solid fa-heart"></div>
+              <div>La Vélodyssée de La Rochelle à Royan</div>
+              <div class="image-enbas">
+                <img src="#" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="btn-reservation">
+          <span>TOUS LES SÉJOURS</span>
+        </div>
+      </section>
     </main>
     <!-- reservation-end -->
 
@@ -578,6 +548,7 @@
     <script src="Javascript/slider.js"></script>
     <script src="Javascript/navSearch.js"></script>
     <script src="Javascript/scroll.js"></script>
+    <script src="Javascript/menuBurger.js"></script>
 </body>
 
 </html>
