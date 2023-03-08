@@ -8,85 +8,53 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="sass/main.css">
-    <script src="https://kit.fontawesome.com/5ed833e0c5.js" crossorigin="anonymous"></script>
     <title>Accueil</title>
   </head>
 
   <body>
     <header class="headerIndex">
-      <div>
-        <div class="media">
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/?hl=fr"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/?hl=FR"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://fr-fr.facebook.com/"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-            </li>
-          </ul>
-          <form>
-            <label>S'abonner à la newsletter</label>
-            <input type="email" placeholder="Votre adresse mail" />
-            <button type="submit">JE M'INSCRIS</button>
-          </form>
+        <div class="mediaPro">
+            <div class="media">
+                <ul>
+                    <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/?hl=FR"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                </ul>
+                <form>
+                    <label>S'abonner à la newsletter</label>
+                    <input type="email" placeholder="Votre adresse mail">
+                    <button type="submit">JE M'INSCRIS</button>
+                </form>
+            </div>
+
+            <ul class="pro">
+                <li><a href="#">Espace pro</a></li>
+                <li><a href="#"><i class="fa-solid fa-heart"></i> Carnet de voyage</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-user"></i> Espace personnel</a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-flag"></i></a></li>
+            </ul>
         </div>
 
-        <ul class="pro">
-          <li><a href="#">Espace pro</a></li>
-          <li>
-            <a href="#"><i class="fa-solid fa-heart"></i> Carnet de voyage</a>
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-circle-user"></i> Espace personnel</a
-            >
-          </li>
-          <li>
-            <a href="#"><i class="fa-sharp fa-solid fa-flag"></i></a>
-          </li>
-        </ul>
-      </div>
-
-      <nav>
-        <ul>
-          <li>
-            <a href="accueil.html" class="logoNav"
-              ><img src="images/logo-euroVelo.png" alt=""
-            /></a>
-          </li>
-          <li><a href="itineraire.html">L'ITINÉRAIRE</a></li>
-          <li><a href="">TÉMOIGNAGES</a></li>
-          <li><a href="">INFOS PRATIQUES</a></li>
-          <li><a href="">SUGGESTIONS</a></li>
-          <li><a href="">INSPIRATIONS</a></li>
-          <li><a href="">ACTUALITÉS 💬</a></li>
-          <li><a href="">PASSEPORT 🗺️</a></li>
-        </ul>
-        <div>
-          <button type="button">
-            <i class="fa-solid fa-magnifying-glass" id="search"></i>
-          </button>
-        </div>
-      </nav>
-      <form class="searchMenu">
-        <input type="text" placeholder="Rechercher..." />
-        <button type="submit">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </form>
+        <nav id="navIndex">
+            <ul>
+                <li><a href="accueil.html" class="logoNav"><img src="images/logo-euroVelo.png" alt=""></a></li>
+                <li><a href="itineraire.html">L'ITINÉRAIRE</a></li>
+                <li><a href="">TÉMOIGNAGES</a></li>
+                <li><a href="">INFOS PRATIQUES</a></li>
+                <li><a href="">SUGGESTIONS</a></li>
+                <li><a href="">INSPIRATIONS</a></li>
+                <li><a href="">ACTUALITÉS 💬</a></li>
+                <li><a href="">PASSEPORT 🗺️</a></li>
+            </ul>
+            <div>
+                <button type="button"><i class="fa-solid fa-magnifying-glass" id="search"></i></button>
+            </div>
+        </nav>
+        <form class="searchMenu">
+            <input type="text" placeholder="Rechercher...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
 
       <section>
         <h1>L'Eurovélo 5</h1>
@@ -96,10 +64,9 @@
 
             <form>
                 <div class="depart"><i class="fa-regular fa-circle"></i><input type="text" placeholder="Lieu de départ">
-                
+
                 </div>
                 <div class="arrivee"><i class="fa-regular fa-circle"></i><input type="text"
-                       
                         placeholder="Lieu d'arrivée"></div>
                 <button type="submit">CALCULER MON ITINÉRAIRE</button>
             </form>
@@ -109,60 +76,54 @@
     <main>
         <section class="firstArticle">
             <article>
-                <h2>La Vélodyssée, 1300 km à vélo le long de l'Atlantique</h2>
-                <p>La Vélodyssée, partie française de Atlantic Coast Route - EuroVelo 1, est une véloroute qui traverse
-                   
-                    la
-                    Bretagne et longe l&rsquo;Atlantique jusqu&rsquo;à la Côte basque par un parcours tonique et
-                   
-                    sauvage.
-                    Enfourchez vos vélos et en route pour un périple de plus de 1300 km de vélotourisme avec
-                   
-                    l&rsquo;océan
-                    en toile de fond ! Entre Roscoff et Hendaye, près de 80% du trajet se réalise sur des voies sans
-                    voiture. Découvrez les trésors de nos régions, en suivant la plus longue véloroute française
-                   
-                    aménagée,
-                    entièrement balisée de bout en bout.</p>
+                <h2>L'EuroVelo 5, 240 km à vélo dans les Hauts-de-France</h2>
+                <p>L'EuroVelo 5 en France est composée de deux parties. Tout d'abord, vous pouvez serpenter
+                    à travers le nord, de Calais à Saint-Omer, une jolie ville-cathédrale aux larges rues et aux
+                    places spacieuses. L'itinéraire vous mènera ensuite à Lille, ancienne capitale européenne de la
+                    culture. Plus loin le long de l'itinéaire, vous retournerez en France en suivant des canaux jusqu'à
+                    Strasbourg, célèbre pour ses nombreux sites historiques et attractions culturelles, ainsi que pour abriter le
+                    Parlement européen. Vous quitterez ensuite la ville pour rejoindre la route des vins d'Alsace, qui
+                    vous mènera à travers une centaine de villages,
+                    tous célèbres pour leurs vins et leur culture vinicole de renommé internationale.</p>
                 <figure>
                     <img src="images/pictos-velodyssee3.jpg" alt="">
                 </figure>
                 <form>
                     <h3>Pédalez selon vos envies</h3>
                     <div><select name="parcours-select">
-                        <option value="">Tous les parcours</option>
-                        <option value="">Aller simple</option>
-                        <option value="">Aller-retour</option>
-                        <option value="">Boucle</option>
-                        <option value="">Tous les parcours</option>
-                        <option value="">Aller simple</option>
-                        <option value="">Aller-retour</option>
-                        <option value="">Boucle</option>
-                    </select></div>
+                            <option value="">Tous les parcours</option>
+                            <option value="">Aller simple</option>
+                            <option value="">Aller-retour</option>
+                            <option value="">Boucle</option>
+                            <option value="">Tous les parcours</option>
+                            <option value="">Aller simple</option>
+                            <option value="">Aller-retour</option>
+                            <option value="">Boucle</option>
+                        </select></div>
                     <div><select name="difficultes">
-                        <option value="">Toutes les difficultés</option>
-                        <option value="">Je débute / En famille</option>
-                        <option value="">J'ai l'habitude</option>
-                        <option value="">Je me dépasse</option>
-                        <option value="">Toutes les difficultés</option>
-                        <option value="">Je débute / En famille</option>
-                        <option value="">J'ai l'habitude</option>
-                        <option value="">Je me dépasse</option>
-                    </select></div>
+                            <option value="">Toutes les difficultés</option>
+                            <option value="">Je débute / En famille</option>
+                            <option value="">J'ai l'habitude</option>
+                            <option value="">Je me dépasse</option>
+                            <option value="">Toutes les difficultés</option>
+                            <option value="">Je débute / En famille</option>
+                            <option value="">J'ai l'habitude</option>
+                            <option value="">Je me dépasse</option>
+                        </select></div>
                     <div><select name="duree">
-                        <option value="">Toutes les durées</option>
-                        <option value="">Journée</option>
-                        <option value="">Long séjour (+7 de jours)</option>
-                        <option value="">A la semaine</option>
-                        <option value="">Court séjour (3 à 5 jours)</option>
-                        <option value="">Week-end</option>
-                        <option value="">Toutes les durées</option>
-                        <option value="">Journée</option>
-                        <option value="">Long séjour (+7 de jours)</option>
-                        <option value="">A la semaine</option>
-                        <option value="">Court séjour (3 à 5 jours)</option>
-                        <option value="">Week-end</option>
-                    </select></div>
+                            <option value="">Toutes les durées</option>
+                            <option value="">Journée</option>
+                            <option value="">Long séjour (+7 de jours)</option>
+                            <option value="">A la semaine</option>
+                            <option value="">Court séjour (3 à 5 jours)</option>
+                            <option value="">Week-end</option>
+                            <option value="">Toutes les durées</option>
+                            <option value="">Journée</option>
+                            <option value="">Long séjour (+7 de jours)</option>
+                            <option value="">A la semaine</option>
+                            <option value="">Court séjour (3 à 5 jours)</option>
+                            <option value="">Week-end</option>
+                        </select></div>
                     <div>
                         <select name="thematique">
                             <option value="">Toutes les thématiques</option>
@@ -208,7 +169,7 @@
                 </figure>
             </div>
             <p>Accueil Vélo est une marque qui garantit des services de qualité auprès des cyclistes le long de
-               
+
                 l'itinéraire</p>
             <div>
                 <figure>
@@ -232,9 +193,9 @@
         <section>
             <h2>Ils l'ont fait !</h2>
             <p>Ces retours d'expérience sont précieux pour vous aider à préparer votre parcours sur La Vélodyssée.
-                    <br>
-                    Inspirez-vous !
-            
+                <br>
+                Inspirez-vous !
+
             </p>
             <div>
                 <figure>
@@ -249,9 +210,7 @@
                     <i class="fa-solid fa-heart"></i>
                     <h3>Premier voyage à vélo avec un bébé de 8 mois</h3>
                     <p>300 km de Nantes à La Rochelle, entre préparation d'un voyage futur et découverte du voyage à
-                       
-                        vélo
-                        pour Zohé.</p>
+                        vélo pour Zohé.</p>
                     <a href="#"><img src="#" alt=""></a>
                 </figure>
                 <figure>
@@ -308,10 +267,10 @@
                     </ul>
                     <span>Biscarosse → Arcachon → Biscarosse dans la journée</span>
                     <p>Petite balade en famille à 6 vélos, n'ayant pas fait de vélo depuis un moment nous avons voulu
-                       
+
                         faire un aller retour de Biscarosse plage à Arcachon.
                         Bilan : le départ est assez simple plusieurs bons kilomètres vallonnés, environ 15 kilomètres je
-                       
+
                         dirai et arrivé la première côte</p>
                     <div>
                         <span>0 réponse</span>
@@ -331,7 +290,7 @@
                     </ul>
                     <span>Decouverte</span>
                     <p>Lors de la semaine fédérale de cyclotourisme de loudeac nous avons décidé de parcourir deux
-                       
+
                         parcours
                         de la velodyssee.
                         Nous avons été ravi du parcours du mur-de-Bretagne à Pontivy.
@@ -356,7 +315,7 @@
                     </ul>
                     <span>Decouverte</span>
                     <p>Deuxième parcours de la journée, toujours aussi bien avec ses points de vues, nombreuses écluses,
-                       
+
                         maison d'eclusiers fleuries, sa halte au chalet pour une dégustation de cidre.
                         Une arrivée au château de Josselin.
                         Une journée agréable, nous poursuivrons notre odyssée l'année prochaine.</p>
@@ -418,24 +377,21 @@
             </div>
         </section>
 
-      <!-- reservation -->
-      <section class="reservation">
-        <div class="reservation-a">
-          <div class="top-reservation">
-            <h2>
-              Partez en voyage,<br />
-              ils organisent tout pour vous !
-            </h2>
-            <p>
-              Besoin d'aide pour organiser vos vacances ? Premier voyage à vélo
-              ? <br />
-            </p>
+        <!-- reservation -->
+        <section>
+            <div class="reservation">
+                <div class="top-reservation">
+                    <h2> Partez en voyage, ils organisent tout pour vous !</h2>
+                    <p>Besoin d'aide pour organiser vos vacances ? Premier voyage à vélo ?
+                        <br>
+                        Des agences de voyages spécialisées vélo vous proposent des séjours clés en main. Partez serein
 
-            <p>
-              Des agences de voyages spécialisées vélo vous proposent des
-              séjours clés en main. Partez serein et l'esprit libre.
-            </p>
-          </div>
+                        et l'esprit libre.
+
+                    </p>
+                </div>
+
+
 
           <div class="bottom-reservation">
 
@@ -493,44 +449,42 @@
     <!-- reservation-end -->
 
     <footer>
-        <div class="ensembleFooter">
-            <div class="background">
-                <div class="contact">
-                    <div class="head">
-
-                        <img src="images/logo-euroVelo.png" alt="">
-                        <ul>
-                            <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a>
-                            </li>
-                            <li><a href="https://www.youtube.com/?hl=FR"><i class="fa-brands fa-youtube"></i></a></li>
-                            <li><a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        </ul>
+        <div class="contact">
+            <div class="ensemble">
+                <div class="head">
+                    <img src="images/logo-euroVelo.png" alt="">
+                    <ul>
+                        <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/?hl=FR"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    </ul>
+                </div>
+                <div class="qui-sommes-nous">
+                    <div class="presentation">
+                        <h3>Qui sommes-nous?</h3>
+                        <p>La Vélodyssée est un projet porté collectivement par 3 Régions et 9 Départements réunis
+                            autour
+                            d'une
+                            ambition commune : positionner La Vélodyssée comme un itinéraire d'excellence du
+                            tourisme à vélo
+                            enFrance et à l'étranger.</p>
                     </div>
-                    <div class="qui-sommes-nous">
-                        <div class="presentation">
-                            <h3>Qui sommes-nous?</h3>
-                            <p>La Vélodyssée est un projet porté collectivement par 3 Régions et 9 Départements réunis
-                                autour
-                                d'une
-                                ambition commune : positionner La Vélodyssée comme un itinéraire d'excellence du
-                                tourisme à vélo
-                                enFrance et à l'étranger.</p>
-                        </div>
-
-                        <div class="liens">
-                            <a class="savoirPlus" href="#">EN SAVOIR PLUS</a>
-                            <a class="nousContacter" href="#">NOUS CONTACTER</a>
-                        </div>
+                    <div class="liens">
+                        <a class="savoirPlus" href="#">EN SAVOIR PLUS</a>
+                        <a class="nousContacter" href="#">NOUS CONTACTER</a>
                     </div>
                 </div>
             </div>
-            <div class="container">
+        </div>
+
+        <div class="container">
+            <div class="ensemble">
                 <ul>
                     <li><a href="">Un itinéraire vélo européen</a></li>
                     <li><a href="">Louer un vélo</a></li>
                     <li><a href="">Voyages organisés</a></li>
                 </ul>
-
                 <ul>
                     <li><a href="">Les suggestions de parcours</a></li>
                     <li><a class="gris" href="">Séjours</a></li>
@@ -538,7 +492,6 @@
                     <li><a class="gris" href="">Étapes</a></li>
                     <li><a class="gris" href="">Boucles</a></li>
                 </ul>
-
                 <ul>
                     <li><a href="">Conseils</a></li>
                     <li><a class="gris" href="">Guides</a></li>
@@ -546,28 +499,28 @@
                     <li><a class="gris" href="">Foire Aux Questions</a></li>
                 </ul>
             </div>
+        </div>
 
-            <div class="accueilVélo">
-               
-                    <div>
-                        <span>La marque Accueil Vélo qu'est ce que c'est ?</span>
-
-                        <figure>
-                            <img src="/images/accueilVelo.jpg" alt="#">
-                        </figure>
-
-                        <p>Accueil Vélo est une marque nationale qui garantit un accueil et des services de qualité
-                            auprès des
-                            cyclistes le long des itinéraires cyclables.</p>
-                    </div>
-                    <div class="liens">
-                        <a class="savoirPlus" href="#">EN SAVOIR PLUS</a>
-                        <a class="devenirAccueil" href="#">DEVENIR ACCUEIL VÉLO</a>
-                    </div>
-                
+        <div class="accueilVélo">
+            <div class="ensemble">
+                <figure>
+                    <img src="images/accueilVelo.jpg" alt="#">
+                </figure>
+                <div>
+                    <h3>La marque Accueil Vélo qu'est ce que c'est ?</h3>
+                    <p>Accueil Vélo est une marque nationale qui garantit un accueil et des services de qualité
+                        auprès des
+                        cyclistes le long des itinéraires cyclables.</p>
+                </div>
+                <div class="liens">
+                    <a class="savoirPlus" href="#">EN SAVOIR PLUS</a>
+                    <a class="devenirAccueil" href="#">DEVENIR ACCUEIL VÉLO</a>
+                </div>
             </div>
+        </div>
 
-            <div class="légale">
+        <div class="légale">
+            <div class="ensemble">
                 <ul>
                     <li><a href="#">Presse</a></li>
                     <li><a href="#">FAQ</a></li>
@@ -575,18 +528,20 @@
                     <li><a href="#">Politique de confidentialité</a></li>
                     <li><a href="#">Gestion des cookies</a></li>
                 </ul>
-
                 <div class="end">
                     <span>Réalisation</span>
                     <a href=""><img src="/images/bz.jpg" alt=""></a>
-                    <a href="#"><img src="/images/france-tourisme.jpg" alt=""></a>
+                    <a href="#"><img src="images/france-tourisme1.jpg" alt=""></a>
                 </div>
             </div>
         </div>
+
     </footer>
     <script src="https://kit.fontawesome.com/9876741200.js" crossorigin="anonymous"></script>
     <script src="Javascript/slider.js"></script>
     <script src="Javascript/navSearch.js"></script>
+    <script src="Javascript/scroll.js"></script>
+    <script src="Javascript/menuBurger.js"></script>
 </body>
 
 </html>
