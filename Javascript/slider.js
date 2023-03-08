@@ -1,57 +1,62 @@
-// // Variables
-// const leftButton = document.querySelector("#leftButton");
-// const rightButton = document.querySelector("#rightButton");
-// const indexHeader = document.querySelector(".header");
-// const imagesTable = 
-// [
-//     {image : ""},
-//     {image : ""},
-//     {image : ""}
-// ]
-// let slides = 0;
-
-// // Fonctions
-// function nextSlide (){
-//     indexHeader.style.backgroundImage = "url(" + imagesTable[slides].image + ")"; 
-//     if (slides == imagesTable.length-1) {
-//     slides = 0
-//     }
+// Variables
+const leftButton = document.querySelector("#leftButton");
+const rightButton = document.querySelector("#rightButton");
+const indexHeader = document.querySelector(".headerIndex");
+const imagesTable = 
+[
+    {image : "images/reserve.jpg"},
+    {image : "images/img-foret.jpeg"},
+    {image : "images/img-nature.jpeg"},
+    {image : "images/marianna-lutkova.jpg"},
+    {image : "images/zoltan-tasi.jpg"},
+    {image : "images/eddy-lackmann.jpg"}
     
-//     else {
-//         slides++
-//     }
-// }
+]
+let slides = 0;
 
-// function previousSlide (){
-//     indexHeader.style.backgroundImage = "url(" + imagesTable[slides].image + ")"; 
-//     if (slides == 0) {
-//     slides = imagesTable.length-1
-//     }
+// Fonctions
+
+function nextSlide (){
+    indexHeader.style.backgroundImage = "url(" + imagesTable[slides].image + ")"; 
+    if (slides == imagesTable.length-1) {
+    slides = 0
+    }
     
-//     else {
-//         slides--
-//     }
-// }
+    else {
+        slides++
+    }
+}
 
-// function autoPlay (){
-//     myInterval = setInterval(nextSlide,4000)
-// }
+function previousSlide (){
+    indexHeader.style.backgroundImage = "url(" + imagesTable[slides].image + ")"; 
+    if (slides == 0) {
+    slides = imagesTable.length-1
+    }
+    
+    else {
+        slides--
+    }
+}
 
-// // Evenements
-// window.onload = autoPlay();
+function autoPlay (){
+    myInterval = setInterval(nextSlide,4000)
+}
 
-// rightButton.addEventListener("click", () =>
-//     {
-//         nextSlide();
-//         clearInterval(myInterval);
-//         autoPlay();
-//     }
-// )
+// Evenements
+window.onload = autoPlay();
 
-// leftButton.addEventListener("click", () =>
-//     {
-//         previousSlide();
-//         clearInterval(myInterval);
-//         autoPlay();
-//     }
-// ) 
+rightButton.addEventListener("click", () =>
+    {
+        nextSlide();
+        clearInterval(myInterval);
+        autoPlay();
+    }
+)
+
+leftButton.addEventListener("click", () =>
+    {
+        previousSlide();
+        clearInterval(myInterval);
+        autoPlay();
+    }
+) 
