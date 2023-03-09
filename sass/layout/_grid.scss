@@ -1,58 +1,95 @@
 .grid {
+  width: 80%;
+  margin: auto;
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
   grid-template-rows: repeat(auto-fill, minmax(350px, 3fr));
   height: 100%;
   width: 100%;
+=======
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
   gap: 20px;
-  
+>>>>>>> 85b6ed2d3fda8d2b1d8139b5d55bf23a95616571
+
   figure {
     border-radius: 20px;
+    margin-bottom: 50px;
+
     h3:hover {
-      position: absolute;
       bottom: 150px;
       transition-duration: 0.1s;
+<<<<<<< HEAD
+    }
+=======
     }        
-      }
-          
+>>>>>>> 85b6ed2d3fda8d2b1d8139b5d55bf23a95616571
+  }
+
   .case1 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
-    img {
-     
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-      
-    }
-
-    img:hover {
-      
-      scale: (1.4);
-      backdrop-filter: blur(5px);
-      filter: blur(6px);
-      
-      }
-     
-    h3 {
-      font-family: $fontTitre;
-      color: $blanc;
-      font-size: 1.3rem;
-      position: absolute;
-      bottom: 40px;
-      right: 45px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    
     i {
       color: $roseFonce;
       font-size: 1.4rem;
       position: absolute;
       bottom: 310px;
+      right: 30px;
+      font-weight: bold;
+    }
+    img {
+<<<<<<< HEAD
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+=======
+      // width: 100%;
+      // height: 100%;
+      object-fit: cover;
+      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+>>>>>>> 85b6ed2d3fda8d2b1d8139b5d55bf23a95616571
+    }
+
+    img:hover {
+      scale: (1.4);
+      backdrop-filter: blur(5px);
+      filter: blur(6px);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 85b6ed2d3fda8d2b1d8139b5d55bf23a95616571
+    }
+
+    h3 {
+      font-family: $fontTitre;
+      color: $blanc;
+      font-size: 1.3rem;
+      position: absolute;
+      bottom: 20px;
+      right: 45px;
+      text-align: center;
+    }
+
+
+<<<<<<< HEAD
+=======
+  }
+
+  .case2 {
+    position: relative;
+    overflow: hidden;
+
+>>>>>>> 85b6ed2d3fda8d2b1d8139b5d55bf23a95616571
+    i {
+      color: $roseFonce;
+      font-size: 1.4rem;
+      position: absolute;
+      bottom: 210px;
       right: 30px;
       font-weight: bold;
     }
@@ -62,6 +99,8 @@
   .case2 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -87,13 +126,14 @@
       text-align: center;
     }
 
-    p {font-family: $fontTexte;
+    p {
+      font-family: $fontTexte;
       color: $blanc;
       font-size: 0.9rem;
       font-weight: bold;
       position: absolute;
-      bottom: 20px;
-      right: 90px;
+      bottom: 0px;
+      left: 100px;
       text-align: center;
     }
 
@@ -103,7 +143,7 @@
       color: $roseFonce;
       font-size: 1.4rem;
       position: absolute;
-      bottom: 310px;
+      bottom: 210px;
       right: 140px;
       font-weight: bold;
       text-align: center;
@@ -114,6 +154,8 @@
   .case3 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -133,8 +175,8 @@
       color: $blanc;
       font-size: 1.3rem;
       position: absolute;
-      bottom: 30px;
-      right: 80px;
+      bottom: 20px;
+      right: 75px;
       font-weight: bold;
       text-align: center;
     }
@@ -143,11 +185,13 @@
   .case4 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
       transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
@@ -162,7 +206,7 @@
       color: $blanc;
       font-size: 1.3rem;
       position: absolute;
-      bottom: 60px;
+      bottom: 70px;
       right: 70px;
       font-weight: bold;
       text-align: center;
@@ -174,7 +218,7 @@
       font-size: 0.9rem;
       font-weight: bold;
       position: absolute;
-      bottom: 20px;
+      bottom: 5px;
       right: 70px;
       text-align: center;
     }
@@ -186,7 +230,7 @@
       color: $roseFonce;
       font-size: 1.4rem;
       position: absolute;
-      bottom: 195px;
+      bottom: 200px;
       right: 125px;
       font-weight: bold;
       text-align: center;
@@ -196,6 +240,8 @@
   .case5 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -237,6 +283,8 @@
   .case6 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
 
     img {
@@ -267,6 +315,8 @@
   .case7 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -286,8 +336,8 @@
       color: $blanc;
       font-size: 1.3rem;
       position: absolute;
-      bottom: 20px;
-      right: 10px;
+      bottom: 10px;
+      right: 5px;
       font-weight: bold;
       text-align: center;
     }
@@ -296,6 +346,8 @@
   .case8 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -315,8 +367,8 @@
       color: $blanc;
       font-size: 1.3rem;
       position: absolute;
-      bottom: 20px;
-      right: 40px;
+      bottom: 10px;
+      right: 30px;
       font-weight: bold;
       text-align: center;
     }
@@ -325,6 +377,8 @@
   .case9 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -344,7 +398,7 @@
       color: $blanc;
       font-size: 1.3rem;
       position: absolute;
-      bottom: 70px;
+      bottom: 60px;
       right: 60px;
       font-weight: bold;
       text-align: center;
@@ -356,20 +410,25 @@
       font-size: 0.9rem;
       font-weight: bold;
       position: absolute;
-      bottom: 20px;
+      bottom: 0px;
       right: 100px;
       text-align: center;
     }
 
     i {
+      position: absolute;
       color: $roseFonce;
       font-size: 1.4rem;
       position: absolute;
-      bottom: 240px;
+      bottom: 210px;
       right: 20px;
       font-weight: bold;
     }
 
+<<<<<<< HEAD
+  }
+}
+=======
     span {
       font-family: $fontTexte;
       background: $jaune;
@@ -383,4 +442,5 @@
     }
 
   }
-  }
+}
+>>>>>>> 85b6ed2d3fda8d2b1d8139b5d55bf23a95616571
