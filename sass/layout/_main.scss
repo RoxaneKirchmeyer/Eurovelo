@@ -69,6 +69,7 @@ main {
     }
 
     .mon-acceuil {
+
         .logo-et-h2 {
             display: flex;
             flex-wrap: wrap;
@@ -78,8 +79,10 @@ main {
             justify-content: flex-start;
             margin-bottom: 40px;
             margin-top: 50px;
+           margin-left: 380px;
 
             h2 {
+                text-align: center;
                 align-self: flex-end;
                 font-family: $fontTitre;
                 color: $grisFonce;
@@ -101,13 +104,14 @@ main {
         }
 
         .tourisme {
-
+            padding-left: 350px;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(140px, 4fr));
             grid-template-rows: repeat(auto-fill, minmax(220px, 1fr));
             height: 100%;
             width: 100%;
             gap: 30px;
+            
 
             .fig-3 {
                 position: relative;
@@ -209,7 +213,7 @@ main {
 
         img {
           
-            height: 100%;
+            height: auto;
         }
     }
 
@@ -224,7 +228,7 @@ main {
        
         img {
             
-        height: 100%;
+        height: auto;
         }
     }
 }
