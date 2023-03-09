@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link
+    <link
         href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+        crossorigin="">
     <link rel="stylesheet" href="sass/main.css">
+
     <title>Itinéraire</title>
 </head>
 
-<body>
+<body id="page_itineraire">
     <header class="headerItineraire">
         <div class="mediaPro">
             <div class="media">
@@ -62,20 +66,25 @@
 
     <main>
         <section>
-            <ul>
-                <li><a href="#">ETAPES</a></li>
-                <li><a href="#">BOUCLES</a></li>
-                <li><a href="#">MON GPS</a></li>
-            </ul>
-            <div id="itineraire">
 
+            <div id="itineraire">
             </div>
+
+            <div id="map">
+            </div>
+
         </section>
     </main>
-    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+
     <script src="https://kit.fontawesome.com/9876741200.js" crossorigin="anonymous"></script>
     <script src="Javascript/navSearch.js"></script>
     <script src="Javascript/Strapi.js"></script>
+<!--     <script src="Javascript/Strapi2.js"></script> -->
     <script src="Javascript/scroll.js"></script>
 
 </body>
