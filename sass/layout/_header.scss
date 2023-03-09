@@ -97,7 +97,7 @@ header {
         display: none;
     }
 
-    
+
     div {
         display: flex;
         justify-content: space-between;
@@ -271,6 +271,7 @@ header {
 
     }
 }
+
 @media screen and (max-width:391px) {
 
     header {
@@ -285,49 +286,53 @@ header {
             text-align: center;
         }
 
-        .mediaPro, nav{
-            display: none;
-        }
         section {
-            #leftButton, #rightButton{
+
+            #leftButton,
+            #rightButton {
                 font-size: 1.5rem;
                 top: 30vh;
                 padding: 0.5rem;
             }
+
             #leftButton {
                 left: 0%;
             }
+
             #rightButton {
                 right: 25%;
                 right: 0;
                 top: 30vh;
             }
+
             form {
                 flex-direction: column;
+
                 button {
                     padding: 10px 40px;
                 }
-        
-     
-        }
-        
-    
+
+
+            }
+
+
             .depart {
                 i {
                     color: $vertDepart;
                 }
-    
+
             }
-    
+
             .arrivee {
                 i {
                     color: $rougeArrivee;
                 }
-    
+
             }
         }
 
     }
+
     .headerIndex {
         width: 100%;
         min-height: 50vh;

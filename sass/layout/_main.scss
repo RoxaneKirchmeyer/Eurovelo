@@ -92,15 +92,15 @@ main {
         }
     }
 
-    p {
-        justify-self: end;
-        text-align: center;
-        margin-bottom: 20px;
-        font-family: $fontTexte;
-        color: $grisFonce;
-    }
 
     .mon-acceuil {
+        p {
+            justify-self: end;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: $fontTexte;
+            color: $grisFonce;
+        }
 
         .tourisme {
 

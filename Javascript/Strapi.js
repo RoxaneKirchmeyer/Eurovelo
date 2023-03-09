@@ -88,37 +88,3 @@ function get_articles() {
 }
 
 get_articles();
-
-/* _______________________________________________________________________________________
-const url = "http://localhost:1337";
-const url_article = "/api/articles";
-const url_img = "?populate=*";
-
-function creer_article(data){
-    body = document.querySelector("body");
-
-
-    data = data.data;
-    for (const article of data) {
-        article_html = document.createElement("article");
-        body.appendChild(article_html);
-
-        titre = document.createElement("h1");
-        titre.innerText = article.attributes.Titre;
-        article_html.appendChild(titre)
-
-        img = document.createElement("img");
-        img.src = url + article.attributes.Couverture.data.attributes.formats.large.url;
-        article_html.appendChild(img)
-    }
-}
-
-function get_articles(){
-    console.log(url+url_article+url_img)
-    fetch(url+url_article+url_img)
-    .then(response => response.json())
-    .then(response => creer_article(response))
-    .catch(error => alert("Erreur : " + error));
-}
-
-get_articles(); */
