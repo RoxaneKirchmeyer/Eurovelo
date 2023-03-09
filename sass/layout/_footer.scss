@@ -85,162 +85,238 @@ footer {
         }
 
         .nousContacter {
-                background-color: $roseTrace;
-                color: $blanc;
-                padding: 0.5rem 3rem;
-                border-radius: 5px;
+            background-color: $roseTrace;
+            color: $blanc;
+            padding: 0.5rem 3rem;
+            border-radius: 5px;
+            font-family: $fontTexte;
+            font-weight: bold;
+            display: block;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-self: center;
+
+            &:hover {
+                background-color: $buttonHover;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+
+    .container {
+        .ensemble {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            li {
+                padding: 0.5rem;
+            }
+        }
+
+        a {
+            font-family: $fontTexte;
+            font-size: 1.25rem;
+            color: $grisFonce;
+            font-weight: bold;
+
+            &:hover {
+                color: $roseFonce;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+
+        .gris {
+            color: $grisMoyen;
+            font-weight: 500;
+            font-size: 1rem;
+
+            &:hover {
+                color: $roseTrace;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+
+    }
+
+    .accueilVélo {
+        background-color: #F4F4F4;
+        padding: 3rem 0;
+
+        .ensemble {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+
+            h3 {
+                font-family: $fontTitre;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+
+            .liens {
+                display: flex;
+                gap: 30px;
+            }
+
+            .savoirPlus {
                 font-family: $fontTexte;
-                font-weight: bold;
-                display: block;
+                color: $grisFonce;
+                background-color: $grisTresClair;
+                border: solid 2px;
+                border-radius: 6px;
+                padding: 0.5rem 1rem;
                 width: 150px;
                 height: 30px;
+                display: block;
                 text-align: center;
-                align-self: center;
+                font-weight: 600;
+
+                &:hover {
+                    background-color: $roseTrace;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+
+            .devenirAccueil {
+                font-family: $fontTexte;
+                color: $blanc;
+                background-color: $grisFonce;
+                border: solid 2px;
+                border-radius: 6px;
+                padding: 0.5rem 1rem;
+                width: 250px;
+                height: 30px;
+                display: block;
+                text-align: center;
+                font-weight: 600;
+
                 &:hover {
                     background-color: $buttonHover;
                     transition: all 0.5s ease-in-out;
                 }
             }
+
+            p {
+                padding-top: 1rem;
+                color: $colorTexte;
+            }
+        }
+    }
+
+    .légale {
+        background-color: $grisFonce;
+        font-family: $fontTexte;
+        padding: 1rem 0;
+
+        .ensemble {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            ul {
+                display: flex;
+                gap: 20px;
+
+                a {
+                    color: $blanc;
+
+                    &:hover {
+                        color: $roseTrace;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+
+            .end {
+                display: flex;
+                align-items: center;
+
+                span {
+                    display: block;
+                    color: $blanc;
+                }
+
+                a {
+                    color: $blanc;
+                    margin-left: 20px;
+                    line-height: 0;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width:391px) {
+    footer {
+        width: 100%;
+
+        .qui-sommes-nous {
+            padding: 70px 0;
+        }
+
+        .head {
+            align-items: center;
+
+        }
+
+        .presentation {
+            display: none;
+        }
+
+        .liens {
+
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
         }
 
         .container {
-            .ensemble {
-                display: flex;
-                justify-content: space-between;
-            }
+
+            margin-top: 1rem;
+        }
+
+        .ensemble {
+            display: flex;
+            flex-direction: column;
 
             ul {
                 li {
-                    padding: 0.5rem;
-                }
-            }
 
-            a {
-                font-family: $fontTexte;
-                font-size: 1.25rem;
-                color: $grisFonce;
-                font-weight: bold;
-                &:hover {
-                    color: $roseFonce;
-                    transition: all 0.5s ease-in-out;
+                    padding: 0;
                 }
-            }
 
-            .gris {
-                color: $grisMoyen;
-                font-weight: 500;
-                font-size: 1rem;
-                &:hover {
-                    color: $roseTrace;
-                    transition: all 0.5s ease-in-out;
+                .gris {
+                    display: none;
                 }
+
             }
 
         }
 
         .accueilVélo {
-            background-color: #F4F4F4;
-            padding: 3rem 0;
-
-            .ensemble {
-                display: flex;
-                justify-content: space-between;
-                gap: 1rem;
-
-                h3 {
-                    font-family: $fontTitre;
-                    font-weight: 600;
-                    font-size: 1rem;
-                }
-
-                .liens {
-                    display: flex;
-                    gap: 30px;
-                }
-
-                .savoirPlus {
-                    font-family: $fontTexte;
-                    color: $grisFonce;
-                    background-color: $grisTresClair;
-                    border: solid 2px;
-                    border-radius: 6px;
-                    padding: 0.5rem 1rem;
-                    width: 150px;
-                    height: 30px;
-                    display: block;
-                    text-align: center;
-                    font-weight: 600;
-                    &:hover {
-                        background-color: $roseTrace;
-                        transition: all 0.5s ease-in-out;
-                    }
-                }
-
-                .devenirAccueil {
-                    font-family: $fontTexte;
-                    color: $blanc;
-                    background-color: $grisFonce;
-                    border: solid 2px;
-                    border-radius: 6px;
-                    padding: 0.5rem 1rem;
-                    width: 250px;
-                    height: 30px;
-                    display: block;
-                    text-align: center;
-                    font-weight: 600;
-                    &:hover {
-                        background-color: $buttonHover;
-                        transition: all 0.5s ease-in-out;
-                    }
-                }
-
-                p {
-                    padding-top: 1rem;
-                    color: $colorTexte;
-                }
+            img {
+                display: none;
             }
-        }
 
-        .légale {
-            background-color: $grisFonce;
-            font-family: $fontTexte;
-            padding: 1rem 0;
+            h3,
+            p {
+                text-align: center;
+            }
 
-            .ensemble {
+            .liens {
+
                 display: flex;
-                justify-content: space-between;
+                flex-direction: column;
                 align-items: center;
-
-                ul {
-                    display: flex;
-                    gap: 20px;
-
-                    a {
-                        color: $blanc;
-                        &:hover {
-                            color: $roseTrace;
-                            transition: all 0.5s ease-in-out;
-                        }
-                    }
-                }
-
-                .end {
-                    display: flex;
-                    align-items: center;
-
-                    span {
-                        display: block;
-                        color: $blanc;
-                    }
-
-                    a {
-                        color: $blanc;
-                        margin-left: 20px;
-                        line-height: 0;
-                    }
-                }
+                margin-left: 30px;
             }
         }
 
 
     }
+}
