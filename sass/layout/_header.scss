@@ -273,29 +273,65 @@ header {
 }
 @media screen and (max-width:391px) {
 
-    // header {
-    //     width: 100%;
-    //     margin: 0;
+    header {
+        width: 100%;
+        margin: 0;
 
-    //     h1 {
-    //         font-size: 1.5rem;
-    //     }
-    // }
-    // .headerIndex {
-    //     width: 100%;
-    //     min-height: 50vh;
-    //     background-position: center;
-    //     background-size: cover;
-    // }
-    // #leftButton, #rightButton{
-    //     font-size: 1.5rem;
-    //     top: 42vh;
-    //     padding: 0.5rem;
-    // }
-    // #leftButton {
-    //     left: 25%;
-    // }
-    // #rightButton {
-    //     right: 25%;
-    // }
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .mediaPro, nav{
+            display: none;
+        }
+        section {
+            #leftButton, #rightButton{
+                font-size: 1.5rem;
+                top: 30vh;
+                padding: 0.5rem;
+            }
+            #leftButton {
+                left: 0%;
+            }
+            #rightButton {
+                right: 25%;
+                right: 0;
+                top: 30vh;
+            }
+            form {
+                flex-direction: column;
+                button {
+                    padding: 10px 40px;
+                }
+        
+     
+        }
+        
+    
+            .depart {
+                i {
+                    color: $vertDepart;
+                }
+    
+            }
+    
+            .arrivee {
+                i {
+                    color: $rougeArrivee;
+                }
+    
+            }
+        }
+
+    }
+    .headerIndex {
+        width: 100%;
+        min-height: 50vh;
+        background-position: center;
+        background-size: cover;
+    }
 }

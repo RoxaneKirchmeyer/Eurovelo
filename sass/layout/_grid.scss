@@ -1,37 +1,396 @@
 .grid {
-        display: grid;
-        // grid-template-columns: repeat(3, auto);
-        grid-template-columns: repeat(auto-fill,minmax(350px,3fr));
-        grid-template-rows: repeat(auto-fill,minmax(350px,3fr));
-        // grid-template-rows: repeat(3, auto);        
-        margin-left: 50px;
-        margin-right: 50px;
-        border: 2px solid blue;
-        height: auto;
-        width: 100%;
-        column-gap: 10px;
-        row-gap: 10px;
-        margin: 70px;
-        background-image: url(..\images\img-foret.jpeg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size:auto; 
-        background-repeat: no-repeat;
-        object-fit: fill;
-        
-      > * {
-        height: 300px;
-        width: auto;
-        background: pink;
-        border-radius: 5px;
-        margin: 10px;
-        
-    
-      }
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  gap: 20px;
 
-      .case1 {
-        margin-top: 10px;
-        
-      }
+  figure {
+    border-radius: 20px;
+    h3:hover {
+      position: absolute;
+      bottom: 150px;
+      transition-duration: 0.1s;
+    }        
+  }
+
+  .case1 {
+    position: relative;
+    overflow: hidden;
+
+    i {
+      color: $roseFonce;
+      font-size: 1.4rem;
+      position: absolute;
+      bottom: 310px;
+      right: 30px;
+      font-weight: bold;
+    }
+    img {
+      // width: 100%;
+      // height: 100%;
+      object-fit: cover;
+      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
     }
+
+    img:hover {
+      scale: (1.4);
+      backdrop-filter: blur(5px);
+      filter: blur(6px);
+
+    }
+
+    h3 {
+      font-family: $fontTitre;
+      color: $blanc;
+      font-size: 1.3rem;
+      position: absolute;
+      bottom: 40px;
+      right: 45px;
+      text-align: center;
+    }
+
+
+  }
+
+  .case2 {
+    position: relative;
+    overflow: hidden;
+
+    i {
+      color: $roseFonce;
+      font-size: 1.4rem;
+      position: absolute;
+      bottom: 310px;
+      right: 30px;
+      font-weight: bold;
+    }
+
+  }
+
+  .case2 {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    img:hover {
+      scale: (1.4);
+      backdrop-filter: blur(5px);
+      filter: blur(6px);
+    }
+
+    h3 {
+      font-family: $fontTitre;
+      color: $blanc;
+      font-size: 1.3rem;
+      position: absolute;
+      bottom: 70px;
+      right: 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {font-family: $fontTexte;
+      color: $blanc;
+      font-size: 0.9rem;
+      font-weight: bold;
+      position: absolute;
+      bottom: 20px;
+      right: 90px;
+      text-align: center;
+    }
+
+    span {
+      font-family: $fontTexte;
+      background: $blanc;
+      color: $roseFonce;
+      font-size: 1.4rem;
+      position: absolute;
+      bottom: 310px;
+      right: 140px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 10px;
+    }
+  }
+
+  .case3 {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    img:hover {
+      scale: (1.4);
+      backdrop-filter: blur(5px);
+      filter: blur(6px);
+    }
+
+    h3 {
+      font-family: $fontTitre;
+      color: $blanc;
+      font-size: 1.3rem;
+      position: absolute;
+      bottom: 30px;
+      right: 80px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .case4 {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    img:hover {
+      scale: (1.4);
+      backdrop-filter: blur(5px);
+      filter: blur(6px);
+    }
+
+    h3 {
+      font-family: $fontTitre;
+      color: $blanc;
+      font-size: 1.3rem;
+      position: absolute;
+      bottom: 60px;
+      right: 70px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      font-family: $fontTexte;
+      color: $blanc;
+      font-size: 0.9rem;
+      font-weight: bold;
+      position: absolute;
+      bottom: 20px;
+      right: 70px;
+      text-align: center;
+    }
+
+    span {
+      font-family: $fontTexte;
+      background: $blanc;
+      border-radius: 10px;
+      color: $roseFonce;
+      font-size: 1.4rem;
+      position: absolute;
+      bottom: 195px;
+      right: 125px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .case5 {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    img:hover {
+      scale: (1.4);
+      backdrop-filter: blur(5px);
+      filter: blur(6px);
+    }
+
+    h3 {
+      font-family: $fontTitre;
+      color: $blanc;
+      font-size: 1.2rem;
+      position: absolute;
+      bottom: 30px;
+      right: 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    span {
+      font-family: $fontTexte;
+      background: $blanc;
+      color: $roseFonce;
+      font-size: 1.4rem;
+      position: absolute;
+      bottom: 197px;
+      right: 120px;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+  }
+
+  .case6 {
+    position: relative;
+    overflow: hidden;
+
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    img:hover {
+      scale: (1.4);
+      backdrop-filter: blur(5px);
+      filter: blur(6px);
+    }
+
+    h3 {
+      font-family: $fontTitre;
+      color: $blanc;
+      font-size: 1.3rem;
+      position: absolute;
+      bottom: 20px;
+      right: 50px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .case7 {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    img:hover {
+      scale: (1.4);
+      backdrop-filter: blur(5px);
+      filter: blur(6px);
+    }
+
+    h3 {
+      font-family: $fontTitre;
+      color: $blanc;
+      font-size: 1.3rem;
+      position: absolute;
+      bottom: 20px;
+      right: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .case8 {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    img:hover {
+      scale: (1.4);
+      backdrop-filter: blur(5px);
+      filter: blur(6px);
+    }
+
+    h3 {
+      font-family: $fontTitre;
+      color: $blanc;
+      font-size: 1.3rem;
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .case9 {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    img:hover {
+      scale: (1.4);
+      backdrop-filter: blur(5px);
+      filter: blur(6px);
+    }
+
+    h3 {
+      font-family: $fontTitre;
+      color: $blanc;
+      font-size: 1.3rem;
+      position: absolute;
+      bottom: 70px;
+      right: 60px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      font-family: $fontTexte;
+      color: $blanc;
+      font-size: 0.9rem;
+      font-weight: bold;
+      position: absolute;
+      bottom: 20px;
+      right: 100px;
+      text-align: center;
+    }
+
+    i {
+      color: $roseFonce;
+      font-size: 1.4rem;
+      position: absolute;
+      bottom: 240px;
+      right: 20px;
+      font-weight: bold;
+    }
+
+    span {
+      font-family: $fontTexte;
+      background: $jaune;
+      color: $roseFonce;
+      font-size: 1.4rem;
+      position: absolute;
+      bottom: 290px;
+      right: 150px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+  }
+}
