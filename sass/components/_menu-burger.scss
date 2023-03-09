@@ -1,31 +1,31 @@
-// menu burger
+// // menu burger
 
-#btn-burger {
-    display: none;
-}
+// #btn-burger {
+//     display: none;
+// }
 
-@media screen and (max-width:391px) {
-    header {
+// @media screen and (max-width:391px) {
+//     header {
 
-        .mediaPro,
-        #navIndex {
-            display: none;
-        }
+//         .mediaPro,
+//         #navIndex {
+//             display: none;
+//         }
 
-        #btn-burger {
-            display: block;
-            position: fixed;
-            font-size: 3em;
-            line-height: 60px;
-            color: $blanc;
-            background-color: $roseTrace;
-            padding: 0.5rem;
-            border-radius: 0px 10px 10px 10px;
-        }
+//         #btn-burger {
+//             display: block;
+//             position: fixed;
+//             font-size: 3em;
+//             line-height: 60px;
+//             color: $blanc;
+//             background-color: $roseTrace;
+//             padding: 0.5rem;
+//             border-radius: 0px 10px 10px 10px;
+//         }
 
-        #navResponsive.visible {
-            display: block;
-            background-color: $backgroundNav;
-        }
-    }
-}
+//         #navResponsive.visible {
+//             display: block;
+//             background-color: $backgroundNav;
+//         }
+//     }
+// }
