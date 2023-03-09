@@ -169,3 +169,77 @@ main {
         }
     }
 }
+
+.avis {
+    h2 {
+        font-family: $fontTitre;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .p1 {
+        width: 600px;
+        margin-left: 600px;
+        
+
+
+    }
+
+
+.détails {
+    padding: 30px 200px 30px 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+
+.contenu {
+    padding: 20px;
+    
+}
+    article {
+        background-color: $grisTresClair;
+        height: 500px;
+        width: 400px;
+
+        p {
+            color: $grisMoyen;
+
+        }
+        .date {
+            color: $grisFonce;
+            font-family: $fontTexte;
+
+        }
+        .nom {
+            font-family: $fontTexte;
+            font-weight: 450;
+            font-size: 1.5rem;
+        }
+        .avisPersonne {
+            display: flex;
+            justify-content: space-between;
+        }
+        .star {
+            color: $roseTrace;
+        }
+        .trajet {
+            color: $blanc;
+            background-color: $roseFonce;
+            padding: 4px 9px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            font-family: $fontTexte;
+            padding: 25px;
+        }
+        h3 {
+            font-family: $fontTitre;
+            
+            font-weight: 450;
+        }
+
+    }
+
+}
+}
