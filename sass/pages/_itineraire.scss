@@ -3,8 +3,8 @@
     .popup {
         position: absolute;
         inset: 0 50% 0 0;
-        background-color: rgb(0, 0, 0);
-        color:white;
+        background-color: rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
         display: none;
         z-index: 10001;
     }
@@ -17,7 +17,7 @@
     position: absolute;
     z-index: 10000;
     inset: 0;
-    background-color: #000000ac;
+    background-color: #0000006e;
     display: none;
   }
 
@@ -27,7 +27,7 @@
 
   main > section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
   #itineraire > div {
     display: grid;
