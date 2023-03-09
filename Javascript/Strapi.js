@@ -14,24 +14,27 @@ function creer_itineraires(data){
         etapeContainer = document.createElement("div");
         container.appendChild(etapeContainer);
 
+        img = document.createElement("img");
+        etapeContainer.appendChild(img);
+        img.src = url + etape.attributes.Photos.data.attributes.url;
+        
         titre = document.createElement("h2");
         titre.innerText = etape.attributes.Nom;
-        etapeContainer.appendChild(titre)
+        etapeContainer.appendChild(titre);
 
-        texte = document.createElement("p");
+        /* texte = document.createElement("p");
         texte.innerText = etape.attributes.Descriptif;
-        etapeContainer.appendChild(texte)
+        etapeContainer.appendChild(texte); */
 
-        img = document.createElement("img");
-        img.src = url + etape.attributes.Photos.data.attributes.url;
-        etapeContainer.appendChild(img)
+        
 
 
-        distance = document.createElement("p");
+       /*  distance = document.createElement("p");
         distance.innerText = "Distance d'étape " + etape.attributes.Distance + " km";
-        etapeContainer.appendChild(distance)
-
-
+        etapeContainer.appendChild(distance); */
+/* 
+        gpx = document.createElement("gpx");
+        gpx. */
 
     }
 
