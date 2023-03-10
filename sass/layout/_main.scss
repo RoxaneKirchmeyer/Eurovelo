@@ -1,8 +1,5 @@
 main {
-<<<<<<< HEAD
-=======
     padding-top: 90px;
->>>>>>> c1fbcc49b229d1c775da9de71800c7815ea9560b
 
     .firstArticle {
         width: 80%;
@@ -61,38 +58,17 @@ main {
     .HDF {
         h2 {
             font-family: $fontTitre;
+            margin-bottom: 40px;
             text-align: center;
         }
 
         p {
             font-family: $fontTexte;
-            margin-top: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             text-align: center;
         }
     }
 
-<<<<<<< HEAD
-    .mon-acceuil {
-
-        .logo-et-h2 {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 20px;
-            margin-top: 40px;
-
-            h2 {
-                text-align: center;
-                align-self: flex-end;
-                font-family: $fontTitre;
-                color: $grisFonce;
-            }
-
-            img {
-                align-self: center;
-            }
-=======
     .logo-et-h2 {
         display: flex;
         flex-wrap: wrap;
@@ -114,7 +90,6 @@ main {
             width: 4%;
             height: 4%;
             object-fit: contain;
->>>>>>> c1fbcc49b229d1c775da9de71800c7815ea9560b
         }
 
         p {
@@ -149,61 +124,6 @@ main {
 
         }
 
-<<<<<<< HEAD
-        .tourisme {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-
-            figure {
-                position: relative;
-                overflow: hidden;
-                height: 220px;
-                width: 150px;
-                border-radius: 15px;
-
-                img {
-                    position: absolute;
-                    z-index: 0;
-                    inset: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-                }
-
-                figcaption {
-                    position: absolute;
-                    inset: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    z-index: 1;
-                    text-shadow: 1px 1px black;
-
-                    a {
-                        font-weight: bold;
-                        font-family: $fontTitre;
-                        color: $blanc;
-                        font-family: $fontTexte;
-                    }
-
-                    a:hover {
-                        color: $roseFonce;
-                        font-family: $fontTexte;
-                    }
-                }
-
-                figcaption:hover~img {
-
-                    transform: scale(2.5);
-                    backdrop-filter: blur(8px);
-                    filter: blur(8px);
-                }
-
-=======
 
         h2 {
             color: rgb(255, 255, 255);
@@ -427,45 +347,9 @@ main {
                 position: absolute;
                 top: 80px;
                 left: 20px;
->>>>>>> c1fbcc49b229d1c775da9de71800c7815ea9560b
             }
         }
-    }
 
-<<<<<<< HEAD
-    .reservation {
-        background-image: url("	/../../../images/img-nature\ .jpeg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 770Px;
-
-        h2 {
-            color: rgb(255, 255, 255);
-            font-weight: 800;
-            font-size: 58px;
-            text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.4);
-
-            text-align: center;
-        }
-
-        p {
-            color: rgb(255, 255, 255);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            font-size: 16px;
-            text-align: center;
-        }
-
-
-        .bottom-reservation {
-            display: flex;
-            justify-content: space-around;
-            padding-top: 100px;
-
-            .image-reservation {
-                background-image: url("/Users/maheydine/Documents/Eurovelo/images/img-rocher.jpeg");
-=======
         .fig-4 {
             position: relative;
 
@@ -506,34 +390,10 @@ main {
                 scale: (2.5);
                 backdrop-filter: blur(8px);
                 filter: blur(8px);
->>>>>>> c1fbcc49b229d1c775da9de71800c7815ea9560b
             }
         }
     }
 
-<<<<<<< HEAD
-}
-
-@media screen and (max-width:390px) {
-    .logo-et-h2 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-
-        img {
-            max-width: 100%;
-            height: 100%;
-        }
-    }
-
-    .tourisme {
-        display: flex;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-=======
 
 }
 
@@ -708,6 +568,5 @@ main {
             }
         }
 
->>>>>>> c1fbcc49b229d1c775da9de71800c7815ea9560b
     }
 }
