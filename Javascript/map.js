@@ -10,7 +10,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 function creer_map(data) {
-
+//manque la boucle for pour génerer tous les gpx
 data = data.data;
 
 let gpx = url + etape.attributes.gpx.data.attributes.url;
