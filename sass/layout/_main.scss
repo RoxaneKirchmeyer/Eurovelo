@@ -530,14 +530,55 @@ main {
                     }
                 }
 
-            }
+                .temoignage {
+                    background-image: url(/images/img-rocher.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
 
+                    h2 {
+                        color: $blanc;
+                    }
+
+                    p {
+                        color: $blanc;
+                    }
+
+                    .experiencePerso {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+
+            }
         }
     }
 }
 
 @media screen and (max-width:391px) {
     main {
+        .avis{
+            .p1 {
+                margin-left: 1.5rem;
+                width: 80%;
+                text-align: center;
+                padding: 0px 15px 10px 15px;
+            }
+        
+            .détails {
+                display: flex;
+                flex-direction: column;
+                padding: 0px;
+                margin-left: 1.5rem;
+        
+                article {
+                    width: 300px;
+                    height: 100%;
+                }
+            }
+        }
+    
+
+    
         .firstArticle {
             display: flex;
             flex-direction: column;
@@ -564,25 +605,4 @@ main {
         }
 
     }
-    .p1 {
-        margin: 0;
-        width: 80%;
-        text-align: center;
-        padding: 0px 15px 10px 15px;
-
-
-    }
-
-    .détails {
-        display: flex;
-        flex-direction: column;
-        padding: 25px;
-
-        article {
-            width: 300px;
-            height: 100%;
-        }
-
-    }
-
 }
