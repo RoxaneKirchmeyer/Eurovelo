@@ -443,10 +443,6 @@ main {
             margin-left: 650px;
             font-size: 1.125rem;
             text-align: center;
-
-
-
-
         }
 
 
@@ -527,6 +523,8 @@ main {
 
                     a {
                         color: $roseFonce;
+                        font-family: $fontTexte;
+                        font-weight: 600;
                     }
                 }
 
