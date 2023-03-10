@@ -5,9 +5,9 @@
 }
 
 @media screen and (max-width:391px) {
-    
+
     header {
-       
+
         .mediaPro {
             display: none;
         }
@@ -16,6 +16,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
             ul {
                 flex-direction: column;
             }
@@ -37,6 +38,21 @@
         }
 
         #navResponsive.visible {
+            display: block;
+            background-color: $backgroundNav;
+        }
+
+        .navShadow {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: none;
+            ul {
+                flex-direction: column;
+            }
+        }
+
+        .navShadow.visible {
             display: block;
             background-color: $backgroundNav;
         }

@@ -404,16 +404,12 @@ main {
         text-align: center;
     }
 
-    .p1 {
-        width: 600px;
-        margin-left: 650px;
-        font-size: 1.125rem;
-        text-align: center;
-
-
-
-
-    }
+        .p1 {
+            width: 600px;
+            margin-left: 650px;
+            font-size: 1.125rem;
+            text-align: center;
+        }
 
 
     .détails {
@@ -491,10 +487,12 @@ main {
                     color: $grisMoyen;
                 }
 
-                a {
-                    color: $roseFonce;
+                    a {
+                        color: $roseFonce;
+                        font-family: $fontTexte;
+                        font-weight: 600;
+                    }
                 }
-            }
 
             .temoignage {
                 background-image: url(/images/img-rocher.jpeg);
