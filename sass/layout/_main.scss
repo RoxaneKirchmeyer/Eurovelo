@@ -5,6 +5,7 @@ main {
         width: 80%;
         margin: auto;
         display: flex;
+        gap: 6rem;
 
         article {
             display: flex;
@@ -50,7 +51,7 @@ main {
         }
 
         #map {
-            max-width: 50%;
+            width: 550px;
         }
     }
 
@@ -92,6 +93,229 @@ main {
         }
     }
 
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: $fontTexte;
+    }
+
+.reservation {
+    background-image: url("	/../../../images/fond-reservation-2.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 770Px;
+   
+
+
+
+    .top-reservation {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 200px;
+
+    }
+
+
+    h2 {
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        font-size: 48px;
+        text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+    }
+
+
+    .bottom-reservation {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 100px;
+        height: 100%;
+        
+
+        .image-reservation {
+            width: 31%;
+            height: 35%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: all 0.3s ;
+
+            
+            
+        }
+        .image-reservation:hover{
+            transform: scale(1.05);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 17px;
+        }
+
+
+        .titre-cellule-reserv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70%;
+            width: 100%;  
+            font-family: 'Mukta Mahee', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .info-sejour {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            position: relative;
+        
+
+                .prix-reservation{
+                    background-color: #E5B9D5;
+                    color: #fff;
+                    font-family: 'Mukta Mahee', sans-serif;
+                    padding:  5px 9px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    
+                }
+                
+                .info-sejour-right {
+                    display: flex;
+                    align-items: center;
+                    
+                    
+                    
+                    .time-sejour{
+                        background-color: rgb(255, 255, 255);
+                        color: black;
+                        font-family: 'Mukta Mahee', sans-serif;
+                        padding: 5px 5px 5px 9px; 
+                        
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                    .fa-regular{
+                        background-color: #fff;
+                        padding: 9px 9px 9px 0px;
+                        color: rgb(0, 0, 0);
+                        font-size: 12px;
+                        font-weight: 100;
+                        
+                    }
+                    .fa-heart{
+                        color: #fff;
+                        position: absolute;
+                        right: 12px;
+                        font-size: 18px;
+                        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+                        &:hover{
+                            color: #E5B9D5;
+                        }
+                    }
+
+                }
+            
+        }
+
+
+    }
+
+    .nature {
+        background-image: url(../../images/Velodyssee-Biarritz.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .foret {
+        background-image: url(../../images/velodysse-orlean.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .champ {
+        background-image: url(../../images/velodyssé-rochelle.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+
+
+}
+
+    .tourisme {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 4fr));
+        grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+        height: 100%;
+        width: 100%;
+        gap: 30px;
+        margin-left: 200px;
+        margin-right: 200px;
+
+        figure {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            justify-content: center;
+
+            figcaption {
+                position: absolute;
+                font-family: $fontTitre;
+                font-size: 1.5rem;
+                color: black;
+            }
+
+            img {
+
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            }
+
+            img:hover {
+
+                scale: (1.4);
+                backdrop-filter: blur(5px);
+                filter: blur(6px);
+
+            }
+        }
+    }
+
+    .reservation {
+        background-image: url("	/../../../images/img-nature\ .jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 770Px;
+
+        h2 {
+            color: rgb(255, 255, 255);
+            font-weight: 800;
+            font-size: 58px;
+            text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.4);
+
+            text-align: center;
+        }
 
     .mon-acceuil {
         p {
@@ -202,9 +426,135 @@ main {
             }
         }
     }
+}
+
+.avis {
+    h2 {
+        font-family: $fontTitre;
+        margin-bottom: 40px;
+        text-align: center;
     }
-    @media screen and (max-width:391px)
-    {
+
+    .p1 {
+        width: 600px;
+       margin-left: 650px;
+       font-size: 1.125rem;
+       text-align: center;
+      
+        
 
 
     }
+
+
+.détails {
+    padding: 30px 200px 30px 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+
+.contenu {
+    padding: 25px;
+    
+}
+    article {
+        background-color: $grisTresClair;
+        height: 450px;
+        width: 400px;
+
+        p {
+            color: $grisMoyen;
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+        }
+        .date {
+            color: $grisFonce;
+            font-family: $fontTexte;
+
+        }
+        .nom {
+            font-family: $fontTexte;
+            font-weight: 450;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+        .avisPersonne {
+            display: flex;
+            justify-content: space-between;
+        }
+        .star {
+            color: $roseTrace;
+        }
+        .trajet {
+            color: $blanc;
+            background-color: $roseFonce;
+            padding: 4px 9px;
+            font-family: $fontTexte;
+           
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            font-family: $fontTexte;
+            padding: 25px;
+        }
+        h3 {
+            font-family: $fontTitre;
+            
+            font-weight: 450;
+        }
+        .reponse {
+            display: flex;
+            justify-content: space-between;
+            span {
+                font-family: $fontTexte;
+                color: $grisMoyen;
+            }
+            a {
+                color: $roseFonce;
+            }
+        }
+
+    }
+
+} @media screen and (max-width:391px) {
+    .p1 {
+         margin: 0;
+         width: 80%;
+         text-align: center;
+         padding: 0px 15px 10px 15px;
+        
+        
+    }
+.détails {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    article {
+        width: 300px;
+        height: 100%;
+    }
+   
+} 
+
+}
+    
+}
+
+}
+.temoignage {
+    background-image: url(/images/img-rocher.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2 {
+        color: $blanc;
+    }
+    p {
+        color: $blanc;
+    }
+    .experiencePerso {
+        display: flex;
+        justify-content: space-between;
+    }
+}

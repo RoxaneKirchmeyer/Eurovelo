@@ -1,9 +1,9 @@
-let search = document.querySelector("#search");
+let searchIcon = document.querySelector("#searchIcon");
 let searchMenu = document.querySelector(".searchMenu")
 
 function openingMenu() {
-    search.classList.toggle("fa-xmark");
+    searchIcon.classList.toggle("fa-xmark");
     searchMenu.classList.toggle("visible");
 }
 
-search.addEventListener("click", openingMenu)
+searchIcon.addEventListener("click", openingMenu)
