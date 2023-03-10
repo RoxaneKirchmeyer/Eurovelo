@@ -7,8 +7,9 @@
 
   figure {
     border-radius: 20px;
+    margin-bottom: 50px;
+
     h3:hover {
-      position: absolute;
       bottom: 150px;
       transition-duration: 0.1s;
     }        
@@ -17,6 +18,8 @@
   .case1 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     i {
       color: $roseFonce;
@@ -38,7 +41,6 @@
       scale: (1.4);
       backdrop-filter: blur(5px);
       filter: blur(6px);
-
     }
 
     h3 {
@@ -46,7 +48,7 @@
       color: $blanc;
       font-size: 1.3rem;
       position: absolute;
-      bottom: 40px;
+      bottom: 20px;
       right: 45px;
       text-align: center;
     }
@@ -62,7 +64,7 @@
       color: $roseFonce;
       font-size: 1.4rem;
       position: absolute;
-      bottom: 310px;
+      bottom: 210px;
       right: 30px;
       font-weight: bold;
     }
@@ -72,6 +74,8 @@
   .case2 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -97,13 +101,14 @@
       text-align: center;
     }
 
-    p {font-family: $fontTexte;
+    p {
+      font-family: $fontTexte;
       color: $blanc;
       font-size: 0.9rem;
       font-weight: bold;
       position: absolute;
-      bottom: 20px;
-      right: 90px;
+      bottom: 0px;
+      left: 100px;
       text-align: center;
     }
 
@@ -113,7 +118,7 @@
       color: $roseFonce;
       font-size: 1.4rem;
       position: absolute;
-      bottom: 310px;
+      bottom: 210px;
       right: 140px;
       font-weight: bold;
       text-align: center;
@@ -124,6 +129,8 @@
   .case3 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -143,8 +150,8 @@
       color: $blanc;
       font-size: 1.3rem;
       position: absolute;
-      bottom: 30px;
-      right: 80px;
+      bottom: 20px;
+      right: 75px;
       font-weight: bold;
       text-align: center;
     }
@@ -153,6 +160,8 @@
   .case4 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -172,7 +181,7 @@
       color: $blanc;
       font-size: 1.3rem;
       position: absolute;
-      bottom: 60px;
+      bottom: 70px;
       right: 70px;
       font-weight: bold;
       text-align: center;
@@ -184,7 +193,7 @@
       font-size: 0.9rem;
       font-weight: bold;
       position: absolute;
-      bottom: 20px;
+      bottom: 5px;
       right: 70px;
       text-align: center;
     }
@@ -196,7 +205,7 @@
       color: $roseFonce;
       font-size: 1.4rem;
       position: absolute;
-      bottom: 195px;
+      bottom: 200px;
       right: 125px;
       font-weight: bold;
       text-align: center;
@@ -206,6 +215,8 @@
   .case5 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -247,6 +258,8 @@
   .case6 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
 
     img {
@@ -277,6 +290,8 @@
   .case7 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -296,8 +311,8 @@
       color: $blanc;
       font-size: 1.3rem;
       position: absolute;
-      bottom: 20px;
-      right: 10px;
+      bottom: 10px;
+      right: 5px;
       font-weight: bold;
       text-align: center;
     }
@@ -306,6 +321,8 @@
   .case8 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -325,8 +342,8 @@
       color: $blanc;
       font-size: 1.3rem;
       position: absolute;
-      bottom: 20px;
-      right: 40px;
+      bottom: 10px;
+      right: 30px;
       font-weight: bold;
       text-align: center;
     }
@@ -335,6 +352,8 @@
   .case9 {
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 250px;
 
     img {
       width: 100%;
@@ -354,7 +373,7 @@
       color: $blanc;
       font-size: 1.3rem;
       position: absolute;
-      bottom: 70px;
+      bottom: 60px;
       right: 60px;
       font-weight: bold;
       text-align: center;
@@ -366,16 +385,17 @@
       font-size: 0.9rem;
       font-weight: bold;
       position: absolute;
-      bottom: 20px;
+      bottom: 0px;
       right: 100px;
       text-align: center;
     }
 
     i {
+      position: absolute;
       color: $roseFonce;
       font-size: 1.4rem;
       position: absolute;
-      bottom: 240px;
+      bottom: 210px;
       right: 20px;
       font-weight: bold;
     }

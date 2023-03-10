@@ -19,31 +19,21 @@
 
 <body>
     <header class="headerIndex">
-      <div class="mediaPro">
-        <div class="media">
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/?hl=fr"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/?hl=FR"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://fr-fr.facebook.com/"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-            </li>
-          </ul>
-          <form>
-            <label>S'abonner à la newsletter</label>
-            <input type="email" placeholder="Votre adresse mail" />
-            <button type="submit">JE M'INSCRIS</button>
-          </form>
-        </div>
+        <!-- <div id="btn-burger">☰</div>
+        <div id="navResponsive"> -->
+        <div class="mediaPro">
+            <div class="media">
+                <ul>
+                    <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/?hl=FR"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                </ul>
+                <form>
+                    <label>S'abonner à la newsletter</label>
+                    <input type="email" placeholder="Votre adresse mail">
+                    <button type="submit">JE M'INSCRIS</button>
+                </form>
+            </div>
 
         <ul class="pro">
           <li><a href="#">Espace pro</a></li>
@@ -206,21 +196,22 @@
             <p>Accueil Vélo est une marque qui garantit des services de qualité auprès des cyclistes le long de
                 l'itinéraire</p>
             <div class="tourisme">
-                <figure>
+                <figure class="fig-1">
                     <img src="/images/image-hotel.jpg" alt="">
-                    <figcaption><a href="#">HÉBERGEMENTS</a></figcaption>
+                    <a href="#">HÉBERGEMENTS</a>
                 </figure>
-                <figure>
+                <figure class="fig-2">
                     <img src="/images/image-Calais.png" alt="">
-                    <figcaption><a href="#">LIEUX DE VISITE</a></figcaption>
-                    <figure>
-                        <img src="/images/office-tourisme.png" alt="">
-                        <figcaption><a href="#">OFFICES DE TOURISME</a></figcaption>
-                    </figure>
-                    <figure>
-                        <img src="/images/réparateur-vélo.png" alt="">
-                        <figcaption><a href="#">LOUEURS & RÉPARATEURS DE VÉLO</a></figcaption>
-                    </figure>
+                    <a href="#">LIEUX DE VISITE</a>
+                </figure>
+                <figure class="fig-3">
+                    <img src="/images/office-tourisme.png" alt="">
+                    <a href="#">OFFICES DE TOURISME</a>
+                </figure>
+                <figure class="fig-4">
+                    <img src="/images/réparateur-vélo.png" alt="">
+                    <a href="#">LOUEURS & RÉPARATEURS DE VÉLO</a>
+                </figure>
             </div>
         </section>
         <section>
@@ -280,47 +271,62 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="avis">
             <h2>Les derniers avis publiés !</h2>
-            <p>Les avis et commentaires de voyageurs à vélo sur nos parcours.
+            <p class="p1">Les avis et commentaires de voyageurs à vélo sur nos parcours.
                 N'hésitez pas à déposer le votre sur les tracés que vous avez déjà parcourus !
             </p>
-            <div>
-                <article>
-                    <span>mar 28/06/2022 - 11:43</span>
-                    <span>David</span>
-                    <span>star</span>
-                    <span>Arcachon / Biscarrosse-plage</span>
+            <div class="détails">
+                <article class="contenu">
+                    <span class="date">mar 28/06/2022 - 11:43</span><br>
+                    <div class="avisPersonne">
+                        <span class="nom">David</span>
+                        <div class="star">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                    </div>
+                    <span class="trajet">Arcachon / Biscarrosse-plage</span>
+
                     <ul>
                         <li>Sécurité 5/5</li>
                         <li>Balisage 5/5</li>
                         <li>Intérêt 5/5</li>
                         <li>Services 5/5</li>
                     </ul>
-                    <span>Biscarosse → Arcachon → Biscarosse dans la journée</span>
+                    <h3>Biscarosse → Arcachon → Biscarosse dans la journée</h3>
                     <p>Petite balade en famille à 6 vélos, n'ayant pas fait de vélo depuis un moment nous avons voulu
-
                         faire un aller retour de Biscarosse plage à Arcachon.
                         Bilan : le départ est assez simple plusieurs bons kilomètres vallonnés, environ 15 kilomètres je
-
                         dirai et arrivé la première côte</p>
                     <div>
                         <span>0 réponse</span>
                         <a href="#">Lire</a>
                     </div>
                 </article>
-                <article>
-                    <span>dim 14/08/2022 - 19:29</span>
-                    <span>Philippe</span>
-                    <span>star</span>
-                    <span>Mûr-de-Bretagne / Pontivy</span>
+                <article class="contenu">
+                    <span class="date">dim 14/08/2022 - 19:29</span><br>
+                    <div class="avisPersonne">
+                    <span class="nom">Philippe</span>
+                    <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span><br>
+                </div>
+            </div>
+                    <span class="trajet">Mûr-de-Bretagne / Pontivy</span>
                     <ul>
                         <li>Sécurité 4/5</li>
                         <li>Balisage 5/5</li>
                         <li>Intérêt 5/5</li>
                         <li>Services 4/5</li>
                     </ul>
-                    <span>Decouverte</span>
+                    <h3>Decouverte</h3>
                     <p>Lors de la semaine fédérale de cyclotourisme de loudeac nous avons décidé de parcourir deux
 
                         parcours
@@ -334,18 +340,26 @@
                         <a href="#">Lire</a>
                     </div>
                 </article>
-                <article>
-                    <span>dim 14/08/2022 - 19:34</span>
-                    <span>Philippe</span>
-                    <span>star</span>
-                    <span>Pontivy / Josselin</span>
+                <article class="contenu">
+                    <span class="date">dim 14/08/2022 - 19:34</span><br>
+                    <div class="avisPersonne">
+                    <span class="nom">Philippe</span>
+                    <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span><br>
+                </div>
+            </div>
+                    <span class="trajet">Pontivy / Josselin</span>
                     <ul>
                         <li>Sécurité 4/5</li>
                         <li>Balisage 5/5</li>
                         <li>Intérêt 5/5</li>
                         <li>Services 5/5</li>
                     </ul>
-                    <span>Decouverte</span>
+                    <h3>Decouverte</h3>
                     <p>Deuxième parcours de la journée, toujours aussi bien avec ses points de vues, nombreuses écluses,
 
                         maison d'eclusiers fleuries, sa halte au chalet pour une dégustation de cidre.
