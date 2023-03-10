@@ -189,12 +189,19 @@ header {
 
     }
 
+    .searchMenuItineraire {
+        top: 85px
+    }
+
+    .searchMenuItineraireTop {
+        top: 140px;
+    }
+
     .searchMenu {
         visibility: hidden;
         position: fixed;
         padding: 0.5rem 1rem;
         width: 100%;
-        top: 140px;
         margin: auto;
         box-sizing: border-box;
         background-color: $grisFonce;
