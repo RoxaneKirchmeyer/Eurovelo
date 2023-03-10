@@ -8,14 +8,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+        crossorigin="">
     <link rel="stylesheet" href="sass/main.css">
     <title>Accueil</title>
 </head>
 
 <body>
     <header class="headerIndex">
-        <!-- <div id="btn-burger">☰</div>
-        <div id="navResponsive"> -->
+
         <div class="mediaPro">
             <div class="media">
                 <ul>
@@ -38,7 +40,9 @@
             </ul>
         </div>
 
+        <div id="btn-burger">☰</div>
         <nav id="navIndex">
+            
             <ul>
                 <li><a href="accueil.html" class="logoNav"><img src="images/logo-euroVelo.png" alt=""></a></li>
                 <li><a href="itineraire.html">L'ITINÉRAIRE</a></li>
@@ -50,10 +54,10 @@
                 <li><a href="">PASSEPORT 🗺️</a></li>
             </ul>
             <div>
-                <button type="button"><i class="fa-solid fa-magnifying-glass" id="search"></i></button>
+                <button type="button"><i class="fa-solid fa-magnifying-glass" id="searchIcon"></i></button>
             </div>
         </nav>
-        <form class="searchMenu">
+        <form id="searchScroll" class="searchMenu">
             <input type="text" placeholder="Rechercher...">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
@@ -158,11 +162,9 @@
                     <div><button>TROUVER MON PARCOURS IDÉAL</button></div>
                 </form>
             </article>
-            <article>
-                <div id="map">
-                    <img src="images/test.jpg" alt="">
-                </div>
-            </article>
+
+            <div id="map"></div>
+            
         </section>
         <section class="mon-acceuil">
             <figure class="logo-et-h2">
@@ -559,9 +561,13 @@
     </footer>
     <script src="https://kit.fontawesome.com/9876741200.js" crossorigin="anonymous"></script>
     <script src="Javascript/slider.js"></script>
-    <script src="Javascript/navSearch.js"></script>
     <script src="Javascript/scroll.js"></script>
+    <script src="Javascript/navSearch.js"></script>
     <script src="Javascript/menuBurger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+    <script src="Javascript/map.js"></script>
+    
 </body>
 
 </html>
