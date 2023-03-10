@@ -5,47 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="sass/main.css" />
-
+        href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+        crossorigin="">
+    <link rel="stylesheet" href="sass/main.css">
     <title>Accueil</title>
   </head>
 
   <body>
     <header class="headerIndex">
-      <!-- <div id="btn-burger">☰</div>
-        <div id="navResponsive"> -->
-      <div class="mediaPro">
-        <div class="media">
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/?hl=fr"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/?hl=FR"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://fr-fr.facebook.com/"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-            </li>
-          </ul>
-          <form>
-            <label>S'abonner à la newsletter</label>
-            <input type="email" placeholder="Votre adresse mail" />
-            <button type="submit">JE M'INSCRIS</button>
-          </form>
-        </div>
+
+        <div class="mediaPro">
+            <div class="media">
+                <ul>
+                    <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/?hl=FR"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                </ul>
+                <form>
+                    <label>S'abonner à la newsletter</label>
+                    <input type="email" placeholder="Votre adresse mail">
+                    <button type="submit">JE M'INSCRIS</button>
+                </form>
+            </div>
 
         <ul class="pro">
           <li><a href="#">Espace pro</a></li>
@@ -63,33 +47,27 @@
         </ul>
       </div>
 
-      <nav id="navIndex">
-        <ul>
-          <li>
-            <a href="accueil.html" class="logoNav"
-              ><img src="images/logo-euroVelo.png" alt=""
-            /></a>
-          </li>
-          <li><a href="itineraire.html">L'ITINÉRAIRE</a></li>
-          <li><a href="">TÉMOIGNAGES</a></li>
-          <li><a href="">INFOS PRATIQUES</a></li>
-          <li><a href="">SUGGESTIONS</a></li>
-          <li><a href="">INSPIRATIONS</a></li>
-          <li><a href="">ACTUALITÉS 💬</a></li>
-          <li><a href="">PASSEPORT 🗺️</a></li>
-        </ul>
-        <div>
-          <button type="button">
-            <i class="fa-solid fa-magnifying-glass" id="search"></i>
-          </button>
-        </div>
-      </nav>
-      <form class="searchMenu">
-        <input type="text" placeholder="Rechercher..." />
-        <button type="submit">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </form>
+        <div id="btn-burger">☰</div>
+        <nav id="navIndex">
+            
+            <ul>
+                <li><a href="accueil.html" class="logoNav"><img src="images/logo-euroVelo.png" alt=""></a></li>
+                <li><a href="itineraire.html">L'ITINÉRAIRE</a></li>
+                <li><a href="">TÉMOIGNAGES</a></li>
+                <li><a href="">INFOS PRATIQUES</a></li>
+                <li><a href="">SUGGESTIONS</a></li>
+                <li><a href="">INSPIRATIONS</a></li>
+                <li><a href="">ACTUALITÉS 💬</a></li>
+                <li><a href="">PASSEPORT 🗺️</a></li>
+            </ul>
+            <div>
+                <button type="button"><i class="fa-solid fa-magnifying-glass" id="searchIcon"></i></button>
+            </div>
+        </nav>
+        <form id="searchScroll" class="searchMenu">
+            <input type="text" placeholder="Rechercher...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
 
       <section>
         <h1>L'Eurovélo 5</h1>
@@ -112,404 +90,348 @@
     </header>
 
     <main>
-      <section class="firstArticle">
-        <article>
-          <h2>L'EuroVelo 5, 240 km à vélo dans les Hauts-de-France</h2>
-          <p>
-            L'EuroVelo 5 en France est composée de deux parties. Tout d'abord,
-            vous pouvez serpenter à travers le nord, de Calais à Saint-Omer, une
-            jolie ville-cathédrale aux larges rues et aux places spacieuses.
-            L'itinéraire vous mènera ensuite à Lille, ancienne capitale
-            européenne de la culture. Plus loin le long de l'itinéaire, vous
-            retournerez en France en suivant des canaux jusqu'à Strasbourg,
-            célèbre pour ses nombreux sites historiques et attractions
-            culturelles, ainsi que pour abriter le Parlement européen. Vous
-            quitterez ensuite la ville pour rejoindre la route des vins
-            d'Alsace, qui vous mènera à travers une centaine de villages, tous
-            célèbres pour leurs vins et leur culture vinicole de renommé
-            internationale.
-          </p>
-          <figure>
-            <img src="images/pictos-velodyssee3.jpg" alt="" />
-          </figure>
-          <form>
-            <h3>Pédalez selon vos envies</h3>
-            <div>
-              <select name="parcours-select">
-                <option value="">Tous les parcours</option>
-                <option value="">Aller simple</option>
-                <option value="">Aller-retour</option>
-                <option value="">Boucle</option>
-                <option value="">Tous les parcours</option>
-                <option value="">Aller simple</option>
-                <option value="">Aller-retour</option>
-                <option value="">Boucle</option>
-              </select>
-            </div>
-            <div>
-              <select name="difficultes">
-                <option value="">Toutes les difficultés</option>
-                <option value="">Je débute / En famille</option>
-                <option value="">J'ai l'habitude</option>
-                <option value="">Je me dépasse</option>
-                <option value="">Toutes les difficultés</option>
-                <option value="">Je débute / En famille</option>
-                <option value="">J'ai l'habitude</option>
-                <option value="">Je me dépasse</option>
-              </select>
-            </div>
-            <div>
-              <select name="duree">
-                <option value="">Toutes les durées</option>
-                <option value="">Journée</option>
-                <option value="">Long séjour (+7 de jours)</option>
-                <option value="">A la semaine</option>
-                <option value="">Court séjour (3 à 5 jours)</option>
-                <option value="">Week-end</option>
-                <option value="">Toutes les durées</option>
-                <option value="">Journée</option>
-                <option value="">Long séjour (+7 de jours)</option>
-                <option value="">A la semaine</option>
-                <option value="">Court séjour (3 à 5 jours)</option>
-                <option value="">Week-end</option>
-              </select>
-            </div>
-            <div>
-              <select name="thematique">
-                <option value="">Toutes les thématiques</option>
-                <option value="">Le littoral</option>
-                <option value="">Nature et patrimoine</option>
-                <option value="">au fil de l'eau</option>
-                <option value="">Forêts et landes</option>
-                <option value="">En famille</option>
-                <option value="">Vignobles et gastronomie</option>
-                <option value="">Panoramas</option>
-                <option value="">Toutes les thématiques</option>
-                <option value="">Le littoral</option>
-                <option value="">Nature et patrimoine</option>
-                <option value="">au fil de l'eau</option>
-                <option value="">Forêts et landes</option>
-                <option value="">En famille</option>
-                <option value="">Vignobles et gastronomie</option>
-                <option value="">Panoramas</option>
-              </select>
-            </div>
-            <div>
-              <select name="destinations">
-                <option value="">Toutes les destinations</option>
-                <option value="">
-                  Nouvelle-Aquitaine (La rochelle &gt; Hendaye)
-                </option>
-                <option value="">
-                  Pays de la Loires (Nantes &gt; La Rochelle)
-                </option>
-                <option value="">Bretagne (Roscoff &gt; Nantes)</option>
-              </select>
-            </div>
-            <div><button>TROUVER MON PARCOURS IDÉAL</button></div>
-          </form>
-        </article>
-        <article>
-          <div id="map">
-            <img src="images/test.jpg" alt="" />
-          </div>
-        </article>
-      </section>
-      <section class="mon-acceuil">
-        <figure class="logo-et-h2">
-          <img src="/images/accueilVelo.jpg" alt="" />
-          <h2>Trouver mon Accueil vélo</h2>
-        </figure>
-        <p>
-          Accueil Vélo est une marque qui garantit des services de qualité
-          auprès des cyclistes le long de l'itinéraire
-        </p>
-        <div class="tourisme">
-          <figure class="fig-1">
-            <img src="/images/image-hotel.jpg" alt="" />
-            <a href="#">HÉBERGEMENTS</a>
-          </figure>
-          <figure class="fig-2">
-            <img src="/images/image-Calais.png" alt="" />
-            <a href="#">LIEUX DE VISITE</a>
-          </figure>
-          <figure class="fig-3">
-            <img src="/images/office-tourisme.png" alt="" />
-            <a href="#">OFFICES DE TOURISME</a>
-          </figure>
-          <figure class="fig-4">
-            <img src="/images/réparateur-vélo.png" alt="" />
-            <a href="#">LOUEURS & RÉPARATEURS DE VÉLO</a>
-          </figure>
-        </div>
-      </section>
-      <section>
-        <h2>Ils l'ont fait !</h2>
-        <p>
-          Ces retours d'expérience sont précieux pour vous aider à préparer
-          votre parcours sur La Vélodyssée.
-          <br />
-          Inspirez-vous !
-        </p>
-        <div>
-          <figure>
-            <img src="#" alt="" />
-            <i class="fa-solid fa-heart"></i>
-            <h3>Les 1110 km de Cynthia en solo sur La Vélodyssée</h3>
-            <p>
-              Un premier voyage à vélo de 16 jours avec 1110 km au compteur !
-            </p>
-            <a href="#"><img src="#" alt="" /></a>
-          </figure>
-          <figure>
-            <img src="#" alt="" />
-            <i class="fa-solid fa-heart"></i>
-            <h3>Premier voyage à vélo avec un bébé de 8 mois</h3>
-            <p>
-              300 km de Nantes à La Rochelle, entre préparation d'un voyage
-              futur et découverte du voyage à vélo pour Zohé.
-            </p>
-            <a href="#"><img src="#" alt="" /></a>
-          </figure>
-          <figure>
-            <img src="#" alt="" />
-            <i class="fa-solid fa-heart"></i>
-            <h3>Le bike trip de Valentin</h3>
-            <a href="#"><img src="#" alt="" /></a>
-          </figure>
-          <figure>
-            <img src="#" alt="" />
-            <i class="fa-solid fa-heart"></i>
-            <h3>De La Rochelle à Biarritz entre copains.</h3>
-            <p>Un trip entre copain, avec quelques rebondissements...</p>
-            <a href="#"><img src="#" alt="" /></a>
-          </figure>
-          <figure>
-            <img src="#" alt="" />
-            <i class="fa-solid fa-heart"></i>
-            <h3>L'aventure au bout du guidon</h3>
-            <p>1000 km, de Hendaye à Nantes, la côte aux milles paysages.</p>
-            <a href="#"><img src="#" alt="" /></a>
-          </figure>
-          <figure>
-            <img src="#" alt="" />
-            <i class="fa-solid fa-heart"></i>
-            <h3>
-              La Velodyssée et ses crochets en famille, au fil de l'Atlantique !
-            </h3>
-            <p>
-              La famille Matton, itinérants belges, a choisi de parcourir la
-              France à vélo sur la Vélodyssée, retour sur leur aventure au fil
-              de l'Atlantique !
-            </p>
-            <a href="#"><img src="#" alt="" /></a>
-          </figure>
-          <div>
-            <a href="#">TOUS LES TÉMOIGNAGES</a>
-            <button>←</button>
-            <button>→</button>
-          </div>
-        </div>
-      </section>
-      <section class="avis">
-        <h2>Les derniers avis publiés !</h2>
-        <p class="p1">
-          Les avis et commentaires de voyageurs à vélo sur nos parcours.
-          N'hésitez pas à déposer le votre sur les tracés que vous avez déjà
-          parcourus !
-        </p>
-        <div class="détails">
-          <article class="contenu">
-            <span class="date">mar 28/06/2022 - 11:43</span><br />
-            <div class="avisPersonne">
-              <span class="nom">David</span>
-              <div class="star">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-              </div>
-            </div>
-            <span class="trajet">Arcachon / Biscarrosse-plage</span>
+        <section class="firstArticle">
+            <article>
+                <h2>L'EuroVelo 5, 240 km à vélo dans les Hauts-de-France</h2>
+                <p>L'EuroVelo 5 en France est composée de deux parties. Tout d'abord, vous pouvez serpenter
+                    à travers le nord, de Calais à Saint-Omer, une jolie ville-cathédrale aux larges rues et aux
+                    places spacieuses. L'itinéraire vous mènera ensuite à Lille, ancienne capitale européenne de la
+                    culture. Plus loin le long de l'itinéaire, vous retournerez en France en suivant des canaux jusqu'à
+                    Strasbourg, célèbre pour ses nombreux sites historiques et attractions culturelles, ainsi que pour
+                    abriter le
+                    Parlement européen. Vous quitterez ensuite la ville pour rejoindre la route des vins d'Alsace, qui
+                    vous mènera à travers une centaine de villages,
+                    tous célèbres pour leurs vins et leur culture vinicole de renommé internationale.</p>
+                <figure>
+                    <img src="images/pictos-velodyssee3.jpg" alt="">
+                </figure>
+                <form>
+                    <h3>Pédalez selon vos envies</h3>
+                    <div><select name="parcours-select">
+                            <option value="">Tous les parcours</option>
+                            <option value="">Aller simple</option>
+                            <option value="">Aller-retour</option>
+                            <option value="">Boucle</option>
+                            <option value="">Tous les parcours</option>
+                            <option value="">Aller simple</option>
+                            <option value="">Aller-retour</option>
+                            <option value="">Boucle</option>
+                        </select></div>
+                    <div><select name="difficultes">
+                            <option value="">Toutes les difficultés</option>
+                            <option value="">Je débute / En famille</option>
+                            <option value="">J'ai l'habitude</option>
+                            <option value="">Je me dépasse</option>
+                            <option value="">Toutes les difficultés</option>
+                            <option value="">Je débute / En famille</option>
+                            <option value="">J'ai l'habitude</option>
+                            <option value="">Je me dépasse</option>
+                        </select></div>
+                    <div><select name="duree">
+                            <option value="">Toutes les durées</option>
+                            <option value="">Journée</option>
+                            <option value="">Long séjour (+7 de jours)</option>
+                            <option value="">A la semaine</option>
+                            <option value="">Court séjour (3 à 5 jours)</option>
+                            <option value="">Week-end</option>
+                            <option value="">Toutes les durées</option>
+                            <option value="">Journée</option>
+                            <option value="">Long séjour (+7 de jours)</option>
+                            <option value="">A la semaine</option>
+                            <option value="">Court séjour (3 à 5 jours)</option>
+                            <option value="">Week-end</option>
+                        </select></div>
+                    <div>
+                        <select name="thematique">
+                            <option value="">Toutes les thématiques</option>
+                            <option value="">Le littoral</option>
+                            <option value="">Nature et patrimoine</option>
+                            <option value="">au fil de l'eau</option>
+                            <option value="">Forêts et landes</option>
+                            <option value="">En famille</option>
+                            <option value="">Vignobles et gastronomie</option>
+                            <option value="">Panoramas</option>
+                            <option value="">Toutes les thématiques</option>
+                            <option value="">Le littoral</option>
+                            <option value="">Nature et patrimoine</option>
+                            <option value="">au fil de l'eau</option>
+                            <option value="">Forêts et landes</option>
+                            <option value="">En famille</option>
+                            <option value="">Vignobles et gastronomie</option>
+                            <option value="">Panoramas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="destinations">
+                            <option value="">Toutes les destinations</option>
+                            <option value="">Nouvelle-Aquitaine (La rochelle &gt; Hendaye)</option>
+                            <option value="">Pays de la Loires (Nantes &gt; La Rochelle)</option>
+                            <option value="">Bretagne (Roscoff &gt; Nantes)</option>
+                        </select>
+                    </div>
+                    <div><button>TROUVER MON PARCOURS IDÉAL</button></div>
+                </form>
+            </article>
 
-            <ul>
-              <li>Sécurité 5/5</li>
-              <li>Balisage 5/5</li>
-              <li>Intérêt 5/5</li>
-              <li>Services 5/5</li>
-            </ul>
-            <h3>Biscarosse → Arcachon → Biscarosse dans la journée</h3>
-            <p>
-              Petite balade en famille à 6 vélos, n'ayant pas fait de vélo
-              depuis un moment nous avons voulu faire un aller retour de
-              Biscarosse plage à Arcachon. Bilan : le départ est assez simple
-              plusieurs bons kilomètres vallonnés, environ 15 kilomètres je
-              dirai et arrivé la première côte
-            </p>
-            <div>
-              <span>0 réponse</span>
-              <a href="#">Lire</a>
+            <div id="map"></div>
+            
+        </section>
+        <section class="mon-acceuil">
+            <figure class="logo-et-h2">
+                <img src="/images/accueilVelo.jpg" alt="">
+                <h2>Trouver mon Accueil vélo</h2>
+            </figure>
+            <p>Accueil Vélo est une marque qui garantit des services de qualité auprès des cyclistes le long de
+                l'itinéraire</p>
+            <div class="tourisme">
+                <figure class="fig-1">
+                    <img src="/images/image-hotel.jpg" alt="">
+                    <a href="#">HÉBERGEMENTS</a>
+                </figure>
+                <figure class="fig-2">
+                    <img src="/images/image-Calais.png" alt="">
+                    <a href="#">LIEUX DE VISITE</a>
+                </figure>
+                <figure class="fig-3">
+                    <img src="/images/office-tourisme.png" alt="">
+                    <a href="#">OFFICES DE TOURISME</a>
+                </figure>
+                <figure class="fig-4">
+                    <img src="/images/réparateur-vélo.png" alt="">
+                    <a href="#">LOUEURS & RÉPARATEURS DE VÉLO</a>
+                </figure>
             </div>
-          </article>
-          <article class="contenu">
-            <span class="date">dim 14/08/2022 - 19:29</span><br />
-            <div class="avisPersonne">
-              <span class="nom">Philippe</span>
-              <div class="star">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span><br />
-              </div>
-            </div>
-            <span class="trajet">Mûr-de-Bretagne / Pontivy</span>
-            <ul>
-              <li>Sécurité 4/5</li>
-              <li>Balisage 5/5</li>
-              <li>Intérêt 5/5</li>
-              <li>Services 4/5</li>
-            </ul>
-            <h3>Decouverte</h3>
-            <p>
-              Lors de la semaine fédérale de cyclotourisme de loudeac nous avons
-              décidé de parcourir deux parcours de la velodyssee. Nous avons été
-              ravi du parcours du mur-de-Bretagne à Pontivy. Le chemin de halage
-              tantôt en bitume, tantôt en stabilisé. Une végétation changeante
-              tous les cinq kilomètres, un vrai
+        </section>
+        <section class="temoignage">
+            <h2>Ils l'ont fait !</h2>
+            <p>Ces retours d'expérience sont précieux pour vous aider à préparer votre parcours sur La Vélodyssée.
+                <br>
+                Inspirez-vous !
             </p>
-            <div>
-              <span>0 réponse</span>
-              <a href="#">Lire</a>
+            <div class="experiencePerso">
+                <figure>
+                    <img src="/images/Wattrelos.jpg" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Les 1110 km de Cynthia en solo sur La Vélodyssée</h3>
+                    <p>Un premier voyage à vélo de 16 jours avec 1110 km au compteur !</p>
+                    <a href="#"><img src="#" alt=""></a>
+                </figure>
+                <figure>
+                    <img src="/images/velodyssé-rochelle.jpeg" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Premier voyage à vélo avec un bébé de 8 mois</h3>
+                    <p>300 km de Nantes à La Rochelle, entre préparation d'un voyage futur et découverte du voyage à
+                        vélo pour Zohé.</p>
+                    <a href="#"><img src="#" alt=""></a>
+                </figure>
+                <figure>
+                    <img src="#" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Le bike trip de Valentin</h3>
+                    <a href="#"><img src="#" alt=""></a>
+                </figure>
+                <figure>
+                    <img src="#" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>De La Rochelle à Biarritz entre copains.</h3>
+                    <p>Un trip entre copain, avec quelques rebondissements...</p>
+                    <a href="#"><img src="#" alt=""></a>
+                </figure>
+                <figure>
+                    <img src="#" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>L'aventure au bout du guidon</h3>
+                    <p>1000 km, de Hendaye à Nantes, la côte aux milles paysages.</p>
+                    <a href="#"><img src="#" alt=""></a>
+                </figure>
+                <figure>
+                    <img src="#" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>La Velodyssée et ses crochets en famille, au fil de l'Atlantique !</h3>
+                    <p>La famille Matton, itinérants belges, a choisi de parcourir la France à vélo sur la Vélodyssée,
+                        retour sur leur aventure au fil de l'Atlantique !</p>
+                    <a href="#"><img src="#" alt=""></a>
+                </figure>
             </div>
-          </article>
-          <article class="contenu">
-            <span class="date">dim 14/08/2022 - 19:34</span><br />
-            <div class="avisPersonne">
-              <span class="nom">Philippe</span>
-              <div class="star">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span><br />
-              </div>
+                <div>
+                    <a href="#">TOUS LES TÉMOIGNAGES</a>
+                    <button>←</button>
+                    <button>→</button>
+                
             </div>
-            <span class="trajet">Pontivy / Josselin</span>
-            <ul>
-              <li>Sécurité 4/5</li>
-              <li>Balisage 5/5</li>
-              <li>Intérêt 5/5</li>
-              <li>Services 5/5</li>
-            </ul>
-            <h3>Decouverte</h3>
-            <p>
-              Deuxième parcours de la journée, toujours aussi bien avec ses
-              points de vues, nombreuses écluses, maison d'eclusiers fleuries,
-              sa halte au chalet pour une dégustation de cidre. Une arrivée au
-              château de Josselin. Une journée agréable, nous poursuivrons notre
-              odyssée l'année prochaine.
+        </section>
+        <section class="avis">
+            <h2>Les derniers avis publiés !</h2>
+            <p class="p1">Les avis et commentaires de voyageurs à vélo sur nos parcours.<br>
+                N'hésitez pas à déposer le votre sur les tracés que vous avez déjà parcourus !
             </p>
-            <div>
-              <span>0 réponse</span>
-              <a href="#">Lire</a>
+            <div class="détails">
+                <article class="contenu">
+                    <span class="date">mar 28/06/2022 - 11:43</span><br>
+                    <div class="avisPersonne">
+                        <span class="nom">David</span>
+                        <div class="star">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                    </div>
+                    <span class="trajet">Arcachon / Biscarrosse-plage</span>
+
+                    <ul>
+                        <li>Sécurité 5/5</li>
+                        <li>Balisage 5/5</li>
+                        <li>Intérêt 5/5</li>
+                        <li>Services 5/5</li>
+                    </ul>
+                    <h3>Biscarosse → Arcachon → Biscarosse dans la journée</h3>
+                    <p>Petite balade en famille à 6 vélos, n'ayant pas fait de vélo depuis un moment nous avons voulu
+                        faire un aller retour de Biscarosse plage à Arcachon.
+                        Bilan : le départ est assez simple plusieurs bons kilomètres vallonnés, environ 15 kilomètres je
+                        dirai et arrivé la première côte</p>
+                    <div class="reponse">
+                        <span>0 réponse</span>
+                        <a href="#">Lire</a>
+                    </div>
+                </article>
+                <article class="contenu">
+                    <span class="date">dim 14/08/2022 - 19:29</span><br>
+                    <div class="avisPersonne">
+                    <span class="nom">Philippe</span>
+                    <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span><br>
+                </div>
             </div>
-          </article>
-        </div>
-      </section>
-      <section>
-        <div class="HDF">
-          <h2>La douceur de la mer à portée de roues !</h2>
-          <p>
-            Idées week-end, nouveautés et tutos pour s'élancer dans une aventure
-            à vélo.
-          </p>
-        </div>
-        <div class="grid">
-          <figure class="case1">
-            <img src="/images/eurovélo5.png" alt="" />
-            <i class="fa-solid fa-heart"></i>
-            <a href="#">
-              <h3>Présentation de l'itinéaire</h3>
-            </a>
-          </figure>
-          <figure class="case2">
-            <img src="/images/image4.png" alt="" />
-            <span>Juin 2022</span>
-            <a href="#">
-              <h3>Le passeport de l'EuroVélo</h3>
-            </a>
-            <p>Des souvenirs indélébiles<br />à portée de main</p>
-          </figure>
-          <figure class="case3">
-            <img src="/images/foire-aux-questions.png" alt="" />
-            <i class="fa-thin fa-comments-question"></i>
-            <a href="#">
-              <h3>Foire Aux Questions</h3>
-            </a>
-          </figure>
-          <figure class="case4">
-            <img src="/images/Lens.jpg" alt="" />
-            <span>Nos conseils</span>
-            <a href="#">
-              <h3>
-                L'EuroVélo: difficulté <br />
-                et dénivelé
-              </h3>
-            </a>
-            <p>
-              Un itineraire adapté aux débutants <br />
-              et aux familles !
-            </p>
-          </figure>
-          <figure class="case5">
-            <img src="/images/image10.png" alt="" />
-            <span>Nos conseils</span>
-            <a href="#">
-              <h3>
-                Comment bien préparer <br />
-                son premier voyage à vélo ?
-              </h3>
-            </a>
-          </figure>
-          <figure class="case6">
-            <img src="/images/Image-transport-et-velo.jpg" alt="" />
-            <a href="#">
-              <h3>Mode de transport + vélo</h3>
-            </a>
-          </figure>
-          <figure class="case7">
-            <img src="/images/hebergement2.jpg" alt="" />
-            <a href="#">
-              <h3>Les hébergements légers à la nuitée</h3>
-            </a>
-          </figure>
-          <figure class="case8">
-            <img src="/images/HDF.jpg" alt="" />
-            <a href="#">
-              <h3>
-                Découvrez à vélo la région <br />
-                autour de l'EuroVélo
-              </h3>
-            </a>
-          </figure>
-          <figure class="case9">
-            <img src="/images/Outil.jpg" alt="" />
-            <i class="fa-solid fa-heart"></i>
-            <a href="#">
-              <h3>
-                L'outil de signalement <br />
-                à votre service
-              </h3>
-            </a>
-            <p>
-              Pendant, avant et après <br />
-              votre parcours
-            </p>
-          </figure>
-        </div>
-      </section>
+                    <span class="trajet">Mûr-de-Bretagne / Pontivy</span>
+                    <ul>
+                        <li>Sécurité 4/5</li>
+                        <li>Balisage 5/5</li>
+                        <li>Intérêt 5/5</li>
+                        <li>Services 4/5</li>
+                    </ul>
+                    <h3>Decouverte</h3>
+                    <p>Lors de la semaine fédérale de cyclotourisme de loudeac nous avons décidé de parcourir deux
+
+                        parcours
+                        de la velodyssee.
+                        Nous avons été ravi du parcours du mur-de-Bretagne à Pontivy.
+                        Le chemin de halage tantôt en bitume, tantôt en stabilisé. Une végétation changeante tous les
+                        cinq
+                        kilomètres, un vrai</p>
+                    <div class="reponse">
+                        <span>0 réponse</span>
+                        <a href="#">Lire</a>
+                    </div>
+                </article>
+                <article class="contenu">
+                    <span class="date">dim 14/08/2022 - 19:34</span><br>
+                    <div class="avisPersonne">
+                    <span class="nom">Philippe</span>
+                    <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span><br>
+                </div>
+            </div>
+                    <span class="trajet">Pontivy / Josselin</span>
+                    <ul>
+                        <li>Sécurité 4/5</li>
+                        <li>Balisage 5/5</li>
+                        <li>Intérêt 5/5</li>
+                        <li>Services 5/5</li>
+                    </ul>
+                    <h3>Decouverte</h3>
+                    <p>Deuxième parcours de la journée, toujours aussi bien avec ses points de vues, nombreuses écluses,
+
+                        maison d'eclusiers fleuries, sa halte au chalet pour une dégustation de cidre.
+                        Une arrivée au château de Josselin.
+                        Une journée agréable, nous poursuivrons notre odyssée l'année prochaine.</p>
+                    <div class="reponse">
+                        <span>0 réponse</span>
+                        <a href="#">Lire</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section>
+            <div class="HDF">
+                <h2>La douceur de la mer à portée de roues !</h2>
+                <p>Idées week-end, nouveautés et tutos pour s'élancer dans une aventure à vélo.</p>
+            </div>
+            <div class="grid">
+                <figure class="case1">
+                    <img src="/images/eurovélo5.png" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="#">
+                        <h3>Présentation de l'itinéaire</h3>
+                    </a>
+                </figure>
+                <figure class="case2">
+                    <img src="/images/image4.png" alt="">
+                    <span>Juin 2022</span>
+                    <a href="#">
+                        <h3>Le passeport de l'EuroVélo</h3>
+                    </a>
+                    <p>Des souvenirs indélébiles<br>à portée de main</p>
+                </figure>
+                <figure class="case3">
+                    <img src="/images/foire-aux-questions.png" alt="">
+                    <i class="fa-thin fa-comments-question"></i>
+                    <a href="#">
+                        <h3>Foire Aux Questions</h3>
+                    </a>
+                </figure>
+                <figure class="case4">
+                    <img src="/images/Lens.jpg" alt="">
+                    <span>Nos conseils</span>
+                    <a href="#">
+                        <h3>L'EuroVélo: difficulté <br> et dénivelé</h3>
+                    </a>
+                    <p>Un itineraire adapté aux débutants <br> et aux familles !</p>
+                </figure>
+                <figure class="case5">
+                    <img src="/images/image10.png" alt="">
+                    <span>Nos conseils</span>
+                    <a href="#">
+                        <h3>Comment bien préparer <br> son premier voyage à vélo ?</h3>
+                    </a>
+                </figure>
+                <figure class="case6">
+                    <img src="/images/Image-transport-et-velo.jpg" alt="">
+                    <a href="#">
+                        <h3>Mode de transport + vélo</h3>
+                    </a>
+                </figure>
+                <figure class="case7">
+                    <img src="/images/hebergement2.jpg" alt="">
+                    <a href="#">
+                        <h3>Les hébergements légers à la nuitée</h3>
+                    </a>
+                </figure>
+                <figure class="case8">
+                    <img src="/images/HDF.jpg" alt="">
+                    <a href="#">
+                        <h3>Découvrez à vélo la région <br> autour de l'EuroVélo</h3>
+                    </a>
+                </figure>
+                <figure class="case9">
+                    <img src="/images/Outil.jpg" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="#">
+                        <h3>L'outil de signalement <br> à votre service</h3>
+                    </a>
+                    <p>Pendant, avant et après <br> votre parcours</p>
+                </figure>
+            </div>
+        </section>
 
       <!-- reservation -->
       <section>
@@ -568,7 +490,7 @@
                 <div class="prix-reservation">Dès 1404€</div>
                 <div class="info-sejour-right">
                   <div class="time-sejour">Long séjour (+ de 7 jours)</div>
-                  <i class="fa-regular fa-clock"></i>
+                  <i class="fa-regular fa-clock "></i>
                   <div class="fa-solid fa-heart"></div>
                 </div>
               </div>
@@ -694,8 +616,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="Javascript/slider.js"></script>
-    <script src="Javascript/navSearch.js"></script>
     <script src="Javascript/scroll.js"></script>
+    <script src="Javascript/navSearch.js"></script>
     <script src="Javascript/menuBurger.js"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+    <script src="Javascript/map.js"></script>
+    
+</body>
+
 </html>

@@ -1,31 +1,44 @@
-// // menu burger
+// menu burger
 
-// #btn-burger {
-//     display: none;
-// }
+#btn-burger {
+    display: none;
+}
 
-// @media screen and (max-width:391px) {
-//     header {
+@media screen and (max-width:391px) {
+    
+    header {
+       
+        .mediaPro {
+            display: none;
+        }
 
-//         .mediaPro,
-//         #navIndex {
-//             display: none;
-//         }
+        #navIndex {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            ul {
+                flex-direction: column;
+            }
+        }
 
-//         #btn-burger {
-//             display: block;
-//             position: fixed;
-//             font-size: 3em;
-//             line-height: 60px;
-//             color: $blanc;
-//             background-color: $roseTrace;
-//             padding: 0.5rem;
-//             border-radius: 0px 10px 10px 10px;
-//         }
+        #btn-burger {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            font-size: 2em;
+            line-height: 2rem;
+            color: $blanc;
+            background-color: $roseTrace;
+            padding: 0.5rem;
+            min-height: 0;
+            border-radius: 0px 10px 10px 10px;
+            z-index: 10003;
+        }
 
-//         #navResponsive.visible {
-//             display: block;
-//             background-color: $backgroundNav;
-//         }
-//     }
-// }
+        #navResponsive.visible {
+            display: block;
+            background-color: $backgroundNav;
+        }
+    }
+}
