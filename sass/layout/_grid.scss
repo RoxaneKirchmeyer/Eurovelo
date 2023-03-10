@@ -1,411 +1,105 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
-  grid-template-rows: repeat(auto-fill, minmax(350px, 3fr));
-  height: 100%;
-  width: 100%;
-
+  grid-template-columns: repeat(auto-fill, minmax(270px, 3fr));
+  justify-content: center;
+  gap: 30px;
+  margin-right: 100px;
+  margin-left: 100px;
 
   figure {
+    position: relative;
+    overflow: hidden;
     border-radius: 20px;
-    margin-bottom: 50px;
-
-    h3:hover {
-      bottom: 150px;
-      transition-duration: 0.1s;
-    }
-  }
-
-  .case1 {
-    position: relative;
-    overflow: hidden;
-    width: 350px;
     height: 250px;
 
     img {
-      align-self: start;
-      width: 100%;
-      height: 100%;
+      position: absolute;
+      z-index: 0;
+      inset: 0;
       object-fit: cover;
       transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-    }
-
-    img:hover {
-
-      scale: (1.4);
-      backdrop-filter: blur(5px);
-      filter: blur(6px);
-
-    }
-
-    h3 {
-      font-family: $fontTitre;
-      color: $blanc;
-      font-size: 1.3rem;
-      position: absolute;
-      bottom: 20px;
-      right: 45px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-
-    i {
-      color: $roseFonce;
-      font-size: 1.4rem;
-      position: absolute;
-      bottom: 210px;
-      right: 30px;
-      font-weight: bold;
-    }
-
-  }
-
-  .case2 {
-    position: relative;
-    overflow: hidden;
-    width: 350px;
-    height: 250px;
-
-    img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
-    img:hover {
-      scale: (1.4);
-      backdrop-filter: blur(5px);
-      filter: blur(6px);
-    }
-
-    h3 {
+    figcaption {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      text-shadow: 1px 1px black;
+      font-weight: bold;
       font-family: $fontTitre;
       color: $blanc;
-      font-size: 1.3rem;
-      position: absolute;
-      bottom: 70px;
-      right: 40px;
-      font-weight: bold;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      a {
+        font-weight: bold;
+        font-family: $fontTitre;
+        color: $blanc;
+        font-size: 1.4rem;
+        align-self: unset;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      a:hover {
+        color: $roseFonce;
+        font-family: $fontTexte;
+      }
+
+      p {
+        font-family: $fontTexte;
+        color: $blanc;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 1px 1px black;
+        inset: 0;
+        font-size: 1.1rem;
+      }
+
+      i {
+        position: absolute;
+        color: $roseFonce;
+        font-weight: bold;
+        align-self: self-end;
+        top: 20px;
+        right: 20px;
+        font-size: 1.3rem;
+      }
+
+      span {
+        font-family: $fontTexte;
+        background: $blanc;
+        color: $roseFonce;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 1.3rem;
+      }
     }
 
-    p {
-      font-family: $fontTexte;
-      color: $blanc;
-      font-size: 0.9rem;
-      font-weight: bold;
-      position: absolute;
-      bottom: 0px;
-      left: 100px;
-      text-align: center;
+    figcaption:hover~img {
+      transform: scale(2.5);
+      backdrop-filter: blur(8px);
+      filter: blur(8px);
     }
-
-    span {
-      font-family: $fontTexte;
-      background: $blanc;
-      color: $roseFonce;
-      font-size: 1.4rem;
-      position: absolute;
-      bottom: 210px;
-      right: 140px;
-      font-weight: bold;
-      text-align: center;
-      border-radius: 10px;
-    }
-  }
-
-  .case3 {
-    position: relative;
-    overflow: hidden;
-    width: 350px;
-    height: 250px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-
-    img:hover {
-      scale: (1.4);
-      backdrop-filter: blur(5px);
-      filter: blur(6px);
-    }
-
-    h3 {
-      font-family: $fontTitre;
-      color: $blanc;
-      font-size: 1.3rem;
-      position: absolute;
-      bottom: 20px;
-      right: 75px;
-      font-weight: bold;
-      text-align: center;
-    }
-  }
-
-  .case4 {
-    position: relative;
-    overflow: hidden;
-    width: 350px;
-    height: 250px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-
-    img:hover {
-      scale: (1.4);
-      backdrop-filter: blur(5px);
-      filter: blur(6px);
-    }
-
-    h3 {
-      font-family: $fontTitre;
-      color: $blanc;
-      font-size: 1.3rem;
-      position: absolute;
-      bottom: 70px;
-      right: 70px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    p {
-      font-family: $fontTexte;
-      color: $blanc;
-      font-size: 0.9rem;
-      font-weight: bold;
-      position: absolute;
-      bottom: 5px;
-      right: 70px;
-      text-align: center;
-    }
-
-    span {
-      font-family: $fontTexte;
-      background: $blanc;
-      border-radius: 10px;
-      color: $roseFonce;
-      font-size: 1.4rem;
-      position: absolute;
-      bottom: 200px;
-      right: 125px;
-      font-weight: bold;
-      text-align: center;
-    }
-  }
-
-  .case5 {
-    position: relative;
-    overflow: hidden;
-    width: 350px;
-    height: 250px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-
-    img:hover {
-      scale: (1.4);
-      backdrop-filter: blur(5px);
-      filter: blur(6px);
-    }
-
-    h3 {
-      font-family: $fontTitre;
-      color: $blanc;
-      font-size: 1.2rem;
-      position: absolute;
-      bottom: 30px;
-      right: 40px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    span {
-      font-family: $fontTexte;
-      background: $blanc;
-      color: $roseFonce;
-      font-size: 1.4rem;
-      position: absolute;
-      bottom: 197px;
-      right: 120px;
-      font-weight: bold;
-      border-radius: 10px;
-    }
-  }
-
-  .case6 {
-    position: relative;
-    overflow: hidden;
-    width: 350px;
-    height: 250px;
-
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-
-    img:hover {
-      scale: (1.4);
-      backdrop-filter: blur(5px);
-      filter: blur(6px);
-    }
-
-    h3 {
-      font-family: $fontTitre;
-      color: $blanc;
-      font-size: 1.3rem;
-      position: absolute;
-      bottom: 20px;
-      right: 50px;
-      font-weight: bold;
-      text-align: center;
-    }
-  }
-
-  .case7 {
-    position: relative;
-    overflow: hidden;
-    width: 350px;
-    height: 250px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-
-    img:hover {
-      scale: (1.4);
-      backdrop-filter: blur(5px);
-      filter: blur(6px);
-    }
-
-    h3 {
-      font-family: $fontTitre;
-      color: $blanc;
-      font-size: 1.3rem;
-      position: absolute;
-      bottom: 10px;
-      right: 5px;
-      font-weight: bold;
-      text-align: center;
-    }
-  }
-
-  .case8 {
-    position: relative;
-    overflow: hidden;
-    width: 350px;
-    height: 250px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-
-    img:hover {
-      scale: (1.4);
-      backdrop-filter: blur(5px);
-      filter: blur(6px);
-    }
-
-    h3 {
-      font-family: $fontTitre;
-      color: $blanc;
-      font-size: 1.3rem;
-      position: absolute;
-      bottom: 10px;
-      right: 30px;
-      font-weight: bold;
-      text-align: center;
-    }
-  }
-
-  .case9 {
-    position: relative;
-    overflow: hidden;
-    width: 350px;
-    height: 250px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-
-    img:hover {
-      scale: (1.4);
-      backdrop-filter: blur(5px);
-      filter: blur(6px);
-    }
-
-    h3 {
-      font-family: $fontTitre;
-      color: $blanc;
-      font-size: 1.3rem;
-      position: absolute;
-      bottom: 60px;
-      right: 60px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    p {
-      font-family: $fontTexte;
-      color: $blanc;
-      font-size: 0.9rem;
-      font-weight: bold;
-      position: absolute;
-      bottom: 0px;
-      right: 100px;
-      text-align: center;
-    }
-
-    i {
-      position: absolute;
-      color: $roseFonce;
-      font-size: 1.4rem;
-      position: absolute;
-      bottom: 210px;
-      right: 20px;
-      font-weight: bold;
-    }
-
   }
 }
 
 @media screen and (max-width:390px) {
- 
-  .grid{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(9, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
+  .grid {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
 
-      img {
-          
-      height: auto;
-      }
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }

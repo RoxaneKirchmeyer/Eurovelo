@@ -14,43 +14,46 @@
 
 <body>
     <header class="headerIndex">
-        <div class="mediaPro">
-            <div class="media">
-                <ul>
-                    <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/?hl=FR"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li><a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <div id="btn-burger">☰</div>
+        <div id="navResponsive">
+            <div class="mediaPro">
+                <div class="media">
+                    <ul>
+                        <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/?hl=FR"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    </ul>
+                    <form>
+                        <label>S'abonner à la newsletter</label>
+                        <input type="email" placeholder="Votre adresse mail">
+                        <button type="submit">JE M'INSCRIS</button>
+                    </form>
+                </div>
+
+                <ul class="pro">
+                    <li><a href="#">Espace pro</a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i> Carnet de voyage</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-user"></i> Espace personnel</a></li>
+                    <li><a href="#"><i class="fa-sharp fa-solid fa-flag"></i></a></li>
                 </ul>
-                <form>
-                    <label>S'abonner à la newsletter</label>
-                    <input type="email" placeholder="Votre adresse mail">
-                    <button type="submit">JE M'INSCRIS</button>
-                </form>
             </div>
 
-            <ul class="pro">
-                <li><a href="#">Espace pro</a></li>
-                <li><a href="#"><i class="fa-solid fa-heart"></i> Carnet de voyage</a></li>
-                <li><a href="#"><i class="fa-solid fa-circle-user"></i> Espace personnel</a></li>
-                <li><a href="#"><i class="fa-sharp fa-solid fa-flag"></i></a></li>
-            </ul>
+            <nav id="navIndex">
+                <ul>
+                    <li><a href="accueil.html" class="logoNav"><img src="images/logo-euroVelo.png" alt=""></a></li>
+                    <li><a href="itineraire.html">L'ITINÉRAIRE</a></li>
+                    <li><a href="">TÉMOIGNAGES</a></li>
+                    <li><a href="">INFOS PRATIQUES</a></li>
+                    <li><a href="">SUGGESTIONS</a></li>
+                    <li><a href="">INSPIRATIONS</a></li>
+                    <li><a href="">ACTUALITÉS 💬</a></li>
+                    <li><a href="">PASSEPORT 🗺️</a></li>
+                </ul>
+                <div>
+                    <button type="button"><i class="fa-solid fa-magnifying-glass" id="search"></i></button>
+                </div>
+            </nav>
         </div>
-
-        <nav id="navIndex">
-            <ul>
-                <li><a href="accueil.html" class="logoNav"><img src="images/logo-euroVelo.png" alt=""></a></li>
-                <li><a href="itineraire.html">L'ITINÉRAIRE</a></li>
-                <li><a href="">TÉMOIGNAGES</a></li>
-                <li><a href="">INFOS PRATIQUES</a></li>
-                <li><a href="">SUGGESTIONS</a></li>
-                <li><a href="">INSPIRATIONS</a></li>
-                <li><a href="">ACTUALITÉS 💬</a></li>
-                <li><a href="">PASSEPORT 🗺️</a></li>
-            </ul>
-            <div>
-                <button type="button"><i class="fa-solid fa-magnifying-glass" id="search"></i></button>
-            </div>
-        </nav>
         <form class="searchMenu">
             <input type="text" placeholder="Rechercher...">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -171,20 +174,20 @@
                 l'itinéraire</p>
             <div class="tourisme">
                 <figure class="fig-1">
-                    <div><img src="/images/image-hotel.jpg" alt=""></div>
-                    <a href="#">HÉBERGEMENTS</a>
+                    <figcaption><a href="#">HÉBERGEMENTS</a></figcaption>
+                    <img src="/images/image-hotel.jpg" alt="">
                 </figure>
                 <figure class="fig-2">
+                    <figcaption><a href="#">LIEUX DE VISITE</a></figcaption>
                     <img src="/images/image-Calais.png" alt="">
-                    <a href="#">LIEUX DE VISITE</a>
                 </figure>
                 <figure class="fig-3">
+                    <figcaption><a href="#">OFFICES DE TOURISME</a></figcaption>
                     <img src="/images/office-tourisme.png" alt="">
-                    <a href="#">OFFICES DE TOURISME</a>
                 </figure>
                 <figure class="fig-4">
+                    <figcaption><a href="#">LOUEURS & RÉPARATEURS DE VÉLO</a></figcaption>
                     <img src="/images/réparateur-vélo.png" alt="">
-                   <a href="#">LOUEURS & RÉPARATEURS DE VÉLO</a>
                 </figure>
             </div>
         </section>
@@ -330,67 +333,67 @@
             </div>
             <div class="grid">
                 <figure class="case1">
+                    <figcaption>
+                        <i class="fa-solid fa-heart"></i>
+                        <h3><a href="#">Présentation de l'itinéaire</a></h3>
+                        </figcaption>
                     <img src="/images/eurovélo5.png" alt="">
-                    <i class="fa-solid fa-heart"></i>
-                    <a href="#">
-                        <h3>Présentation de l'itinéaire</h3>
-                    </a>
                 </figure>
                 <figure class="case2">
+                    <figcaption>
+                        <span>Juin 2022</span>
+                        <h3><a href="#">Le passeport de l'EuroVélo</a></h3>
+                        <p>Des souvenirs indélébiles à portée de main</p>
+                    </figcaption>
                     <img src="/images/image4.png" alt="">
-                    <span>Juin 2022</span>
-                    <a href="#">
-                        <h3>Le passeport de l'EuroVélo</h3>
-                    </a>
-                    <p>Des souvenirs indélébiles<br>à portée de main</p>
                 </figure>
                 <figure class="case3">
+                    <figcaption>
+                        <i class="fa-thin fa-comments-question"></i>
+                        <h3><a href="#">Foire Aux Questions</a></h3>                        
+                    </figcaption>
                     <img src="/images/foire-aux-questions.png" alt="">
-                    <i class="fa-thin fa-comments-question"></i>
-                    <a href="#">
-                        <h3>Foire Aux Questions</h3>
-                    </a>
                 </figure>
                 <figure class="case4">
+                    <figcaption>
+                        <span>Nos conseils</span>
+                        <h3><a href="#">L'EuroVélo: difficulté et dénivelé</a></h3>
+                        <p>Un itineraire adapté aux débutants et aux familles !</p>
+                    </figcaption>
                     <img src="/images/Lens.jpg" alt="">
-                    <span>Nos conseils</span>
-                    <a href="#">
-                        <h3>L'EuroVélo: difficulté <br> et dénivelé</h3>
-                    </a>
-                    <p>Un itineraire adapté aux débutants <br> et aux familles !</p>
                 </figure>
                 <figure class="case5">
+                    <figcaption>
+                        <span>Nos conseils</span>
+                        <h3><a href="#">Comment bien préparer son premier voyage à vélo ?</a></h3>
+                    </figcaption>
                     <img src="/images/image10.png" alt="">
-                    <span>Nos conseils</span>
-                    <a href="#">
-                        <h3>Comment bien préparer <br> son premier voyage à vélo ?</h3>
-                    </a>
                 </figure>
                 <figure class="case6">
-                    <img src="/images/Image-transport-et-velo.jpg" alt="">
-                    <a href="#">
-                        <h3>Mode de transport + vélo</h3>
-                    </a>
+                    <figcaption>
+                        <h3><a href="#">Mode de transport + vélo</a></h3>
+                    </figcaption>
+                    <img src="/images/train-et-velo-2.jpg" alt="">
                 </figure>
                 <figure class="case7">
+                    <figcaption>
+                        <h3><a href="#">Les hébergements légers à la nuitée</a></h3>
+                    </figcaption>
                     <img src="/images/hebergement2.jpg" alt="">
-                    <a href="#">
-                        <h3>Les hébergements légers à la nuitée</h3>
-                    </a>
                 </figure>
                 <figure class="case8">
+                    <figcaption>
+                        <h3><a href="#">Découvrez à vélo la région autour de l'EuroVélo</a></h3>
+                    </figcaption>
                     <img src="/images/HDF.jpg" alt="">
-                    <a href="#">
-                        <h3>Découvrez à vélo la région <br> autour de l'EuroVélo</h3>
-                    </a>
                 </figure>
                 <figure class="case9">
+                    <figcaption>
+                        <i class="fa-solid fa-heart"></i>
+                        <h3><a href="#">L'outil de signalement à votre service</a></h3>
+                        <p>Pendant, avant et après votre parcours</p>
+                    </figcaption>
                     <img src="/images/Outil.jpg" alt="">
-                    <i class="fa-solid fa-heart"></i>
-                    <a href="#">
-                        <h3>L'outil de signalement <br> à votre service</h3>
-                    </a>
-                    <p>Pendant, avant et après <br> votre parcours</p>
                 </figure>
             </div>
         </section>
