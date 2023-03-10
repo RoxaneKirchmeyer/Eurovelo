@@ -202,9 +202,119 @@ main {
             }
         }
     }
+}
+
+.avis {
+    h2 {
+        font-family: $fontTitre;
+        margin-bottom: 40px;
+        text-align: center;
     }
-    @media screen and (max-width:391px)
-    {
+
+    .p1 {
+        width: 600px;
+       margin-left: 650px;
+       font-size: 1.125rem;
+       text-align: center;
+      
+        
 
 
     }
+
+
+.détails {
+    padding: 30px 200px 30px 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+
+.contenu {
+    padding: 25px;
+    
+}
+    article {
+        background-color: $grisTresClair;
+        height: 450px;
+        width: 400px;
+
+        p {
+            color: $grisMoyen;
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+        }
+        .date {
+            color: $grisFonce;
+            font-family: $fontTexte;
+
+        }
+        .nom {
+            font-family: $fontTexte;
+            font-weight: 450;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+        .avisPersonne {
+            display: flex;
+            justify-content: space-between;
+        }
+        .star {
+            color: $roseTrace;
+        }
+        .trajet {
+            color: $blanc;
+            background-color: $roseFonce;
+            padding: 4px 9px;
+            font-family: $fontTexte;
+           
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            font-family: $fontTexte;
+            padding: 25px;
+        }
+        h3 {
+            font-family: $fontTitre;
+            
+            font-weight: 450;
+        }
+        .reponse {
+            display: flex;
+            justify-content: space-between;
+            span {
+                font-family: $fontTexte;
+                color: $grisMoyen;
+            }
+            a {
+                color: $roseFonce;
+            }
+        }
+
+    }
+
+} @media screen and (max-width:391px) {
+    .p1 {
+         margin: 0;
+         width: 80%;
+         text-align: center;
+         padding: 0px 15px 10px 15px;
+        
+        
+    }
+.détails {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    article {
+        width: 300px;
+        height: 100%;
+    }
+   
+} 
+
+}
+    
+}
+
