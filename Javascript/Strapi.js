@@ -27,7 +27,7 @@ function creer_itineraires(data) {
     etapeContainer = document.createElement("div");
     container.appendChild(etapeContainer);
     etapeContainer.addEventListener("click", function (e) {
-      popup.innerHTML = etape.attributes.Descriptif;
+      popup.innerHTML = marked.parse(etape.attributes.Descriptif);
       popup.classList.toggle("visible");
       overlay.classList.toggle("visible");
     });
@@ -41,12 +41,12 @@ function creer_itineraires(data) {
     let divH2_P = document.createElement("div");
 
     titre = document.createElement("h2");
-    titre.innerText = etape.attributes.Nom;
+    titre.innerHTML = etape.attributes.Nom;
     etapeContainer.appendChild(divH2_P);
     divH2_P.appendChild(titre);
 
     distance = document.createElement("p");
-    distance.innerText =
+    distance.innerHTML =
       "Distance d'étape " + etape.attributes.Distance + " km";
     etapeContainer.appendChild(divH2_P);
     divH2_P.appendChild(distance);
@@ -54,7 +54,7 @@ function creer_itineraires(data) {
     gpx = url + etape.attributes.gpx.data.attributes.url;
     new L.GPX(gpx, {
       polyline_options: {
-        color: "black",
+        color: "#e56cb9",
         opacity: 0.75,
         weight: 7,
         lineCap: "round",
@@ -67,17 +67,22 @@ function creer_itineraires(data) {
     })
       .on("mouseover mousemove", function (e) {
         this.setStyle({
-          color: "red",
+          color: "#FF4500",
         });
       })
       .on("mouseout", function (e) {
         this.setStyle({
-          color: "black",
+          color: "#e56cb9",
         });
       })
       .addTo(map);
   }
 }
+
+
+
+
+
 
 function get_articles() {
   console.log(url + url_article + url_img);

@@ -1,3 +1,11 @@
+#map{
+   height: 100vh;
+}
+
+strong {
+    font-weight: bold;
+            }
+
 #page_itineraire {
 
     .popup {
@@ -10,6 +18,9 @@
     }
 
   .popup.visible {
+    padding-top: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: block;
   }
 
@@ -40,6 +51,7 @@
       }
       p {
         align-items: start;
+       
       }
   }
   figure {
@@ -54,4 +66,9 @@
 
     }
   }
+}
+
+#itineraire{
+    height: 100vh;
+    overflow: hidden scroll;
 }
