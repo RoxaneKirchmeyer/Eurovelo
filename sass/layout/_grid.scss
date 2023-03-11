@@ -1,10 +1,11 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 3fr));
+  margin: auto;
+  width: 80%;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 30px;
-  margin-right: 100px;
-  margin-left: 100px;
+  padding: 2rem 0;
 
   figure {
     position: relative;
@@ -13,12 +14,6 @@
     height: 250px;
 
     img {
-<<<<<<< HEAD
-      position: absolute;
-      z-index: 0;
-      inset: 0;
-=======
->>>>>>> c1fbcc49b229d1c775da9de71800c7815ea9560b
       object-fit: cover;
       transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
       width: 100%;
@@ -67,7 +62,7 @@
 
       i {
         position: absolute;
-        color: $roseFonce;
+        color: $roseTrace;
         font-weight: bold;
         align-self: self-end;
         top: 20px;
@@ -76,11 +71,11 @@
       }
 
       span {
+        padding: 0.5rem;
         font-family: $fontTexte;
-        background: $blanc;
-        color: $roseFonce;
+        background: $roseTrace;
+        color: $blanc;
         font-weight: bold;
-        border-radius: 10px;
         font-size: 1.3rem;
       }
     }
@@ -93,16 +88,8 @@
   }
 }
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:391px) {
   .grid {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-right: 10%;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    grid-template-columns: 1fr;
   }
 }

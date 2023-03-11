@@ -1,8 +1,5 @@
 main {
-<<<<<<< HEAD
-=======
     padding-top: 90px;
->>>>>>> c1fbcc49b229d1c775da9de71800c7815ea9560b
 
     .firstArticle {
         width: 80%;
@@ -55,10 +52,13 @@ main {
 
         #map {
             width: 550px;
+            min-height: 940px;
         }
     }
 
     .HDF {
+        padding: 2rem 0;
+
         h2 {
             font-family: $fontTitre;
             text-align: center;
@@ -69,11 +69,13 @@ main {
             margin-top: 10px;
             margin-bottom: 20px;
             text-align: center;
+            padding: 0 1rem;
         }
     }
 
-<<<<<<< HEAD
     .mon-acceuil {
+        padding: 2rem 0;
+        margin-bottom: 50px;
 
         .logo-et-h2 {
             display: flex;
@@ -92,29 +94,6 @@ main {
             img {
                 align-self: center;
             }
-=======
-    .logo-et-h2 {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 50px;
-        margin-left: 200px;
-        margin-right: 200px;
-        justify-content: flex-start;
-        margin-bottom: 40px;
-        margin-top: 50px;
-
-        h2 {
-            align-self: flex-end;
-            font-family: $fontTitre;
-            color: $grisFonce;
-        }
-
-        img {
-            align-self: center;
-            width: 4%;
-            height: 4%;
-            object-fit: contain;
->>>>>>> c1fbcc49b229d1c775da9de71800c7815ea9560b
         }
 
         p {
@@ -122,34 +101,7 @@ main {
             margin-bottom: 20px;
             font-family: $fontTexte;
         }
-    }
 
-
-
-
-
-    /////////////////////////////////////////////////////////////////////////////////////:
-
-
-
-    .reservation {
-        background-image: url("	/../../../images/fond-reservation-2.webp");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 800Px;
-        box-shadow: inset -11px -46px 50px -30px rgba(0, 0, 0, 0.36);
-
-
-        .top-reservation {
-            padding-top: 50px;
-            padding-bottom: 50px;
-            padding-left: 200px;
-
-        }
-
-<<<<<<< HEAD
         .tourisme {
             display: flex;
             flex-wrap: wrap;
@@ -202,36 +154,244 @@ main {
                     backdrop-filter: blur(8px);
                     filter: blur(8px);
                 }
+            }
+        }
+    }
 
-=======
+    .temoignage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 1rem;
+        padding: 2rem;
+        background-image: url(/images/fond-reservation-2.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
 
         h2 {
-            color: rgb(255, 255, 255);
-            font-weight: 400;
-            font-size: 48px;
-            text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
+            padding-top: 2rem;
+            color: $blanc;
         }
 
+
+        h3 {
+            color: $blanc;
+            font-family: $fontTitre;
+            font-weight: 800;
+            text-align: center;
+            margin-top: 100px;
+            padding: 0 1rem;
+        }
 
         p {
-            color: rgb(255, 255, 255);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-            font-size: 16px;
-
+            color: $blanc;
+            margin-top: 25px;
+            padding: 0 1rem;
         }
 
+        .experiencePerso {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 50px;
+            flex-wrap: wrap;
 
+            figure {
+                height: 300px;
+                width: 400px;
+                position: relative;
+
+                i {
+                    color: $blanc;
+                    font-size: x-large;
+                    margin-left: 350px;
+                    padding: 10px;
+                }
+
+                img {
+                    height: 300px;
+                    width: 400px;
+                    border-radius: 15px;
+                }
+
+                figcaption {
+                    position: absolute;
+                    inset: 0;
+                    z-index: 1;
+                    transition: all 0.5s ease-in;
+
+                    &:hover {
+                        backdrop-filter: blur(5px);
+                        transition: all 0.5s ease-in;
+                    }
+                }
+            }
+        }
+
+        .temoignagelien {
+            a {
+                background-color: #fff;
+                display: block;
+                width: 150px;
+                color: $roseFonce;
+                font-family: $fontTexte;
+                font-weight: 400;
+                padding: 15px;
+                border: $roseFonce solid;
+                border-radius: 10px;
+                margin: auto;
+            }
+        }
+    }
+
+    .avis {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+
+        h2 {
+            font-family: $fontTitre;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .p1 {
+            font-size: 1.125rem;
+            text-align: center;
+        }
+
+        .détails {
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+
+            .contenu {
+                padding: 25px;
+            }
+
+            article {
+                background-color: $grisTresClair;
+                height: 450px;
+                width: 400px;
+
+                p {
+                    color: $grisMoyen;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+
+                }
+
+                .date {
+                    color: $grisFonce;
+                    font-family: $fontTexte;
+
+                }
+
+                .nom {
+                    font-family: $fontTexte;
+                    font-weight: 450;
+                    font-size: 1.5rem;
+                    margin-bottom: 25px;
+                }
+
+                .avisPersonne {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .star {
+                    color: $roseTrace;
+                }
+
+                .trajet {
+                    color: $blanc;
+                    background-color: $roseFonce;
+                    padding: 4px 9px;
+                    font-family: $fontTexte;
+
+                }
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: $fontTexte;
+                    padding: 25px;
+                }
+
+                h3 {
+                    font-family: $fontTitre;
+
+                    font-weight: 450;
+                }
+
+                .reponse {
+                    display: flex;
+                    justify-content: space-between;
+
+                    span {
+                        font-family: $fontTexte;
+                        color: $grisMoyen;
+                    }
+
+                    a {
+                        color: $roseFonce;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .reservation {
+        background-image: url("/images/fond-reservation-2.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        padding: 2rem 0;
+        box-shadow: inset -11px -46px 50px -30px rgba(0, 0, 0, 0.36);
+
+
+
+        .top-reservation {
+            text-align: center;
+
+            h2 {
+                color: rgb(255, 255, 255);
+                font-weight: 400;
+                font-size: 48px;
+                text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
+                padding: 1.5rem 0;
+            }
+
+
+            p {
+                padding: 1rem;
+                color: rgb(255, 255, 255);
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+                font-size: 16px;
+
+            }
+
+        }
 
         .bottom-reservation {
             display: flex;
             justify-content: space-around;
             padding-top: 100px;
-            height: 33%;
-
 
             .image-reservation {
-                width: 31%;
-                height: 100%;
+                width: 30%;
+                text-align: center;
+                padding: 1rem;
+                min-height: 250px;
                 object-fit: cover;
                 border-radius: 10px;
                 transition: all 0.3s;
@@ -267,254 +427,130 @@ main {
                 align-items: center;
                 margin-top: 10px;
                 position: relative;
+            }
 
 
 
-                .prix-reservation {
-                    background-color: #E5B9D5;
-                    color: #fff;
+
+
+            .prix-reservation {
+                background-color: #E5B9D5;
+                color: #fff;
+                font-family: 'Mukta Mahee', sans-serif;
+                padding: 5px 9px;
+                padding: 5px 9px;
+                font-size: 12px;
+                font-weight: 600;
+
+
+            }
+
+
+            .info-sejour-right {
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+
+
+
+                .time-sejour {
+                    background-color: rgb(255, 255, 255);
+                    color: black;
                     font-family: 'Mukta Mahee', sans-serif;
-                    padding: 5px 9px;
-                    padding: 5px 9px;
+                    padding: 5px 5px 5px 9px;
                     font-size: 12px;
                     font-weight: 600;
-
-
                 }
 
 
-                .info-sejour-right {
-                    display: flex;
-                    align-items: center;
+
+                .fa-clock {
                     background-color: #fff;
-
-
-
-                    .time-sejour {
-                        background-color: rgb(255, 255, 255);
-                        color: black;
-                        font-family: 'Mukta Mahee', sans-serif;
-                        padding: 5px 5px 5px 9px;
-                        font-size: 12px;
-                        font-weight: 600;
-                    }
-
-
-
-                    .fa-clock {
-                        background-color: #fff;
-                        padding: 5px 5px 5px 1px;
-                        color: rgb(0, 0, 0);
-                        font-size: 12px;
-                    }
-
-
-
-                    .fa-heart {
-                        color: #fff;
-                        position: absolute;
-                        right: 12px;
-                        font-size: 18px;
-                        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-                        
-                        &:hover {
-                            color: #E5B9D5;
-                        }
-                    }
-
+                    padding: 5px 5px 5px 1px;
+                    color: rgb(0, 0, 0);
+                    font-size: 12px;
                 }
 
-            }
-
-        }
 
 
-    }
+                .fa-heart {
+                    color: #fff;
+                    position: absolute;
+                    right: 12px;
+                    font-size: 18px;
+                    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
-
-
-
-    .nature {
-        background-image: url(../../images/Velodyssee-Biarritz.jpeg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .foret {
-        background-image: url(../../images/velodysse-orlean.jpeg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .champ {
-        background-image: url(../../images/velodyssé-rochelle.jpeg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-}
-
-
-
-
-
-
-.btn-reservation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-
-    a {
-        text-decoration: none;
-        color: #E5B9D5;
-        font-family: 'Mukta Mahee', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        background-color: #ffffff;
-        height: 50px;
-        width: 190PX;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        cursor: pointer;
-        transition: all 0.3s;
-
-
-        &:hover {
-            background-color: #E5B9D5;
-            text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
-            color: #ffff;
-            border-radius: 15px;
-            margin-top: 4px;
-
-        }
-    }
-}
-
-
-
-
-
-.mon-acceuil {
-    p {
-        justify-self: end;
-        text-align: center;
-        margin-bottom: 20px;
-        font-family: $fontTexte;
-        color: $grisFonce;
-    }
-
-    .tourisme {
-
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(140px, 4fr));
-        grid-template-rows: repeat(auto-fill, minmax(220px, 1fr));
-        height: 100%;
-        width: 100%;
-        gap: 30px;
-
-        .fig-3 {
-            position: relative;
-
-            a {
-                text-align: center;
-                position: absolute;
-                top: 80px;
-                left: 20px;
->>>>>>> c1fbcc49b229d1c775da9de71800c7815ea9560b
+                    &:hover {
+                        color: #E5B9D5;
+                    }
+                }
             }
         }
-    }
 
-<<<<<<< HEAD
-    .reservation {
-        background-image: url("	/../../../images/img-nature\ .jpeg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 770Px;
-
-        h2 {
-            color: rgb(255, 255, 255);
-            font-weight: 800;
-            font-size: 58px;
-            text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.4);
-
-            text-align: center;
+        .nature {
+            background-image: url("/images/Velodyssee-Biarritz.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
 
-        p {
-            color: rgb(255, 255, 255);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            font-size: 16px;
-            text-align: center;
+        .foret {
+            background-image: url("/images/velodysse-orlean.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .champ {
+            background-image: url("/images/velodyssé-rochelle.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
 
 
-        .bottom-reservation {
+        .btn-reservation {
             display: flex;
-            justify-content: space-around;
-            padding-top: 100px;
-
-            .image-reservation {
-                background-image: url("/Users/maheydine/Documents/Eurovelo/images/img-rocher.jpeg");
-=======
-        .fig-4 {
-            position: relative;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
 
             a {
-                text-align: center;
-                position: absolute;
-                top: 70px;
-                left: 20px;
+                text-decoration: none;
+                color: #E5B9D5;
+                font-family: 'Mukta Mahee', sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+                background-color: #ffffff;
+                height: 50px;
+                width: 190PX;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+                transition: all 0.3s;
+
+
+                &:hover {
+                    background-color: #E5B9D5;
+                    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+                    color: #ffff;
+                    border-radius: 15px;
+                    margin-top: 4px;
+
+                }
             }
         }
 
-        figure {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-
-            a {
-                text-align: center;
-                color: $blanc;
-                font-weight: bold;
-                position: absolute;
-                font-family: $fontTitre;
-                font-size: 1rem;
-                top: 95px;
-                right: 20px;
-            }
-
-
-            img {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-            }
-
-            img:hover {
-                scale: (2.5);
-                backdrop-filter: blur(8px);
-                filter: blur(8px);
->>>>>>> c1fbcc49b229d1c775da9de71800c7815ea9560b
-            }
-        }
     }
-
-<<<<<<< HEAD
 }
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:391px) {
+
+
     .logo-et-h2 {
         display: flex;
         flex-wrap: wrap;
@@ -533,16 +569,15 @@ main {
             width: 100%;
             height: 100%;
         }
-=======
 
-}
-
-.avis {
-    h2 {
-        font-family: $fontTitre;
-        margin-bottom: 40px;
-        text-align: center;
     }
+
+    .avis {
+        h2 {
+            font-family: $fontTitre;
+            margin-bottom: 40px;
+            text-align: center;
+        }
 
         .p1 {
             width: 600px;
@@ -552,80 +587,80 @@ main {
         }
 
 
-    .détails {
-        padding: 30px 200px 30px 250px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 25px;
+        .détails {
+            padding: 30px 200px 30px 250px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
 
-        .contenu {
-            padding: 25px;
-
-        }
-
-        article {
-            background-color: $grisTresClair;
-            height: 450px;
-            width: 400px;
-
-            p {
-                color: $grisMoyen;
-                margin-top: 25px;
-                margin-bottom: 25px;
-
-            }
-
-            .date {
-                color: $grisFonce;
-                font-family: $fontTexte;
-
-            }
-
-            .nom {
-                font-family: $fontTexte;
-                font-weight: 450;
-                font-size: 1.5rem;
-                margin-bottom: 25px;
-            }
-
-            .avisPersonne {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .star {
-                color: $roseTrace;
-            }
-
-            .trajet {
-                color: $blanc;
-                background-color: $roseFonce;
-                padding: 4px 9px;
-                font-family: $fontTexte;
-
-            }
-
-            ul {
-                display: flex;
-                justify-content: space-between;
-                font-family: $fontTexte;
+            .contenu {
                 padding: 25px;
+
             }
 
-            h3 {
-                font-family: $fontTitre;
+            article {
+                background-color: $grisTresClair;
+                height: 450px;
+                width: 400px;
 
-                font-weight: 450;
-            }
-
-            .reponse {
-                display: flex;
-                justify-content: space-between;
-
-                span {
-                    font-family: $fontTexte;
+                p {
                     color: $grisMoyen;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+
                 }
+
+                .date {
+                    color: $grisFonce;
+                    font-family: $fontTexte;
+
+                }
+
+                .nom {
+                    font-family: $fontTexte;
+                    font-weight: 450;
+                    font-size: 1.5rem;
+                    margin-bottom: 25px;
+                }
+
+                .avisPersonne {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .star {
+                    color: $roseTrace;
+                }
+
+                .trajet {
+                    color: $blanc;
+                    background-color: $roseFonce;
+                    padding: 4px 9px;
+                    font-family: $fontTexte;
+
+                }
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: $fontTexte;
+                    padding: 25px;
+                }
+
+                h3 {
+                    font-family: $fontTitre;
+
+                    font-weight: 450;
+                }
+
+                .reponse {
+                    display: flex;
+                    justify-content: space-between;
+
+                    span {
+                        font-family: $fontTexte;
+                        color: $grisMoyen;
+                    }
 
                     a {
                         color: $roseFonce;
@@ -634,80 +669,108 @@ main {
                     }
                 }
 
-            .temoignage {
-                background-image: url(/images/img-rocher.jpeg);
-                background-repeat: no-repeat;
-                background-size: cover;
+                .temoignage {
+                    background-image: url(/images/img-rocher.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
 
-                h2 {
-                    color: $blanc;
-                }
+                    h2 {
+                        color: $blanc;
+                    }
 
-                p {
-                    color: $blanc;
-                }
+                    p {
+                        color: $blanc;
+                    }
 
-                .experiencePerso {
-                    display: flex;
-                    justify-content: space-between;
+                   
+
                 }
             }
-
         }
     }
-}
 
+    @media screen and (max-width:391px) {
+        main {
+            .avis {
+                .p1 {
+                    margin-left: 1.5rem;
+                    width: 80%;
+                    text-align: center;
+                    padding: 0px 15px 10px 15px;
+                }
 
-@media screen and (max-width:391px) {
-    main {
-        .avis {
-            .p1 {
-                margin-left: 1.5rem;
-                width: 80%;
-                text-align: center;
-                padding: 0px 15px 10px 15px;
+                .détails {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0px;
+                    margin-left: 1.5rem;
+
+                    article {
+                        width: 300px;
+                        height: 100%;
+                    }
+                }
             }
 
-            .détails {
+
+
+            .firstArticle {
                 display: flex;
                 flex-direction: column;
-                padding: 0px;
-                margin-left: 1.5rem;
+                width: 80%;
+                margin: auto;
+                align-items: center;
+
+                img {
+                    display: none;
+                }
 
                 article {
-                    width: 300px;
-                    height: 100%;
+                    max-width: 100%;
+
+                    p {
+                        text-align: center;
+                        padding-bottom: 1rem;
+                    }
+                }
+
+                #map {
+                    display: none;
                 }
             }
         }
 
+        .reservation {
+            .bottom-reservation {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
 
+                .image-reservation {
+                    min-width: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                }
+            }
+        }
+    }
 
-        .firstArticle {
-            display: flex;
-            flex-direction: column;
-            width: 80%;
-            margin: auto;
-            align-items: center;
+    .experiencePerso {
+        display: flex;
+        justify-content: space-between;
+
+        figure {
+            max-height: 300px;
+            max-width: 300px;
 
             img {
-                display: none;
-            }
-
-            article {
-                max-width: 100%;
-
-                p {
-                    text-align: center;
-                    padding-bottom: 1rem;
-                }
-            }
-
-            #map {
-                display: none;
+                max-height: 300px;
+                max-width: 300px;
             }
         }
 
->>>>>>> c1fbcc49b229d1c775da9de71800c7815ea9560b
     }
 }

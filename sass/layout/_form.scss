@@ -32,3 +32,13 @@ form {
         }
     }
 }
+
+@media screen and (max-width:391px) {
+    header {
+        form{
+            button{
+                max-width: 250px;
+            }
+        }
+    }
+}
