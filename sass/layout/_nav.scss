@@ -53,7 +53,7 @@ nav {
     }
 }
 
-.headerIndex{
+.headerIndex {
     .navShadowIndex {
         border-top: 1px solid $grisClair;
         border-bottom: 1px solid $grisClair;
@@ -73,9 +73,11 @@ nav {
     #navIndex {
         display: none;
     }
-    #navIndex.visible{
+
+    #navIndex.visible {
         width: 390px;
         display: block;
+
         img {
             margin-top: 1rem;
             width: 45px;
