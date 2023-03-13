@@ -6,6 +6,7 @@ form {
         border: none;
         border-radius: 5px;
         font-family: $fontTexte;
+
         &:focus {
             outline: 2px solid $inputFocus;
         }
@@ -27,6 +28,7 @@ form {
         border: none;
         border-radius: 5px;
         font-family: $fontTexte;
+
         &:focus {
             outline: 2px solid $inputFocus;
         }
@@ -35,8 +37,8 @@ form {
 
 @media screen and (max-width:391px) {
     header {
-        form{
-            button{
+        form {
+            button {
                 max-width: 250px;
             }
         }
