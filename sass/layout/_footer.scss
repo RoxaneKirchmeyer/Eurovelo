@@ -73,7 +73,7 @@ footer {
             font-weight: bold;
             display: block;
             width: 150px;
-            height: 30px;
+            height: 20px;
             text-align: center;
             align-self: center;
 
@@ -93,12 +93,13 @@ footer {
             font-weight: bold;
             display: block;
             width: 150px;
-            height: 30px;
+            height: 20px;
             text-align: center;
             align-self: center;
 
             &:hover {
-                background-color: $buttonHover;
+                background-color: $colorTexteDarkBackground;
+                color: $roseTrace;
                 transition: all 0.5s ease-in-out;
             }
         }
@@ -169,13 +170,14 @@ footer {
                 border-radius: 6px;
                 padding: 0.5rem 1rem;
                 width: 150px;
-                height: 30px;
+                height: 20px;
                 display: block;
                 text-align: center;
                 font-weight: 600;
 
                 &:hover {
                     background-color: $roseTrace;
+                    color: $blanc;
                     transition: all 0.5s ease-in-out;
                 }
             }
@@ -188,13 +190,14 @@ footer {
                 border-radius: 6px;
                 padding: 0.5rem 1rem;
                 width: 250px;
-                height: 30px;
+                height: 20px;
                 display: block;
                 text-align: center;
                 font-weight: 600;
 
                 &:hover {
-                    background-color: $buttonHover;
+                    background-color: $roseTrace;
+                    color: $colorTexteDarkBackground;
                     transition: all 0.5s ease-in-out;
                 }
             }
