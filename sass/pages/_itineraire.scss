@@ -11,8 +11,8 @@ strong {
   .popup {
     position: absolute;
     inset: 0 50% 0 0;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: $backgroundNav;
+    color: $grisFonce;
     display: none;
     z-index: 10001;
   }
@@ -47,15 +47,31 @@ strong {
     grid-template-columns: 150px 1fr;
     align-items: start;
     gap: 15px;
-    background-color: rgb(255, 255, 255);
+    background-color: $backgroundNav;
+    cursor: pointer;
+    padding-top: 1rem;
 
     h2 {
       font-size: 1.5rem;
+      background-color: $roseTrace;
+      font-family: $fontTitre;
+      color: $colorTexteDarkBackground;
+      padding: 0.5rem;
+      border-radius: 15px;
+      font-weight: 500;
+      text-align: center;
+        &:hover {
+          background-color: $roseFonce;
+          transition: all 0.5s ease-in-out;
+        }
     }
 
     p {
-      align-items: start;
-
+      padding: 1rem;
+      font-family: $fontTexte;
+      color: $colorTexte;
+      font-size: 1.1rem;
+      font-weight: 700;
     }
   }
 
@@ -67,8 +83,6 @@ strong {
       width: 100%;
       height: 100%;
       object-fit: cover;
-
-
     }
   }
 }
@@ -76,20 +90,19 @@ strong {
 #itineraire {
   height: 100vh;
   overflow: hidden scroll;
+  padding-right: 1rem;
 }
 
 @media screen and (max-width:391px) {
   #page_itineraire {
     #map {
       display: none;
-
     }
 
     main>section {
       width: 100%;
       display: grid;
       grid-template-columns: 1fr;
-
     }
   }
 }

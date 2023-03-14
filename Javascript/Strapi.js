@@ -1,5 +1,5 @@
-const url = "http://90.110.218.245:5001";
-const url_article = "/api/itineraires";
+const url = "http://localhost:1337";
+const url_article = "/api/etapes";
 const url_img = "?populate=*";
 
 // Création map
@@ -67,7 +67,7 @@ function creer_itineraires(data) {
     })
       .on("mouseover mousemove", function (e) {
         this.setStyle({
-          color: "#FF4500",
+          color: "#e237a3",
         });
       })
       .on("mouseout", function (e) {

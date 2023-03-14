@@ -1,4 +1,4 @@
-const url = "http://90.110.218.245:5001";
+const url = "http://localhost:1337";
 const url_article = "/api/trace-globals"
 const url_img = "?populate=*";
 
@@ -19,7 +19,7 @@ data = data.data;
  gpx = url + data[0].attributes.gpx.data.attributes.url;
     new L.GPX(gpx, {
       polyline_options: {
-        color: "black",
+        color: "#e56cb9",
         opacity: 0.75,
         weight: 7,
         lineCap: "round",
@@ -32,7 +32,7 @@ data = data.data;
     })
       .on("mouseover mousemove", function (e) {
         this.setStyle({
-          color: "#FF4500",
+          color: "#e237a3",
         });
       })
       .on("mouseout", function (e) {
