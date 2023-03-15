@@ -2,8 +2,21 @@
   height: 100vh;
 }
 
+p {
+  padding: 0.5rem;
 strong {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1.5rem;
+  background-color: $roseTrace;
+  padding: 0 1rem;
+  color: $colorTexteDarkBackground;
+  font-family: $fontTitre;
+  cursor: pointer;
+  &:hover {
+    background-color: $roseFonce;
+    transition: all 0.5s ease-in-out;
+}
+}
 }
 
 #page_itineraire {

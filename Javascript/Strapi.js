@@ -79,11 +79,6 @@ function creer_itineraires(data) {
   }
 }
 
-
-
-
-
-
 function get_articles() {
   console.log(url + url_article + url_img);
   fetch(url + url_article + url_img)
